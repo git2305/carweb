@@ -1,0 +1,1 @@
+<?php echo $this->element('front/auction_listing');?>

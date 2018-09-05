@@ -1,0 +1,1907 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/ApisController.php:35
+msgid "Your account is not activated by admin yet..!"
+msgstr "Ihr Konto wurde noch nicht freigeschaltet."
+
+#: Controller/ApisController.php:38
+msgid "Login successfully."
+msgstr "Login erfolgreich."
+
+#: Controller/ApisController.php:42
+msgid "Invalid Username or Password !"
+msgstr "Benutzer oder Passwort ungültig."
+
+#: Controller/ApisController.php:53
+msgid "Already logged in"
+msgstr "Sie sind schon eingeloggt."
+
+#: Controller/ApisController.php:56
+msgid "you are not logged in"
+msgstr "Sie sind nicht eingeloggt."
+
+#: Controller/ApisController.php:68
+msgid "Logout Successfully"
+msgstr "Erfolgreich ausgeloggt."
+
+#: Controller/ApisController.php:71
+msgid "Logout failed. Please try again"
+msgstr "Logout nicht erfolgreich. Bitte erneut versuchen."
+
+#: Controller/ApisController.php:105
+msgid "Please pass required parameters."
+msgstr "Bitte alle Felder ausfüllen"
+
+#: Controller/ApisController.php:133
+msgid "Username & email already exist. Try with different username & email."
+msgstr "Nutzername oder E-Mail existieren bereits."
+
+#: Controller/ApisController.php:139
+msgid "Email already exist. Try with different email id."
+msgstr "Email bereits vorhanden. Bitte geben Sie eine neue Email ein."
+
+#: Controller/ApisController.php:144
+msgid "Username already exist. Try with different username."
+msgstr "Benutzer existiert bereits. Bitte geben Sie einen neuen Benutzer ein."
+
+#: Controller/ApisController.php:177
+msgid "Your profile application has been sent to admin for approval. We will respond you within 1-2 working days."
+msgstr "Ihre Anmeldung muss noch vom Administrator freigeschaltet werden. Wir werden uns in den nächsten Tagen melden."
+
+#: Controller/ApisController.php:186
+msgid "SomeThing went wrong, Please try again later."
+msgstr "Etwas lief schief. Bitte später nochmals versuchen."
+
+#: Controller/UsersController.php:479
+#: View/Users/contact_us.ctp:62
+msgid "Car Dealer"
+msgstr "Autohändler"
+
+#: Controller/UsersController.php:479
+#: View/Users/contact_us.ctp:62
+msgid "Private User"
+msgstr "Privater Benutzer"
+
+#: Controller/VehicleMakeYearsController.php:37;71;98
+msgid "Invalid vehicle make year"
+msgstr "Baujahr ungültig."
+
+#: Controller/VehicleMakeYearsController.php:52;75
+msgid "The vehicle make year has been saved."
+msgstr "Baujahr gespeichert."
+
+#: Controller/VehicleMakeYearsController.php:55;78
+msgid "The vehicle make year could not be saved. Please, try again."
+msgstr "Baujahr konnte nicht gespeichert werden."
+
+#: Controller/VehicleMakeYearsController.php:102
+msgid "The vehicle make year has been deleted."
+msgstr "Baujahr wurde gelöscht."
+
+#: Controller/VehicleMakeYearsController.php:104
+msgid "The vehicle make year could not be deleted. Please, try again."
+msgstr "Baujahr konnte nicht gelöscht werden. Bitte erneut versuchen."
+
+#: Controller/VehicleMakesController.php:44;76;101
+msgid "Invalid vehicle make"
+msgstr "Automarke ungültig"
+
+#: Controller/VehicleMakesController.php:59;80
+msgid "The vehicle make has been saved."
+msgstr "Automarke gespeichert"
+
+#: Controller/VehicleMakesController.php:62;83
+msgid "The vehicle make could not be saved. Please, try again."
+msgstr "Automarke konnte nicht gespeichert werden. Bitte erneut versuchen"
+
+#: Controller/VehicleMakesController.php:105
+msgid "The vehicle make has been deleted."
+msgstr "Automarke wurde gelöscht"
+
+#: Controller/VehicleMakesController.php:107
+msgid "The vehicle make could not be deleted. Please, try again."
+msgstr "Automarke konnte nicht gelöscht werden. Bite erneut versuchen"
+
+#: Controller/VehicleModelsController.php:44;78;105
+msgid "Invalid vehicle model"
+msgstr "ungültige Automarke"
+
+#: Controller/VehicleModelsController.php:59;82
+msgid "The vehicle model has been saved."
+msgstr "Automarke wurde gespeichert"
+
+#: Controller/VehicleModelsController.php:62;85
+msgid "The vehicle model could not be saved. Please, try again."
+msgstr "Automarke konnte nicht gespeichert werden. Bitte erneut versuchen"
+
+#: Controller/VehicleModelsController.php:109
+msgid "The vehicle model has been deleted."
+msgstr "Automarke wurde gelöscht"
+
+#: Controller/VehicleModelsController.php:111
+msgid "The vehicle model could not be deleted. Please, try again."
+msgstr "Automarke konnte nicht gelöscht werden. Bitte erneut versuchen"
+
+#: Controller/VehiclesController.php:22;862;881;898
+msgid "Vehicle Detail"
+msgstr "Fahrzeugdetails"
+
+#: Controller/VehiclesController.php:31
+msgid "Add New Advertisement"
+msgstr "Neue Werbung hinzufügen"
+
+#: Controller/VehiclesController.php:63
+msgid "Advertisement: Step1"
+msgstr "Werbung: 1. Schritt"
+
+#: Controller/VehiclesController.php:92
+msgid "Advertisement: Step2"
+msgstr "Werbung: 2. Schritt"
+
+#: Controller/VehiclesController.php:387
+msgid "Advertisement: Step3"
+msgstr "Werbung: Schritt 3"
+
+#: Controller/VehiclesController.php:488
+msgid "Advertisement: Step4"
+msgstr "Werbung: Schritt 4"
+
+#: Controller/VehiclesController.php:630
+msgid "Sell Vehicles"
+msgstr "Fahrzeuge verkaufen"
+
+#: Controller/VehiclesController.php:635
+msgid "Vehicles in Auktion"
+msgstr "Fahrzeuge in Auktion"
+
+#: Controller/VehiclesController.php:645
+msgid "My Favourite Cars"
+msgstr "Meine Lieblingsautos"
+
+#: Controller/VehiclesController.php:656
+msgid "Vehicles Auctions"
+msgstr "Fahrzeuge in Auktion"
+
+#: Controller/VehiclesController.php:694;717
+#: View/Elements/front/header.ctp:17
+#: View/Elements/front/header_bkp_20_01.ctp:37
+msgid "Vehicles Sold"
+msgstr "Verkaufte Fahrzeuge"
+
+#: Controller/VehiclesController.php:778;800
+#: View/Elements/front/header.ctp:18
+#: View/Elements/front/header_bkp_20_01.ctp:38
+msgid "Vehicles Purchased"
+msgstr "Gekaufte Fahrzeuge"
+
+#: View/CmsPages/admin_update.ctp:48
+msgid "Page Title"
+msgstr "Seitentitel"
+
+#: View/CmsPages/admin_update.ctp:54
+msgid "Page URL"
+msgstr "Seiten URL"
+
+#: View/CmsPages/admin_update.ctp:60
+msgid "Content"
+msgstr "Inhalt"
+
+#: View/Companies/admin_add.ctp:9;12;21
+msgid "Add Company"
+msgstr "Unternehmen hinzufügen"
+
+#: View/Companies/admin_add.ctp:28;30
+#: View/Companies/admin_edit.ctp:29;31
+#: View/Users/register.ctp:11;13
+msgid "Company"
+msgstr "Unternehmen"
+
+#: View/Companies/admin_add.ctp:34;36
+#: View/Companies/admin_edit.ctp:35;37
+#: View/Users/register.ctp:17;19
+msgid "Addition"
+msgstr "Zusatz"
+
+#: View/Companies/admin_add.ctp:40
+#: View/Companies/admin_edit.ctp:41
+#: View/Users/register.ctp:23
+msgid "Street/no."
+msgstr "Strasse / Nr."
+
+#: View/Companies/admin_add.ctp:42
+#: View/Companies/admin_edit.ctp:43
+#: View/Users/register.ctp:25
+msgid "Address line 1"
+msgstr "Adresse"
+
+#: View/Companies/admin_add.ctp:46
+#: View/Companies/admin_edit.ctp:47
+#: View/Users/register.ctp:29
+msgid "PO box"
+msgstr "Postfach"
+
+#: View/Companies/admin_add.ctp:48
+#: View/Companies/admin_edit.ctp:49
+#: View/Users/register.ctp:31
+msgid "Address line 2"
+msgstr "Adresse"
+
+#: View/Companies/admin_add.ctp:52
+#: View/Companies/admin_edit.ctp:53
+#: View/Users/register.ctp:35
+msgid "Postcode/town *"
+msgstr "PLZ / Ort"
+
+#: View/Companies/admin_add.ctp:54
+#: View/Companies/admin_edit.ctp:55
+#: View/Users/register.ctp:37
+msgid "Postcode"
+msgstr "PLZ"
+
+#: View/Companies/admin_add.ctp:55
+#: View/Companies/admin_edit.ctp:56
+#: View/Users/register.ctp:38
+msgid "Town"
+msgstr "Stadt"
+
+#: View/Companies/admin_add.ctp:58
+#: View/Companies/admin_edit.ctp:59
+#: View/Users/register.ctp:42
+msgid "Country*"
+msgstr "Land"
+
+#: View/Companies/admin_add.ctp:96
+#: View/Companies/admin_edit.ctp:97
+#: View/Users/register.ctp:80
+msgid "Car dealership"
+msgstr "Autohändler"
+
+#: View/Companies/admin_add.ctp:102
+#: View/Companies/admin_edit.ctp:103
+#: View/Users/register.ctp:86
+msgid "Motorcycle dealership"
+msgstr "Motorradhändler"
+
+#: View/Companies/admin_add.ctp:108
+#: View/Companies/admin_edit.ctp:109
+#: View/Users/register.ctp:92
+msgid "Commercial vehicle dealership"
+msgstr "Kommerzieller Autohändler"
+
+#: View/Companies/admin_edit.ctp:9;12;21
+msgid "Edit Company"
+msgstr "Unternehmen bearbeiten"
+
+#: View/Companies/admin_listing.ctp:9
+msgid "Companies Listing"
+msgstr "Unternehmerliste"
+
+#: View/Companies/admin_listing.ctp:24
+msgid "Manage Companies"
+msgstr "Unternehmen bearbeiten"
+
+#: View/Companies/admin_listing.ctp:42
+msgid "Add New Company"
+msgstr "Neues Unternehmen hinzufügen"
+
+#: View/Companies/admin_listing.ctp:55
+#: View/Companies/admin_searchcompanies.ctp:7
+#: View/Users/admin_listing.ctp:66
+#: View/Users/admin_usersearch.ctp:9
+#: View/Vehicles/admin_listing.ctp:64
+#: View/Vehicles/admin_vehiclesearch.ctp:12
+msgid "Action"
+msgstr "Aktion"
+
+#: View/Companies/admin_listing.ctp:116
+#: View/Companies/admin_searchcompanies.ctp:68
+#: View/Users/admin_listing.ctp:129
+#: View/Users/admin_usersearch.ctp:72
+msgid "Are you sure you want to delete?"
+msgstr "Sind Sie sicher, dass Sie löschen möchten?"
+
+#: View/Elements/admin/leftmenubar.ctp:41
+#: View/Elements/front/admin/leftmenubar.ctp:41
+msgid "Vehicles Management"
+msgstr "Fahrzeugmanagement"
+
+#: View/Elements/admin/leftmenubar.ctp:43
+#: View/Elements/front/admin/leftmenubar.ctp:43
+msgid "Add New Car"
+msgstr "Neues Auto hinzufügen"
+
+#: View/Elements/admin/leftmenubar.ctp:95
+#: View/Elements/front/admin/leftmenubar.ctp:92
+msgid "More"
+msgstr "Mehr"
+
+#: View/Elements/front/auction_listing.ctp:4
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:4
+#: View/Vehicles/vehicle_detail.ctp:281
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:343
+#: View/Vehicles/vehicledetails.ctp:279
+msgid "Recent"
+msgstr "Letztens"
+
+#: View/Elements/front/auction_listing.ctp:4
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:4
+msgid "Car Submissions"
+msgstr "CO2-Emission"
+
+#: View/Elements/front/auction_listing.ctp:9
+msgid "Sort By"
+msgstr "Ordnen nach"
+
+#: View/Elements/front/auction_listing.ctp:10
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:9
+msgid "YEAR OLD-NEW"
+msgstr "Jahrgang: Älteste zuerst"
+
+#: View/Elements/front/auction_listing.ctp:11
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:10
+msgid "YEAR NEW-OLD"
+msgstr "Jahrgang: Neueste zuerst"
+
+#: View/Elements/front/auction_listing.ctp:12
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:11
+msgid "PRICE LOW-HIGH"
+msgstr "Preis Niedrigster-Höchster"
+
+#: View/Elements/front/auction_listing.ctp:13
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:12
+msgid "PRICE HIGH-LOW"
+msgstr "Preis Höchster-Niedrigster"
+
+#: View/Elements/front/auction_listing.ctp:14
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:13
+msgid "ODOMETER LOW-HIGH"
+msgstr "Kilometerstand Niedrigster-Höchster"
+
+#: View/Elements/front/auction_listing.ctp:15
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:14
+msgid "ODOMETER HIGH-LOW"
+msgstr "Kilometerstand Höchster-Niedrigster"
+
+#: View/Elements/front/auction_listing.ctp:21
+msgid "Only show my bids"
+msgstr "Nur meine Gebote anzeigen"
+
+#: View/Elements/front/auction_listing.ctp:22
+msgid "Only show favourites"
+msgstr "Nur Favoriten anzeigen"
+
+#: View/Elements/front/auction_listing.ctp:33
+#: View/Users/index.ctp:50
+#: View/Users/index_bkp_20_01.ctp:21
+msgid "Select Make"
+msgstr "Marke auswählen"
+
+#: View/Elements/front/auction_listing.ctp:38
+#: View/Users/index.ctp:56
+#: View/Users/index_bkp_20_01.ctp:28
+msgid "Select Model"
+msgstr "Modell auswählen"
+
+#: View/Elements/front/auction_listing.ctp:42
+#: View/Users/index.ctp:61
+#: View/Users/index_bkp_20_01.ctp:38
+#: View/Vehicles/step1.ctp:93
+msgid "--Select Region--"
+msgstr "Region auswählen"
+
+#: View/Elements/front/auction_listing.ctp:53
+#: View/Users/index.ctp:72
+#: View/Users/index_bkp_20_01.ctp:50
+msgid "--Min Year--"
+msgstr "Min. Jahrgang"
+
+#: View/Elements/front/auction_listing.ctp:57
+#: View/Users/index.ctp:77
+#: View/Users/index_bkp_20_01.ctp:56
+msgid "--Max Year--"
+msgstr "Max. Jahrgang"
+
+#: View/Elements/front/auction_listing.ctp:59
+#: View/Users/index.ctp:79
+#: View/Users/index_bkp_20_01.ctp:58
+#: View/Vehicles/add_advertisement.ctp:22;47
+msgid "Search"
+msgstr "Suchen"
+
+#: View/Elements/front/auction_listing_bkp_20_01.ctp:18
+msgid "Only show my bids"
+msgstr "Nur meine Gebote anzeigen"
+
+#: View/Elements/front/footer.ctp:7
+#: View/Elements/front/footer_bkp_20_01.ctp:6
+msgid "Eintauschfahrzeuge24.ch GmbH"
+msgstr "Eintauschfahrzeuge24.ch GmbH
+
+#: View/Elements/front/footer.ctp:9
+#: View/Elements/front/footer_bkp_20_01.ctp:8
+msgid "Oberzelgstrasse 3"
+msgstr "Oberzelgstrasse 3"
+
+#: View/Elements/front/footer.ctp:9
+#: View/Elements/front/footer_bkp_20_01.ctp:9
+msgid "8618 Oetwil am See ZH"
+msgstr "8618 Oetwil am See ZH"
+
+#: View/Elements/front/footer.ctp:10
+msgid "044 799 17 77"
+msgstr "+044 799 17 77"
+
+#: View/Elements/front/footer.ctp:11
+msgid "info@ef24.ch"
+msgstr "info@ef24.ch"
+
+#: View/Elements/front/footer.ctp:15
+msgid "Useful Links"
+msgstr "Nützliche Links"
+
+#: View/Elements/front/footer.ctp:17
+msgid "Jobs"
+msgstr "Jobs"
+
+#: View/Elements/front/footer.ctp:18
+msgid "Imprint"
+msgstr "Impressum"
+
+#: View/Elements/front/footer.ctp:19
+msgid "Prices"
+msgstr "Preise"
+
+#: View/Elements/front/footer.ctp:20
+#: View/Elements/front/footer_bkp_20_01.ctp:21
+msgid "AGB"
+msgstr "AGB"
+
+#: View/Elements/front/footer.ctp:25
+#: View/Elements/front/footer_bkp_20_01.ctp:26
+msgid "Our Company"
+msgstr "Unsere Firma"
+
+#: View/Elements/front/footer.ctp:27
+#: View/Elements/front/footer_bkp_20_01.ctp:28
+#: View/Elements/front/header.ctp:84
+#: View/Elements/front/header_bkp_20_01.ctp:160
+msgid "About Us"
+msgstr "Über uns"
+
+#: View/Elements/front/footer.ctp:28
+#: View/Elements/front/footer_bkp_20_01.ctp:29
+msgid "FAQ"
+msgstr "Oft gestellte Fragen"
+
+#: View/Elements/front/footer.ctp:29
+#: View/Elements/front/footer_bkp_20_01.ctp:30
+msgid "Instructions"
+msgstr "Instruktionen"
+
+#: View/Elements/front/footer.ctp:34
+msgid "Our Partners"
+msgstr "Unsere Partner"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:10
+msgid "telefon +0 55 553 40 00"
+msgstr "Telefon +0 55 553 40 00"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:11
+msgid "E-Mail info@ef24.ch"
+msgstr "E- Mail info@ef24.ch"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:15;17
+msgid "Carauction"
+msgstr "Autoauktion"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:18
+msgid "jobs"
+msgstr "Karriere"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:19
+msgid "Impressum"
+msgstr "Impressum"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:20
+msgid "Preise"
+msgstr "Prices"
+
+#: View/Elements/front/footer_bkp_20_01.ctp:40
+msgid "Our Partners"
+msgstr "Unsere Partner"
+
+#: View/Elements/front/header.ctp:14
+#: View/Elements/front/header_bkp_20_01.ctp:34;65
+msgid "My Corner"
+msgstr "Meine Ecke"
+
+#: View/Elements/front/header.ctp:16
+#: View/Elements/front/header_bkp_20_01.ctp:36
+msgid "My Vehicles"
+msgstr "Meine Fahrzeuge"
+
+#: View/Elements/front/header.ctp:19
+#: View/Elements/front/header_bkp_20_01.ctp:39
+msgid "Vehiclea in Auction"
+msgstr "Fahrzeuge in Auktion"
+
+#: View/Elements/front/header.ctp:20
+#: View/Elements/front/header_bkp_20_01.ctp:40
+msgid "My Favourite Vehicles"
+msgstr "Meine Favoriten"
+
+#: View/Elements/front/header.ctp:22
+#: View/Elements/front/header_bkp_20_01.ctp:42
+#: View/Users/profile.ctp:3
+msgid "Profile"
+msgstr "Profil"
+
+#: View/Elements/front/header.ctp:23
+#: View/Elements/front/header_bkp_20_01.ctp:43
+msgid "Change Profile Data"
+msgstr "Profilangaben ändern"
+
+#: View/Elements/front/header.ctp:24
+#: View/Elements/front/header_bkp_20_01.ctp:44
+#: View/Users/change_password.ctp:23
+msgid "Change Password"
+msgstr "Passwort ändern"
+
+#: View/Elements/front/header.ctp:25
+#: View/Elements/front/header_bkp_20_01.ctp:45
+msgid "Delete Account"
+msgstr "Konto löschen"
+
+#: View/Elements/front/header.ctp:25
+#: View/Elements/front/header_bkp_20_01.ctp:45
+msgid "Are you sure you want to delete account?"
+msgstr "Bist du dir sicher, dass du dein Konto dauerhaft löschen möchtest?"
+
+#: View/Elements/front/header.ctp:27
+#: View/Elements/front/header_bkp_20_01.ctp:47
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: View/Elements/front/header.ctp:28
+#: View/Elements/front/header_bkp_20_01.ctp:48
+msgid "Email Preference"
+msgstr "Nachrichten Einstellungen"
+
+#: View/Elements/front/header.ctp:30
+#: View/Elements/front/header_bkp_20_01.ctp:50
+msgid "Invoices"
+msgstr "Nachrichten"
+
+#: View/Elements/front/header.ctp:33
+#: View/Elements/front/header_bkp_20_01.ctp:32;91
+msgid "Sign Out"
+msgstr "Abmelden"
+
+#: View/Elements/front/header.ctp:35
+#: View/Elements/front/header_bkp_20_01.ctp:54;93
+msgid "Sign up"
+msgstr "Konto erstellen"
+
+#: View/Elements/front/header.ctp:36
+#: View/Elements/front/header_bkp_20_01.ctp:55;94
+msgid "Sign in"
+msgstr "Einloggen"
+
+#: View/Elements/front/header.ctp:56
+#: View/Elements/front/header_bkp_20_01.ctp:139
+msgid "Add advertisement"
+msgstr "Inserat hinzufügen"
+
+#: View/Elements/front/header.ctp:80
+#: View/Elements/front/header_bkp_20_01.ctp:156
+msgid "Home"
+msgstr "Home"
+
+#: View/Elements/front/header.ctp:81
+#: View/Elements/front/header_bkp_20_01.ctp:157
+msgid "How it works"
+msgstr "Wie es funktioniert"
+
+#: View/Elements/front/header.ctp:82
+#: View/Elements/front/header_bkp_20_01.ctp:158
+#: View/Users/register.ctp:6;213
+msgid "Registration"
+msgstr "Registrierung"
+
+#: View/Elements/front/header.ctp:83
+#: View/Elements/front/header_bkp_20_01.ctp:159
+msgid "Sell Vehicle"
+msgstr "Fahrzeug verkaufen"
+
+#: View/Elements/front/header.ctp:85
+#: View/Elements/front/header_bkp_20_01.ctp:161
+msgid "Contact Us"
+msgstr "Kontaktiere Sie uns"
+
+#: View/Elements/front/header_bkp_20_01.ctp:18
+msgid "Login"
+msgstr "Login"
+
+#: View/Elements/front/header_bkp_20_01.ctp:19
+msgid "Register"
+msgstr "Register"
+
+#: View/Elements/front/header_bkp_20_01.ctp:149
+msgid "Toggle navigation"
+msgstr "Umschalten der Navigation"
+
+#: View/Elements/front/header_bkp_20_01.ctp:149
+msgid "Menu"
+msgstr "Menü"
+
+#: View/Elements/front/header_bkp_20_01.ctp:150;164
+msgid "+41 44 799 17 77"
+msgstr "+41 44 799 17 77"
+
+#: View/Layouts/front.ctp:10
+msgid "Car Listing"
+msgstr "Fahrzeugliste"
+
+#: View/Users/admin_edit.ctp:9;12;21
+msgid "Edit User"
+msgstr "Benutzer bearbeiten"
+
+#: View/Users/admin_edit.ctp:29
+#: View/Users/login.ctp:11
+#: View/Users/profile.ctp:68
+msgid "Username"
+msgstr "Benutzername"
+
+#: View/Users/admin_edit.ctp:36
+#: View/Users/contact_us.ctp:130
+#: View/Users/profile.ctp:74
+#: View/Users/register.ctp:100
+msgid "Form of address*"
+msgstr "Art der Adresse*"
+
+#: View/Users/admin_edit.ctp:73
+#: View/Users/profile.ctp:123
+#: View/Users/register.ctp:150
+msgid "Preferred language"
+msgstr "Bevorzugte Sprache"
+
+#: View/Users/admin_edit.ctp:85
+#: View/Users/profile.ctp:130
+#: View/Users/register.ctp:177
+msgid "How did you find out about us?"
+msgstr "Wie sind Sie auf uns aufmerksam geworden?"
+
+#: View/Users/admin_edit.ctp:99
+msgid "Status"
+msgstr "Status"
+
+#: View/Users/admin_edit.ctp:101
+#: View/Vehicles/add_advertisement.ctp:122;148
+msgid "Please Select"
+msgstr "Bitte auswählen"
+
+#: View/Users/change_password.ctp:3
+msgid "Change"
+msgstr "Ändern"
+
+#: View/Users/change_password.ctp:3
+#: View/Users/login.ctp:17
+msgid "Password"
+msgstr "Passwort"
+
+#: View/Users/change_password.ctp:9
+msgid "Current Password"
+msgstr "Aktuelles Passwort"
+
+#: View/Users/change_password.ctp:13
+msgid "New Password"
+msgstr "Neues Passwort"
+
+#: View/Users/change_password.ctp:17
+msgid "Confirm New Password"
+msgstr "Bestätige neues Passwort"
+
+#: View/Users/change_password.ctp:24
+#: View/Users/email_preference.ctp:16
+#: View/Users/profile.ctp:146
+msgid "Cancel"
+msgstr "aufheben"
+
+#: View/Users/contact_us.ctp:31
+msgid "Contact"
+msgstr "Kontakt"
+
+#: View/Users/contact_us.ctp:31
+msgid "Us"
+msgstr "Uns"
+
+#: View/Users/contact_us.ctp:45
+msgid "Calculate route"
+msgstr "Route berechnen"
+
+#: View/Users/contact_us.ctp:59
+msgid "I am"
+msgstr "Ich bin"
+
+#: View/Users/contact_us.ctp:71
+msgid "Marketplace"
+msgstr "Marktplatz"
+
+#: View/Users/contact_us.ctp:87
+msgid "I have a"
+msgstr "Ich habe ein"
+
+#: View/Users/contact_us.ctp:102
+msgid "Topic"
+msgstr "Thema"
+
+#: View/Users/contact_us.ctp:122
+msgid "My Request"
+msgstr "Meine Anfrage"
+
+#: View/Users/contact_us.ctp:137
+#: View/Users/profile.ctp:81
+#: View/Users/register.ctp:107
+msgid "First name*"
+msgstr "Vorname"
+
+#: View/Users/contact_us.ctp:139
+msgid "First Name"
+msgstr "Vorname"
+
+#: View/Users/contact_us.ctp:144
+#: View/Users/profile.ctp:88
+#: View/Users/register.ctp:114
+msgid "Surname*"
+msgstr "Nachname"
+
+#: View/Users/contact_us.ctp:146
+msgid "Last Name"
+msgstr "Nachname"
+
+#: View/Users/contact_us.ctp:150
+#: View/Users/profile.ctp:94
+#: View/Users/register.ctp:120
+msgid "Email*"
+msgstr "E-Mail"
+
+#: View/Users/contact_us.ctp:152
+#: View/Users/email_preference.ctp:3
+#: View/Vehicles/admin_vehicledetailpage.ctp:45
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:170
+msgid "Email"
+msgstr "E-Mail"
+
+#: View/Users/contact_us.ctp:157
+msgid "Send Request"
+msgstr "Anfrage senden"
+
+#: View/Users/email_preference.ctp:3
+msgid "Preference"
+msgstr "Präferenz"
+
+#: View/Users/email_preference.ctp:11
+msgid "Send Email Notifications ?"
+msgstr "E-Mail-Benachrichtigungen senden"
+
+#: View/Users/email_preference.ctp:15
+msgid "Save"
+msgstr "Speichern"
+
+#: View/Users/get_auction_data.ctp:13
+#: View/Users/get_auction_data_old.ctp:10
+#: View/Users/getmy_auction_data_bkp_20_01.ctp:10
+#: View/Users/getquicksearch_data.ctp:10
+#: View/Users/getsort_auction_data.ctp:10
+msgid "Time"
+msgstr "Zeit"
+
+#: View/Users/get_auction_data.ctp:31
+msgid "KM"
+msgstr "KM"
+
+#: View/Users/get_auction_data.ctp:34
+#: View/Users/get_auction_data_old.ctp:35
+#: View/Users/getmy_auction_data_bkp_20_01.ctp:35
+#: View/Users/getquicksearch_data.ctp:27
+#: View/Users/getsort_auction_data.ctp:35
+msgid "Offer"
+msgstr "Angebot"
+
+#: View/Users/get_auction_data.ctp:35
+#: View/Vehicles/step2.ctp:54
+#: View/Vehicles/step4.ctp:26
+#: View/Vehicles/vehicle_detail.ctp:299
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:361
+#: View/Vehicles/vehicledetails.ctp:297
+msgid "CHF"
+msgstr "CHF"
+
+#: View/Users/get_auction_data.ctp:57
+#: View/Users/get_auction_data_old.ctp:41
+#: View/Users/getmy_auction_data_bkp_20_01.ctp:41
+#: View/Users/getsort_auction_data.ctp:41
+#: View/Vehicles/sold_vehicles.ctp:145
+msgid "No Record Found"
+msgstr "Kein Eintrag gefunden"
+
+#: View/Users/get_auction_data_old.ctp:20
+#: View/Users/getmy_auction_data_bkp_20_01.ctp:20
+#: View/Users/getquicksearch_data.ctp:20
+#: View/Users/getsort_auction_data.ctp:20
+msgid "Power"
+msgstr "Leistung"
+
+#: View/Users/get_auction_data_old.ctp:34
+#: View/Users/getmy_auction_data_bkp_20_01.ctp:34
+#: View/Users/getquicksearch_data.ctp:26
+#: View/Users/getsort_auction_data.ctp:34
+msgid "Price"
+msgstr "Preis"
+
+#: View/Users/index.ctp:19;24;29
+msgid "Eintausch"
+msgstr "Eintausch"
+
+#: View/Users/index.ctp:19;24;29
+msgid "Fahrzeuge24.ch GmbH"
+msgstr "Fahrzeuge24.ch GmbH"
+
+#: View/Users/index.ctp:39
+#: View/Users/index_bkp_20_01.ctp:10
+msgid "Quick Search"
+msgstr "Schnelle Suche"
+
+#: View/Users/index.ctp:40
+#: View/Users/index_bkp_20_01.ctp:11
+msgid "Search By Body Type"
+msgstr "Suche nach Fahrzeugbau"
+
+#: View/Users/index.ctp:48
+#: View/Users/index_bkp_20_01.ctp:19;23
+msgid "Marke"
+msgstr "Marke"
+
+#: View/Users/index.ctp:60
+#: View/Users/index_bkp_20_01.ctp:36;37
+msgid "Area"
+msgstr "Region"
+
+#: View/Users/index.ctp:64
+#: View/Users/index_bkp_20_01.ctp:41;51
+msgid "Min Year"
+msgstr "Min. Jahr"
+
+#: View/Users/index.ctp:76
+#: View/Users/index_bkp_20_01.ctp:54;55
+msgid "Max Year"
+msgstr "Max. Jahr"
+
+#: View/Users/index.ctp:86
+#: View/Users/index_bkp_20_01.ctp:65
+msgid "Limousine"
+msgstr "Limousine"
+
+#: View/Users/index.ctp:89
+#: View/Users/index_bkp_20_01.ctp:68
+msgid "Combi"
+msgstr "Kombi"
+
+#: View/Users/index.ctp:92
+#: View/Users/index_bkp_20_01.ctp:71
+msgid "Small cars"
+msgstr "Kleinwagen"
+
+#: View/Users/index.ctp:96
+#: View/Users/index_bkp_20_01.ctp:75
+msgid "SUV"
+msgstr "SUV"
+
+#: View/Users/index.ctp:99
+#: View/Users/index_bkp_20_01.ctp:78
+msgid "Convertible"
+msgstr "Cabriolet"
+
+#: View/Users/index.ctp:102
+#: View/Users/index_bkp_20_01.ctp:81
+msgid "Coupe"
+msgstr "Coupe"
+
+#: View/Users/index.ctp:106
+#: View/Users/index_bkp_20_01.ctp:85
+msgid "Minivan"
+msgstr "Minivan"
+
+#: View/Users/index.ctp:109
+#: View/Users/index_bkp_20_01.ctp:88
+msgid "Pickup"
+msgstr "Pickup"
+
+#: View/Users/index.ctp:112
+#: View/Users/index_bkp_20_01.ctp:91
+msgid "Bus"
+msgstr "Bus"
+
+#: View/Users/index_bkp_20_01.ctp:26;30
+#: View/Vehicles/step1.ctp:34
+msgid "Model"
+msgstr "Model"
+
+#: View/Users/login.ctp:7;24
+msgid "Sign In"
+msgstr "Anmelden"
+
+#: View/Users/login.ctp:13
+msgid "Enter your username"
+msgstr "Geben Sie Ihren Benutzernamen ein"
+
+#: View/Users/login.ctp:19
+msgid "Enter your password"
+msgstr "Geben Sie Ihr Passwort ein"
+
+#: View/Users/profile.ctp:3
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: View/Users/profile.ctp:65
+#: View/Users/register.ctp:98
+msgid "Personal details"
+msgstr "Persönliche Daten"
+
+#: View/Users/profile.ctp:83
+#: View/Users/register.ctp:109
+msgid "Insert first name"
+msgstr "Vorname eingeben"
+
+#: View/Users/profile.ctp:90
+#: View/Users/register.ctp:116
+msgid "Insert last name"
+msgstr "Nachname eingeben"
+
+#: View/Users/profile.ctp:100
+#: View/Users/register.ctp:126
+msgid "Telephone *"
+msgstr "Telefon"
+
+#: View/Users/profile.ctp:108;119
+#: View/Users/register.ctp:134;145
+msgid "Area code without the \"0\", Number plus extension"
+msgstr "Ortsvorwahl ohne "0", Nummer plus Durchwahl"
+
+#: View/Users/profile.ctp:111
+#: View/Users/register.ctp:137
+#: View/Vehicles/admin_vehicledetailpage.ctp:65
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:190
+msgid "Mobile"
+msgstr "Mobile"
+
+#: View/Users/profile.ctp:145
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: View/Users/register.ctp:9
+msgid "Company Data"
+msgstr "Firmendaten"
+
+#: View/Users/register.ctp:122
+msgid "Insert email address"
+msgstr "Emailadresse eingeben"
+
+#: View/Users/register.ctp:155
+msgid "Login details"
+msgstr "Login Daten"
+
+#: View/Users/register.ctp:155
+msgid "Please note that your username will be displayed if you place a bid"
+msgstr "Bitte beachten Sie, dass der Benutzername bei einer Gebotsabgabe angezeigt wird"
+
+#: View/Users/register.ctp:158
+msgid "Username*"
+msgstr "Benutzername"
+
+#: View/Users/register.ctp:160
+msgid "Insert username"
+msgstr "Benutzername eingeben"
+
+#: View/Users/register.ctp:161
+msgid "(Min. 6 characters)"
+msgstr "(Min. 6 Zeichen)"
+
+#: View/Users/register.ctp:165
+msgid "Password*"
+msgstr "Passwort*"
+
+#: View/Users/register.ctp:167
+msgid "Insert password"
+msgstr "Passwort eingeben"
+
+#: View/Users/register.ctp:168
+msgid "At least 8 characters, uppercase/lowercase letters and numbers"
+msgstr "Min. 8 Zeichen, Gross-/Kleinbuchstaben und Zahlen"
+
+#: View/Users/register.ctp:171
+msgid "Re-enter password*"
+msgstr "Passwort-Wiederholung*"
+
+#: View/Users/register.ctp:173
+msgid "Confirm your password"
+msgstr "Bestätigen Sie Ihr Passwort"
+
+#: View/Users/register.ctp:174
+msgid "Please note that your ........"
+msgstr "Bitte beachten Sie ....... "
+
+#: View/Users/register.ctp:191
+msgid "I hereby confirm that I have read and understood the General Terms and Conditions and that I agree to them*"
+msgstr "Hiermit bestätige ich, die Allgemeinen Geschäftsbedingungen gelesen zu haben und erkläre mich damit einverstanden*"
+
+#: View/Users/register.ctp:195
+msgid "Eintauschfahrzeuge24.ch GmbH is hereby authorised to obtain external information about the company/person to be registered*"
+msgstr "Hiermit wird Eintauschfahrzeuge24.ch GmbH ermächtigt, über die zu registrierende Firma/Person externe Auskünfte einzuholen* *"
+
+#: View/Users/register.ctp:201
+msgid "Security Check"
+msgstr "Sicherheitsüberprüfung"
+
+#: View/Users/register.ctp:205
+msgid "I'm not a robot"
+msgstr "Ich bin kein Roboter"
+
+#: View/Vehicles/add_advertisement.ctp:5
+msgid "Add Advertisement"
+msgstr "Fahrzeug hinzufügen"
+
+#: View/Vehicles/add_advertisement.ctp:13
+msgid "1st reg. *"
+msgstr "1. reg."
+
+#: View/Vehicles/add_advertisement.ctp:18
+msgid "Model No. *"
+msgstr "Model Nr."
+
+#: View/Vehicles/add_advertisement.ctp:45
+msgid "Search your vehicle by production duation and vehicel make and model."
+msgstr "Suchen Sie nach Jahrgang, Fahrzeugmarke und Modell."
+
+#: View/Vehicles/add_advertisement.ctp:52
+msgid "--Select Year--"
+msgstr "--Jahrgang wählen--"
+
+#: View/Vehicles/add_advertisement.ctp:53
+msgid "--Select Make--"
+msgstr "--Marke auswählen--"
+
+#: View/Vehicles/add_advertisement.ctp:58
+msgid "--Select Month--"
+msgstr "--Monat auswählen--"
+
+#: View/Vehicles/add_advertisement.ctp:59
+msgid "--Select Model--"
+msgstr "--Modell auswählen--"
+
+#: View/Vehicles/add_advertisement.ctp:66
+#: View/Vehicles/step1.ctp:268
+#: View/Vehicles/step2.ctp:180
+#: View/Vehicles/step3.ctp:53
+msgid "Next"
+msgstr "Nächste"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:9
+#: View/Vehicles/admin_listing.ctp:9
+#: View/Vehicles/admin_purchasedvehicles.ctp:9
+#: View/Vehicles/admin_soldvehicles.ctp:9
+msgid "Vehicle Listing"
+msgstr "Fahrzeugliste"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:15
+#: View/Vehicles/admin_listing.ctp:15
+#: View/Vehicles/admin_purchasedvehicles.ctp:15
+#: View/Vehicles/admin_soldvehicles.ctp:15
+msgid "Users"
+msgstr "Benutzer"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:24
+msgid "Auction Vehicles"
+msgstr "Fahrzeugauktion"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:56
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:4
+#: View/Vehicles/admin_purchasedvehicles.ctp:57
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:5
+#: View/Vehicles/admin_soldvehicles.ctp:57
+#: View/Vehicles/admin_soldvehiclesearch.ctp:5
+#: View/Vehicles/auction_vehicles.ctp:15
+#: View/Vehicles/favourite_vehicles.ctp:15
+#: View/Vehicles/purchased_vehicles.ctp:16
+#: View/Vehicles/sold_vehicles.ctp:17
+msgid "Seller Name"
+msgstr "Name des Verkäufers"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:57
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:5
+#: View/Vehicles/admin_listing.ctp:56
+#: View/Vehicles/admin_purchasedvehicles.ctp:58
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:6
+#: View/Vehicles/admin_soldvehicles.ctp:58
+#: View/Vehicles/admin_soldvehiclesearch.ctp:6
+#: View/Vehicles/admin_vehiclesearch.ctp:4
+#: View/Vehicles/auction_vehicles.ctp:16
+#: View/Vehicles/favourite_vehicles.ctp:16
+#: View/Vehicles/purchased_vehicles.ctp:17
+#: View/Vehicles/sold_vehicles.ctp:18
+msgid "Model, Type"
+msgstr "Model, Typ"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:58
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:6
+#: View/Vehicles/admin_listing.ctp:57
+#: View/Vehicles/admin_purchasedvehicles.ctp:59
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:7
+#: View/Vehicles/admin_soldvehicles.ctp:59
+#: View/Vehicles/admin_soldvehiclesearch.ctp:7
+#: View/Vehicles/admin_vehiclesearch.ctp:5
+#: View/Vehicles/auction_vehicles.ctp:17
+#: View/Vehicles/favourite_vehicles.ctp:17
+#: View/Vehicles/purchased_vehicles.ctp:18
+#: View/Vehicles/sold_vehicles.ctp:19
+msgid "Body Type"
+msgstr "Fahrzeugbau"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:59
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:7
+#: View/Vehicles/admin_listing.ctp:58
+#: View/Vehicles/admin_purchasedvehicles.ctp:60
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:8
+#: View/Vehicles/admin_soldvehicles.ctp:60
+#: View/Vehicles/admin_soldvehiclesearch.ctp:8
+#: View/Vehicles/admin_vehiclesearch.ctp:6
+#: View/Vehicles/auction_vehicles.ctp:18
+#: View/Vehicles/favourite_vehicles.ctp:18
+#: View/Vehicles/purchased_vehicles.ctp:19
+#: View/Vehicles/sold_vehicles.ctp:20
+msgid "Doors"
+msgstr "Türen"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:60
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:8
+#: View/Vehicles/admin_listing.ctp:59
+#: View/Vehicles/admin_purchasedvehicles.ctp:61
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:9
+#: View/Vehicles/admin_soldvehicles.ctp:61
+#: View/Vehicles/admin_soldvehiclesearch.ctp:9
+#: View/Vehicles/admin_vehiclesearch.ctp:7
+#: View/Vehicles/auction_vehicles.ctp:19
+#: View/Vehicles/favourite_vehicles.ctp:19
+#: View/Vehicles/purchased_vehicles.ctp:20
+#: View/Vehicles/sold_vehicles.ctp:21
+#: View/Vehicles/step1.ctp:134
+msgid "HP"
+msgstr "PS"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:61
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:9
+#: View/Vehicles/admin_listing.ctp:60
+#: View/Vehicles/admin_purchasedvehicles.ctp:62
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:10
+#: View/Vehicles/admin_soldvehicles.ctp:62
+#: View/Vehicles/admin_soldvehiclesearch.ctp:10
+#: View/Vehicles/admin_vehiclesearch.ctp:8
+#: View/Vehicles/auction_vehicles.ctp:20
+#: View/Vehicles/favourite_vehicles.ctp:20
+#: View/Vehicles/purchased_vehicles.ctp:21
+#: View/Vehicles/sold_vehicles.ctp:22
+msgid "Fuel"
+msgstr "Treibstoff"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:62
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:10
+#: View/Vehicles/admin_listing.ctp:61
+#: View/Vehicles/admin_purchasedvehicles.ctp:63
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:11
+#: View/Vehicles/admin_soldvehicles.ctp:63
+#: View/Vehicles/admin_soldvehiclesearch.ctp:11
+#: View/Vehicles/admin_vehiclesearch.ctp:9
+#: View/Vehicles/auction_vehicles.ctp:21
+#: View/Vehicles/favourite_vehicles.ctp:21
+#: View/Vehicles/purchased_vehicles.ctp:22
+#: View/Vehicles/sold_vehicles.ctp:23
+msgid "Gear"
+msgstr "Getriebe"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:63
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:11
+#: View/Vehicles/admin_listing.ctp:62
+#: View/Vehicles/admin_purchasedvehicles.ctp:64
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:12
+#: View/Vehicles/admin_soldvehicles.ctp:64
+#: View/Vehicles/admin_soldvehiclesearch.ctp:12
+#: View/Vehicles/admin_vehiclesearch.ctp:10
+#: View/Vehicles/auction_vehicles.ctp:22
+#: View/Vehicles/favourite_vehicles.ctp:22
+#: View/Vehicles/purchased_vehicles.ctp:23
+#: View/Vehicles/sold_vehicles.ctp:24
+msgid "Factory Price"
+msgstr "Neupreis"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:64
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:12
+#: View/Vehicles/admin_listing.ctp:63
+#: View/Vehicles/admin_purchasedvehicles.ctp:65
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:13
+#: View/Vehicles/admin_soldvehicles.ctp:66
+#: View/Vehicles/admin_soldvehiclesearch.ctp:13
+#: View/Vehicles/admin_vehiclesearch.ctp:11
+#: View/Vehicles/auction_vehicles.ctp:23
+#: View/Vehicles/favourite_vehicles.ctp:23
+#: View/Vehicles/purchased_vehicles.ctp:24
+#: View/Vehicles/sold_vehicles.ctp:25
+#: View/Vehicles/vehicle_detail.ctp:289
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:351
+#: View/Vehicles/vehicledetails.ctp:287
+msgid "Created"
+msgstr "Erstellt"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:65
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:13
+#: View/Vehicles/admin_purchasedvehicles.ctp:66
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:14
+#: View/Vehicles/admin_soldvehicles.ctp:67
+#: View/Vehicles/admin_soldvehiclesearch.ctp:14
+msgid "View Detail Page"
+msgstr "Detailseite ansehen"
+
+#: View/Vehicles/admin_auctionvehicles.ctp:164
+#: View/Vehicles/admin_auctionvehiclesearch.ctp:112
+#: View/Vehicles/admin_purchasedvehicles.ctp:176
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:125
+#: View/Vehicles/admin_soldvehicles.ctp:186
+#: View/Vehicles/admin_soldvehiclesearch.ctp:125
+#: View/Vehicles/auction_vehicles.ctp:123
+#: View/Vehicles/favourite_vehicles.ctp:124
+#: View/Vehicles/purchased_vehicles.ctp:135
+#: View/Vehicles/sold_vehicles.ctp:137
+msgid "Visit Details Page"
+msgstr "Besuchen Sie die Detailseite"
+
+#: View/Vehicles/admin_listing.ctp:24
+msgid "Manage Vehicles"
+msgstr "Fahrzeuge verwalten"
+
+#: View/Vehicles/admin_purchasedvehicles.ctp:24
+msgid "Purchased Vehicles"
+msgstr "Gekaufte Fahrzeuge"
+
+#: View/Vehicles/admin_purchasedvehicles.ctp:56
+#: View/Vehicles/admin_purchasedvehiclesearch.ctp:4
+#: View/Vehicles/admin_soldvehicles.ctp:56
+#: View/Vehicles/admin_soldvehiclesearch.ctp:4
+#: View/Vehicles/purchased_vehicles.ctp:15
+#: View/Vehicles/sold_vehicles.ctp:16
+msgid "Buyer Name"
+msgstr "Käufername"
+
+#: View/Vehicles/admin_soldvehicles.ctp:24
+msgid "Sold Vehicles"
+msgstr "Verkaufte Fahrzeuge"
+
+#: View/Vehicles/admin_soldvehicles.ctp:65
+msgid "Mark As Paid"
+msgstr "Als bezahlt markieren"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:31
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:149
+msgid "Seller Information"
+msgstr "Angaben zum Verkäufer"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:35
+#: View/Vehicles/vehicle_detail.ctp:287
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:160;349
+#: View/Vehicles/vehicledetails.ctp:285
+msgid "Name"
+msgstr "Name"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:55
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:180
+msgid "Phone"
+msgstr "Telefon"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:78;82
+#: View/Vehicles/vehicle_detail.ctp:173
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:206
+#: View/Vehicles/vehicledetails.ctp:139
+msgid "Special equipment"
+msgstr "Spezialausrüstung"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:89;93
+#: View/Vehicles/vehicle_detail.ctp:175
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:217
+#: View/Vehicles/vehicledetails.ctp:153
+msgid "Serial equipment"
+msgstr "Serienausstattung"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:100
+#: View/Vehicles/vehicle_detail.ctp:179
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:227
+#: View/Vehicles/vehicledetails.ctp:163
+msgid "Vehicle description"
+msgstr "Fahrzeugbeschreibung"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:105
+msgid "Vehicle Brand"
+msgstr "Fahrzeugmarke"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:110
+msgid "Vehicle Model"
+msgstr "Fahrzeugmodell"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:115
+msgid "Vehicle Type"
+msgstr "Fahrzeugtyp"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:120
+#: View/Vehicles/vehicle_detail.ctp:87
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:56
+#: View/Vehicles/vehicledetails.ctp:51
+msgid "Auction Price"
+msgstr "Auktionspreis"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:125
+#: View/Vehicles/vehicle_detail.ctp:187
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:237
+#: View/Vehicles/vehicledetails.ctp:173
+msgid "Repairs"
+msgstr "Reparaturen"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:130
+#: View/Vehicles/vehicle_detail.ctp:192
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:242
+#: View/Vehicles/vehicledetails.ctp:178
+msgid "Accident vehicle"
+msgstr "Unfallfahrzeug"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:135
+#: View/Vehicles/step2.ctp:45
+#: View/Vehicles/vehicle_detail.ctp:197
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:247
+#: View/Vehicles/vehicledetails.ctp:183
+msgid "Vehicle inspection"
+msgstr "Letzte MFK / Motorfahrzeugkontrolle"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:154
+#: View/Vehicles/vehicle_detail.ctp:105
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:80
+#: View/Vehicles/vehicledetails.ctp:72
+msgid "wheel drive"
+msgstr "Radantrieb"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:164
+#: View/Vehicles/step2.ctp:104
+#: View/Vehicles/vehicle_detail.ctp:209
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:259
+#: View/Vehicles/vehicledetails.ctp:195
+msgid "Service record"
+msgstr "Servicebericht"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:165
+#: View/Vehicles/step2.ctp:101;105
+#: View/Vehicles/vehicle_detail.ctp:210
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:260
+#: View/Vehicles/vehicledetails.ctp:196
+msgid "Available"
+msgstr "erhältlich"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:169
+#: View/Vehicles/step2.ctp:100
+#: View/Vehicles/vehicle_detail.ctp:214
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:264
+#: View/Vehicles/vehicledetails.ctp:200
+msgid "Vehicle registration document"
+msgstr "Fahrzeugregistrierungsdokument"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:170
+#: View/Vehicles/step2.ctp:101
+#: View/Vehicles/vehicle_detail.ctp:215
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:265
+#: View/Vehicles/vehicledetails.ctp:201
+msgid "Will be supplied later"
+msgstr "Wird später geliefert"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:174
+#: View/Vehicles/vehicle_detail.ctp:219
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:269
+#: View/Vehicles/vehicledetails.ctp:205
+msgid "Number of keys"
+msgstr "Schlüsselnummer"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:185
+#: View/Vehicles/vehicle_detail.ctp:231
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:281
+#: View/Vehicles/vehicledetails.ctp:217
+msgid "Model Number"
+msgstr "Typengenehemigung"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:190
+#: View/Vehicles/vehicle_detail.ctp:236
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:286
+#: View/Vehicles/vehicledetails.ctp:222
+msgid "Frame Number"
+msgstr "Rahmennummer"
+
+#: View/Vehicles/admin_vehicledetailpage.ctp:195
+#: View/Vehicles/vehicle_detail.ctp:241
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:291
+#: View/Vehicles/vehicledetails.ctp:227
+msgid "Register Number"
+msgstr "Stamm-Nr."
+
+#: View/Vehicles/auction_vehicles.ctp:8
+msgid "My Auktion"
+msgstr "Meine Auktionen"
+
+#: View/Vehicles/auction_vehicles.ctp:8
+#: View/Vehicles/favourite_vehicles.ctp:8
+#: View/Vehicles/purchased_vehicles.ctp:8
+#: View/Vehicles/sold_vehicles.ctp:8
+msgid "Cars"
+msgstr "Autos"
+
+#: View/Vehicles/auction_vehicles.ctp:24
+#: View/Vehicles/favourite_vehicles.ctp:24
+#: View/Vehicles/purchased_vehicles.ctp:25
+#: View/Vehicles/sold_vehicles.ctp:26
+msgid "Details Page"
+msgstr "Details Seite"
+
+#: View/Vehicles/detail.ctp:7
+msgid "ALFA ROMEO"
+msgstr "ALFA ROMEO"
+
+#: View/Vehicles/favourite_vehicles.ctp:8
+msgid "My Favourite"
+msgstr "Favoriten"
+
+#: View/Vehicles/purchased_vehicles.ctp:8
+msgid "My Purchased"
+msgstr "gekaufte Fahrzeuge"
+
+#: View/Vehicles/sold_vehicles.ctp:8
+msgid "My Sold"
+msgstr "Meine verkauften Fahrzeuge"
+
+#: View/Vehicles/step1.ctp:9;18
+#: View/Vehicles/step2.ctp:9
+#: View/Vehicles/step3.ctp:9
+#: View/Vehicles/step4.ctp:7
+msgid "Vehicle Data"
+msgstr "Fahrzeugdaten"
+
+#: View/Vehicles/step1.ctp:10
+#: View/Vehicles/step3.ctp:10
+#: View/Vehicles/step4.ctp:8
+#: View/Vehicles/vehicle_detail.ctp:249
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:304
+#: View/Vehicles/vehicledetails.ctp:240
+msgid "Condition"
+msgstr "Konditionen"
+
+#: View/Vehicles/step1.ctp:11
+#: View/Vehicles/step2.ctp:11
+#: View/Vehicles/step3.ctp:11
+#: View/Vehicles/step4.ctp:9
+msgid "Documents & Pictures"
+msgstr "Dokumente und Bilder"
+
+#: View/Vehicles/step1.ctp:12
+#: View/Vehicles/step2.ctp:12
+#: View/Vehicles/step3.ctp:12
+#: View/Vehicles/step4.ctp:10;16
+#: View/Vehicles/vehicle_detail.ctp:83
+msgid "Auction"
+msgstr "Auktion"
+
+#: View/Vehicles/step1.ctp:19
+#: View/Vehicles/step2.ctp:19
+#: View/Vehicles/step4.ctp:17
+msgid "Fields marked with asterisk (*) are mandatory"
+msgstr "Felder mit (*) müssen ausgefüllt werden"
+
+#: View/Vehicles/step1.ctp:25
+msgid "Brand *"
+msgstr "Marke"
+
+#: View/Vehicles/step1.ctp:27
+msgid "Brand Name"
+msgstr "Marke"
+
+#: View/Vehicles/step1.ctp:32
+msgid "Model *"
+msgstr "Modell"
+
+#: View/Vehicles/step1.ctp:39;41
+msgid "Type"
+msgstr "Typ"
+
+#: View/Vehicles/step1.ctp:46
+msgid "Body Type *"
+msgstr "Aufbau"
+
+#: View/Vehicles/step1.ctp:60
+msgid "--Select Body Type--"
+msgstr "--Fahrzeugbau wählen--"
+
+#: View/Vehicles/step1.ctp:66
+msgid "Doors *"
+msgstr "Türen"
+
+#: View/Vehicles/step1.ctp:68;100;107;126;184;191
+#: View/Vehicles/step2.ctp:110
+#: View/Vehicles/step4.ctp:33;42
+msgid "--Please Select--"
+msgstr "--Bitte auswählen--"
+
+#: View/Vehicles/step1.ctp:73;75
+msgid "Displacement"
+msgstr "Hubraum"
+
+#: View/Vehicles/step1.ctp:91
+msgid "Vehicle Region*"
+msgstr "Fahrzeug Ort"
+
+#: View/Vehicles/step1.ctp:98
+msgid "Wheel Drive *"
+msgstr "Radantrieb"
+
+#: View/Vehicles/step1.ctp:105
+msgid "Gear *"
+msgstr "Getriebe"
+
+#: View/Vehicles/step1.ctp:112
+msgid "Fuel *"
+msgstr "Treibstoff"
+
+#: View/Vehicles/step1.ctp:132
+msgid "Performance *"
+msgstr "Leistung"
+
+#: View/Vehicles/step1.ctp:137
+msgid "KW"
+msgstr "KW"
+
+#: View/Vehicles/step1.ctp:142
+msgid "Number of Seats "
+msgstr "Anzahl Sitzplätze"
+
+#: View/Vehicles/step1.ctp:144
+msgid "Bitte wählen"
+msgstr "Bitte wählen"
+
+#: View/Vehicles/step1.ctp:156
+msgid "Further Information"
+msgstr "weitere Information"
+
+#: View/Vehicles/step1.ctp:161
+msgid "1st Reg. *"
+msgstr "1. Reg."
+
+#: View/Vehicles/step1.ctp:163
+msgid "1st Registration"
+msgstr "Erstzulassung"
+
+#: View/Vehicles/step1.ctp:168
+msgid "Kilometers *"
+msgstr "KM"
+
+#: View/Vehicles/step1.ctp:170
+msgid "Kilometers"
+msgstr "KM"
+
+#: View/Vehicles/step1.ctp:175
+msgid "Exterior Color *"
+msgstr "Farbe"
+
+#: View/Vehicles/step1.ctp:177
+msgid "--Please Choose Color--"
+msgstr "Bitte Farbe auswählen"
+
+#: View/Vehicles/step1.ctp:182
+msgid "Car Finish"
+msgstr "Lack"
+
+#: View/Vehicles/step1.ctp:189
+msgid "Interior Color *"
+msgstr "Innenfarbe"
+
+#: View/Vehicles/step1.ctp:197
+msgid "Special Equipment"
+msgstr "Spezialausrüstung"
+
+#: View/Vehicles/step1.ctp:204
+msgid "Serial Equipment"
+msgstr "Serienausstattung"
+
+#: View/Vehicles/step1.ctp:214
+msgid "Frame No."
+msgstr "Chassis-Nr."
+
+#: View/Vehicles/step1.ctp:221
+msgid "Model No."
+msgstr "Modellnummer"
+
+#: View/Vehicles/step1.ctp:228
+msgid "Register No."
+msgstr "Register Nr."
+
+#: View/Vehicles/step1.ctp:235
+msgid "Vehicle No."
+msgstr "Fahrzeugnummer"
+
+#: View/Vehicles/step1.ctp:242
+msgid "Additional Information"
+msgstr "Zusätzliche Informationen"
+
+#: View/Vehicles/step1.ctp:249
+msgid "Factory Price of Vehicle"
+msgstr "Neupreis Fahrzeug"
+
+#: View/Vehicles/step1.ctp:266
+#: View/Vehicles/step2.ctp:178
+#: View/Vehicles/step3.ctp:51
+#: View/Vehicles/step4.ctp:57
+msgid "Previous"
+msgstr "Vorher"
+
+#: View/Vehicles/step2.ctp:10;18
+msgid "Conditions"
+msgstr "Bedingungen"
+
+#: View/Vehicles/step2.ctp:23
+msgid "Gen. Condition"
+msgstr "Allgemeinzustand"
+
+#: View/Vehicles/step2.ctp:28
+msgid "Vehicle involved in accident"
+msgstr "Unfallfahrzeug"
+
+#: View/Vehicles/step2.ctp:32
+msgid "Dog owner"
+msgstr "Hundehalter"
+
+#: View/Vehicles/step2.ctp:36
+msgid "Smoker's vehicle"
+msgstr "Raucher-Fahrzeug"
+
+#: View/Vehicles/step2.ctp:40
+msgid "Hail damage"
+msgstr "Hagelschaden"
+
+#: View/Vehicles/step2.ctp:52
+msgid "Repairs*"
+msgstr "Reparaturen"
+
+#: View/Vehicles/step2.ctp:59
+#: View/Vehicles/vehicle_detail.ctp:254
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:311
+#: View/Vehicles/vehicledetails.ctp:247
+msgid "Mechanics"
+msgstr "Allg. mechanischer Zustand"
+
+#: View/Vehicles/step2.ctp:63;69;115;119
+msgid "Multilingual"
+msgstr "Mehrsprachig"
+
+#: View/Vehicles/step2.ctp:68
+#: View/Vehicles/vehicle_detail.ctp:258
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:315
+#: View/Vehicles/vehicledetails.ctp:251
+msgid "Car finish"
+msgstr "Auto fertig"
+
+#: View/Vehicles/step2.ctp:72
+msgid "Car Defects"
+msgstr "Schaden"
+
+#: View/Vehicles/step2.ctp:78
+msgid "Motor"
+msgstr "Motor"
+
+#: View/Vehicles/step2.ctp:82
+msgid "Getriebe"
+msgstr "Getriebe"
+
+#: View/Vehicles/step2.ctp:86
+msgid "Vorderachse"
+msgstr "Vorderachse"
+
+#: View/Vehicles/step2.ctp:90
+msgid " Hinterachse"
+msgstr "Hinterachse"
+
+#: View/Vehicles/step2.ctp:105
+msgid "Incomplete"
+msgstr "Nicht vollständig"
+
+#: View/Vehicles/step2.ctp:105
+msgid "Missing"
+msgstr "Fehlt"
+
+#: View/Vehicles/step2.ctp:109
+msgid "Number of keys*"
+msgstr "Schlüsselnummer"
+
+#: View/Vehicles/step2.ctp:114
+#: View/Vehicles/vehicle_detail.ctp:262
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:319
+#: View/Vehicles/vehicledetails.ctp:255
+msgid "Body"
+msgstr "Allg. Carrosserie Zustand"
+
+#: View/Vehicles/step2.ctp:118
+#: View/Vehicles/vehicle_detail.ctp:266
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:323
+#: View/Vehicles/vehicledetails.ctp:259
+msgid "Other"
+msgstr "Sonstiges"
+
+#: View/Vehicles/step2.ctp:126
+msgid "Vehicle Damage Images"
+msgstr "Unfallfahrzeuge Bilder"
+
+#: View/Vehicles/step2.ctp:141
+msgid "Front view"
+msgstr "Front"
+
+#: View/Vehicles/step2.ctp:146
+msgid "Left view"
+msgstr "Links"
+
+#: View/Vehicles/step2.ctp:150
+msgid "Top view"
+msgstr "Oben"
+
+#: View/Vehicles/step2.ctp:156
+msgid "Right view"
+msgstr "Rechts"
+
+#: View/Vehicles/step2.ctp:160
+msgid "Back view"
+msgstr "Heck"
+
+#: View/Vehicles/step3.Dop:18
+msgid "Documents & pictures"
+msgstr "Dokumente und Bilder"
+
+#: View/Vehicles/step3.ctp:19
+msgid "Documents of vehicles"
+msgstr "Fahrzeugdokument"
+
+#: View/Vehicles/step3.ctp:20
+msgid "You can upload vehicle documents such as expert's report.Maximum file size 18 MB,minimum image size: 370X490 pixels."
+msgstr "Sie können beliebige Fahrzeugdokumente raufladen. Max. 18MB; min. Auflösung: 370x490px"
+
+#: View/Vehicles/step3.ctp:35
+msgid "Pictures of vehicles"
+msgstr "Fahrzeugbilder"
+
+msgid "You can upload a maximum of 20 vehicle images.Maximum file size 5 MB,minimum image resolution: 370X490 pixels.Only images in landscape orientation can be uploaded."
+msgstr "Sie können maximal 20 Fahrzeugbilder hochladen. Die Maximale Dateigrösse ist 5 MB, minimale Bildauflösung: 370x490 Pixel. Es können nur Bilder im Querformat hochgeladen werden."
+
+#: View/Vehicles/step4.ctp:24
+msgid "Minimum Price *"
+msgstr "Minimumpreis"
+
+#: View/Vehicles/step4.ctp:31
+msgid "Auction Duration *"
+msgstr "Auktionsdauer"
+
+#: View/Vehicles/step4.ctp:40
+msgid "To be transported by the *"
+msgstr "Transport wird übernommen von"
+
+#: View/Vehicles/step4.ctp:59
+msgid "Done"
+msgstr "Erledigt"
+
+#: View/Vehicles/vehicle_detail.ctp:83
+msgid "Starts in"
+msgstr "Starte in"
+
+#: View/Vehicles/vehicle_detail.ctp:91
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:58
+#: View/Vehicles/vehicledetails.ctp:53
+msgid "Your bid"
+msgstr "Ihr Gebot"
+
+#: View/Vehicles/vehicle_detail.ctp:107
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:82
+#: View/Vehicles/vehicledetails.ctp:74
+msgid "View all details"
+msgstr "Alle Details ansehen"
+
+#: View/Vehicles/vehicle_detail.ctp:110
+msgid "Damage Car"
+msgstr "Unfallauto"
+
+#: View/Vehicles/vehicle_detail.ctp:154
+msgid "No Vehicle Damage"
+msgstr "Keine Fahrzeug Schäden"
+
+#: View/Vehicles/vehicle_detail.ctp:281
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:343
+#: View/Vehicles/vehicledetails.ctp:279
+msgid "Offers"
+msgstr "Angebote"
+
+#: View/Vehicles/vehicle_detail.ctp:283
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:345
+#: View/Vehicles/vehicledetails.ctp:281
+msgid "No"
+msgstr "Nein"
+
+#: View/Vehicles/vehicle_detail.ctp:283
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:345
+#: View/Vehicles/vehicledetails.ctp:281
+msgid "offer(s) found."
+msgstr "gefundene Angebote"
+
+#: View/Vehicles/vehicle_detail.ctp:288
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:350
+#: View/Vehicles/vehicledetails.ctp:286
+msgid "Bidding Price"
+msgstr "Gebot abgeben"
+
+#: View/Vehicles/vehicle_detail.ctp:307
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:369
+#: View/Vehicles/vehicledetails.ctp:305
+msgid "No offer(s) found"
+msgstr "Keine passenden Angebote gefunden"
+
+#: View/Vehicles/vehicle_detail.ctp:363
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:407
+msgid "Hours"
+msgstr "Stunden"
+
+#: View/Vehicles/vehicle_detail.ctp:363
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:407
+msgid "Minutes"
+msgstr "Minuten"
+
+#: View/Vehicles/vehicle_detail.ctp:363
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:407
+msgid "Seconds"
+msgstr "Sekunden"
+
+#: View/Vehicles/vehicle_detail_bkp_01_02.ctp:53
+msgid "Auction Starts in"
+msgstr "Auktion startet in"
+
+#: View/Vehicles/vehicledetails.ctp:48
+msgid "Vehicle Details"
+msgstr "Fahrzeug Details"
+
+#: Model/AuctionBid.php:validation for field user_id;validation for field vehicle_id;validation for field biding_amount
+#: Model/Company.php:validation for field user_id
+#: Model/VehicleMakeYear.php:validation for field year
+msgid "numeric"
+msgstr "numerisch"
+
+#: Model/Company.php:validation for field name;validation for field addition;validation for field street;validation for field pob;validation for field postcode;validation for field town;validation for field country;validation for field car_dealership;validation for field motorcycle_dealership;validation for field com_vehicle_dealership
+#: Model/VehicleFavourite.php:validation for field name
+#: Model/VehicleMake.php:validation for field name
+#: Model/VehicleModel.php:validation for field name
+#: Model/VehicleRegion.php:validation for field name
+msgid "notBlank"
+msgstr "nicht leer"
+
