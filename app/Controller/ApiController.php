@@ -3,7 +3,7 @@ App::uses('AppController', 'Controller');
 
 class ApiController extends AppController {
 
-
+    var $components = array('Email', 'Upload', 'Paginator', 'Cookie','Redis','RequestHandler');
     function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow();
@@ -618,6 +618,554 @@ class ApiController extends AppController {
        
         if($this->request->is('post')) {
                 return json_encode(['success' => true, 'message' => 'Congratulations. You have buy new vehicle', 'data' => [] ]);
+        }
+        return json_encode(['success' => false, 'message' => 'Invalid Request', 'data' => []]);
+    }
+    
+    public function uploadImage(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->autoRender = false;
+        
+        if ($this->request->is('post')) {
+            
+            $img = $_FILES['file'];
+           
+            $imgNameExt = pathinfo($img["name"]);
+            $ext = $imgNameExt['extension'];
+            $ext = strtolower($ext);
+            
+            $newImgName = "Aniket_panchal"; //echo $newImgName; die;
+            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+            $tempFile = $img['tmp_name'];
+            $destLarge = realpath('../webroot/img/') . '/';
+            $file = $img;
+            
+            $result = $this->Upload->upload($file, $destLarge, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+            $name = $newImgName . ".jpeg";
+            return json_encode(['success' => true,'message' => 'Vehicle images uploaded successfully','data'=> []]);
+        }
+        
+        return json_encode(['success' => false,'message' => 'Invalid request','data'=> [] ]);
+        
+        
+    }
+    
+    public function step1() {
+        
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers','token');
+        $this->autoRender = false;
+        
+        App::uses('CakeText', 'Utility');
+        
+        $this->loadModel('Vehicle');
+        $this->loadModel('VehicleRegion');
+        $this->loadModel('VehicleDamage');
+        if ($this->request->is('post')) {
+            
+            $requestData = $this->data;
+            pr($requestData);
+            pr($_FILES); die;
+            
+            
+            
+            $requestData['Vehicle']['temp_id'] = CakeText::uuid();
+            
+            if( isset($requestData['Vehicle']['gen_condition']) && !empty($requestData['Vehicle']['gen_condition']) ){
+                $requestData['Vehicle']['gen_condition'] = implode(',', $requestData['Vehicle']['gen_condition']); //pr($tmp);die;
+            }
+            
+            $requestData['Vehicle']['seller_id'] = '';
+            
+            $leftsidename = '';
+            $topsidename = '';
+            $rightsidename = '';
+            $bottomsidename = '';
+            $backsidename = '';
+            
+            $rimgtmp = isset($requestData['VehicleDamage']['rightside']) ? $requestData['VehicleDamage']['rightside'] : null;
+            $limgtmp = isset($requestData['VehicleDamage']['leftside']) ? $requestData['VehicleDamage']['leftside'] : null;
+            $timgtmp = isset($requestData['VehicleDamage']['topside']) ? $requestData['VehicleDamage']['topside'] : null;
+            $bimgtmp = isset($requestData['VehicleDamage']['bottomside']) ? $requestData['VehicleDamage']['bottomside']: null;
+            $bkimgtmp = isset($requestData['VehicleDamage']['backside']) ? $requestData['VehicleDamage']['backside'] : null;
+            
+            if (!empty($rimgtmp)) {
+				
+                //foreach($rimgtmp as $img) { //pr($img);die;
+                    if(isset($rimgtmp['name']) && !empty($rimgtmp['name'])){
+                        $imgNameExt = pathinfo($rimgtmp["name"]);
+                        $ext = $imgNameExt['extension'];
+                        $ext = strtolower($ext);
+                        if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'gif') {
+                            $newImgName = "rightside_" . $rimgtmp['size'] . "_" . time(); //echo $newImgName; die;
+                            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+                            $tempFile = $rimgtmp['tmp_name'];
+                            $destThumb = realpath('../webroot/img/vehicledamage/thumb/') . '/';
+                            $destOriginal = realpath('../webroot/img/vehicledamage/orignal/') . '/';
+                            $file = $rimgtmp;
+
+                            $file['name'] = $imgNameExt['filename'] . '.' . $ext;
+                            if ($ext == 'gif') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $rightsidename = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".gif" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $rightsidename = $newImgName . ".gif";
+
+                            } else if ($ext == 'png') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $rightsidename = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".png" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $rightsidename = $newImgName . ".png";
+
+                            } else if ($ext == 'jpeg') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $rightsidename = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpeg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $rightsidename = $newImgName . ".jpeg";
+
+                            } else {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $rightsidename = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $rightsidename = $newImgName . ".jpg";
+
+                            }
+                        }
+                    }
+                //}
+            }
+            
+            if (!empty($limgtmp)) {
+				
+                foreach($limgtmp as $img) { //pr($img);die;
+                    if(isset($img['name']) && !empty($img['name'])){
+                        $imgNameExt = pathinfo($img["name"]);
+                        $ext = $imgNameExt['extension'];
+                        $ext = strtolower($ext);
+                        if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'gif') {
+                            $newImgName = "leftside_" . $img['size'] . "_" . time(); //echo $newImgName; die;
+                            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+                            $tempFile = $img['tmp_name'];
+                            $destThumb = realpath('../webroot/img/vehicledamage/thumb/') . '/';
+                            $destOriginal = realpath('../webroot/img/vehicledamage/orignal/') . '/';
+                            $file = $img;
+
+                            $file['name'] = $imgNameExt['filename'] . '.' . $ext;
+                            if ($ext == 'gif') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $leftsidename = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".gif" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $leftsidename = $newImgName . ".gif";
+
+                            } else if ($ext == 'png') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $leftsidename = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".png" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $leftsidename = $newImgName . ".png";
+
+                            } else if ($ext == 'jpeg') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $leftsidename = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpeg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $leftsidename = $newImgName . ".jpeg";
+
+                            } else {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $leftsidename = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $leftsidename = $newImgName . ".jpg";
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if (!empty($timgtmp)) {
+				
+                foreach($timgtmp as $img) { //pr($img);die;
+                    if(isset($img['name']) && !empty($img['name'])){
+                        $imgNameExt = pathinfo($img["name"]);
+                        $ext = $imgNameExt['extension'];
+                        $ext = strtolower($ext);
+                        if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'gif') {
+                            $newImgName = "topside_" . $img['size'] . "_" . time(); //echo $newImgName; die;
+                            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+                            $tempFile = $img['tmp_name'];
+                            $destThumb = realpath('../webroot/img/vehicledamage/thumb/') . '/';
+                            $destOriginal = realpath('../webroot/img/vehicledamage/orignal/') . '/';
+                            $file = $img;
+
+                            $file['name'] = $imgNameExt['filename'] . '.' . $ext;
+                            if ($ext == 'gif') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $topsidename = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".gif" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $topsidename = $newImgName . ".gif";
+
+                            } else if ($ext == 'png') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $topsidename = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".png" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $topsidename = $newImgName . ".png";
+
+                            } else if ($ext == 'jpeg') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $topsidename = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpeg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $topsidename = $newImgName . ".jpeg";
+
+                            } else {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $topsidename = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $topsidename = $newImgName . ".jpg";
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if (!empty($bimgtmp)) {
+				
+                foreach($bimgtmp as $img) { //pr($img);die;
+                    if(isset($img['name']) && !empty($img['name'])){
+                        $imgNameExt = pathinfo($img["name"]);
+                        $ext = $imgNameExt['extension'];
+                        $ext = strtolower($ext);
+                        if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'gif') {
+                            $newImgName = "bottomside_" . $img['size'] . "_" . time(); //echo $newImgName; die;
+                            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+                            $tempFile = $img['tmp_name'];
+                            $destThumb = realpath('../webroot/img/vehicledamage/thumb/') . '/';
+                            $destOriginal = realpath('../webroot/img/vehicledamage/orignal/') . '/';
+                            $file = $img;
+
+                            $file['name'] = $imgNameExt['filename'] . '.' . $ext;
+                            if ($ext == 'gif') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $bottomsidename = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".gif" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $bottomsidename = $newImgName . ".gif";
+
+                            } else if ($ext == 'png') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $bottomsidename = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".png" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $bottomsidename = $newImgName . ".png";
+
+                            } else if ($ext == 'jpeg') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $bottomsidename = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpeg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $bottomsidename = $newImgName . ".jpeg";
+
+                            } else {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $bottomsidename = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $bottomsidename = $newImgName . ".jpg";
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if (!empty($bkimgtmp)) {
+				
+                foreach($bkimgtmp as $img) { //pr($img);die;
+                    if(isset($img['name']) && !empty($img['name'])){
+                        $imgNameExt = pathinfo($img["name"]);
+                        $ext = $imgNameExt['extension'];
+                        $ext = strtolower($ext);
+                        if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'gif') {
+                            $newImgName = "backside_" . $img['size'] . "_" . time(); //echo $newImgName; die;
+                            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+                            $tempFile = $img['tmp_name'];
+                            $destThumb = realpath('../webroot/img/vehicledamage/thumb/') . '/';
+                            $destOriginal = realpath('../webroot/img/vehicledamage/orignal/') . '/';
+                            $file = $img;
+
+                            $file['name'] = $imgNameExt['filename'] . '.' . $ext;
+                            if ($ext == 'gif') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $backsidename = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".gif" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $backsidename = $newImgName . ".gif";
+
+                            } else if ($ext == 'png') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $backsidename = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".png" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $backsidename = $newImgName . ".png";
+
+                            } else if ($ext == 'jpeg') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $backsidename = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpeg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $backsidename = $newImgName . ".jpeg";
+
+                            } else {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $backsidename = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpg" , array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $backsidename = $newImgName . ".jpg";
+
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+            
+            if ($this->Vehicle->save($requestData)) {
+               
+                $vehicleId = 0;
+                if (isset($requestData['Vehicle']['id']) && !empty($requestData['Vehicle']['id'])) {
+                    
+                    $vehicleId = $requestData['Vehicle']['id'];
+                } else {
+                    $vehicleId = $this->Vehicle->getLastInsertId();
+                }
+                
+                if( $leftsidename != '' || $rightsidename != '' || $topsidename != '' || $bottomsidename != '' || $backsidename != '' ) {
+                    $pic['VehicleDamage']['id'] = "";
+                    $pic['VehicleDamage']['vehicle_id'] = $vehicleId;
+                    $pic['VehicleDamage']['left_file_name'] = $leftsidename;
+                    $pic['VehicleDamage']['right_file_name'] = $rightsidename;
+                    $pic['VehicleDamage']['top_file_name'] = $topsidename;
+                    $pic['VehicleDamage']['bottom_file_name'] = $bottomsidename;
+                    $pic['VehicleDamage']['back_file_name'] = $backsidename;
+                    //$pic['VehicleDamage']['vehicle_damage'] = isset($tmp['VehicleDamage']['vehicle_damage']) ? implode(',', $tmp['VehicleDamage']['vehicle_damage']) : '';
+                    $pic['VehicleDamage']['file_type'] = 2;
+                    $this->VehicleDamage->save($pic);
+                }
+                
+                return json_encode(['success' => true, 'message' => 'Congratulations. You have added new vehicle', 'data' => [] ]);
+            } else {
+                pr($this->Vehicle->validationErrors); die;
+                return json_encode(['success' => false, 'message' => 'We are unable to add vehicle. Please try again', 'data' => [] ]);
+            }
+            
+           
+        }
+
+//        $ltnId = '';
+//        if (isset($this->request->query['ltn']) && $this->request->query['ltn'] != '') {
+//            $ltnId = $this->request->query['ltn'];
+//        }
+//        $vehicle_region = $this->VehicleRegion->find('list', array('fields' => array('VehicleRegion.region_code', 'VehicleRegion.region_name'))); //pr($vehicle_region);die;
+//        $this->set('region_data', $vehicle_region);
+//        $this->set('ltnId', $ltnId);
+//        $this->set('vehicleData', $this->Session->read('vehicleData.data'));
+
+//        if (isset($_SESSION['ADVERTISEMENT_ID'])) { //pr($this->request->data);die;
+//            $this->request->data = $this->Vehicle->findById($_SESSION['ADVERTISEMENT_ID']);
+//        }
+        
+        return json_encode(['success' => false, 'message' => 'Invalid Request', 'data' => []]);
+    }
+    
+    public function step2(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->autoRender = false;
+        $this->loadModel('Vehicle');
+        if ($this->request->is('post')) {
+            
+//            $data = $this->data;
+//            $imgtmp = $data['image'];
+            $img = $_FILES['file'];
+            if (!empty($imgtmp)) {
+                foreach ($imgtmp as $img) { pr($img);die;
+                    if (isset($img['name']) && !empty($img['name'])) {
+                        $imgNameExt = pathinfo($img["name"]);
+                        $ext = $imgNameExt['extension'];
+                        $ext = strtolower($ext);
+                        if ($ext == 'jpg' || $ext == 'jpeg' || $ext == 'png' || $ext == 'gif') {
+                            $newImgName = "Adv_" . $img['size'] . "_" . time(); //echo $newImgName; die;
+                            $newImgName = str_replace(array('#', '.', '"', ' '), "", $newImgName);
+                            $tempFile = $img['tmp_name'];
+                            $destThumb = realpath('../webroot/img/vehicle/thumb/') . '/';
+                            $destOriginal = realpath('../webroot/img/vehicle/orignal/') . '/';
+                            $destLarge = realpath('../webroot/img/vehicle/large/') . '/';
+                            $file = $img;
+
+                            $file['name'] = $imgNameExt['filename'] . '.' . $ext;
+                            if ($ext == 'gif') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $name = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $name = $newImgName . ".gif";
+
+                                $result = $this->Upload->upload($file, $destLarge, $newImgName . ".gif", array('type' => 'resizemin', 'size' => array('800', '800')));
+                                $name = $newImgName . ".gif";
+                            } else if ($ext == 'png') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $name = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $name = $newImgName . ".png";
+
+                                $result = $this->Upload->upload($file, $destLarge, $newImgName . ".png", array('type' => 'resizemin', 'size' => array('800', '800')));
+                                $name = $newImgName . ".png";
+                            } else if ($ext == 'jpeg') {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $name = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $name = $newImgName . ".jpeg";
+
+                                $result = $this->Upload->upload($file, $destLarge, $newImgName . ".jpeg", array('type' => 'resizemin', 'size' => array('800', '800')));
+                                $name = $newImgName . ".jpeg";
+                            } else {
+                                $result = $this->Upload->upload($file, $destThumb, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('120', '120')));
+                                $name = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destOriginal, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('750', '500')));
+                                $name = $newImgName . ".jpg";
+
+                                $result = $this->Upload->upload($file, $destLarge, $newImgName . ".jpg", array('type' => 'resizemin', 'size' => array('800', '800')));
+                                $name = $newImgName . ".jpg";
+                            }
+
+                            $pic['VehicleDoc']['id'] = "";
+                            $pic['VehicleDoc']['vehicle_id'] = $data['VehicleDoc']['vehicle_id'];
+                            $pic['VehicleDoc']['file_name'] = $name;
+                            $pic['VehicleDoc']['file_type'] = 2;
+                            $this->VehicleDoc->save($pic);
+                        }
+                    }
+                }
+            }
+
+//            $doctmp = $data['doc'];
+            $doctmp = $_FILES['doc'];
+            if (!empty($doctmp)) {
+                foreach ($doctmp as $doc) { //pr($img);die;
+                    if (isset($doc['name']) && !empty($doc['name'])) {
+                        $target_dir = realpath('../webroot/files/doc');
+                        $name = time(strtotime(date('Y-m-d H:i'))) . '_' . $doc['name'];
+                        str_replace(array('#', '.', '"', ' '), "", $name);
+                        $target_file = $target_dir . '/' . $name;
+                        if (move_uploaded_file($doc["tmp_name"], $target_file)) {
+                            $document['VehicleDoc']['id'] = "";
+                            $document['VehicleDoc']['vehicle_id'] = $data['VehicleDoc']['vehicle_id'];
+                            $document['VehicleDoc']['file_name'] = $name;
+                            $document['VehicleDoc']['file_type'] = 1;
+                            $this->VehicleDoc->save($document);
+                        }
+                    }
+                }
+            }
+            
+            return json_encode(['success' => true,'message' => 'Vehicle images uploaded successfully','data'=> $query]);
+        }
+        return json_encode(['success' => false,'message'=> 'Invalid Rquest','data' =>[]]);
+    }
+    
+    public function getCmsPage(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers','token');
+        $this->autoRender = false;
+        
+        if ($this->request->is('get')) {            
+            $language = $this->request->query['language'];
+            $pageUrl = $this->request->query['page_url'];
+            if ($language && $pageUrl) {
+                $this->loadModel('CmsPage');
+                $cmsSlugs = $this->CmsPage->find('first', array( 'conditions'=> array( 'page_url' => $pageUrl,'language' => $language ), 'recursive' => -1)); //'conditions'=> array('language'=> $cmsLang )
+                return json_encode(['success' => true,'message' => '','data'=> [ 'page_content' => $cmsSlugs['CmsPage']['description'] ]]);
+            } else {
+                return json_encode(['success' => false,'message'=> 'Please Provide language and page url','data' => []]);
+            }
+        } else {
+            return json_encode(['success' => false,'message'=> 'Invalid request. Please try again','data' => []]);
+        }
+    }
+    
+    public function contactUs(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers','token');
+        $this->autoRender = false;
+       
+        if($this->request->is('post')) {
+            
+            $to = "panchal.aniket@gmail.com";
+            $subject = "Request from " . trim($this->request->data['first_name'] . ' ' . $this->request->data['last_name']);
+
+            $mailHtml = '<html>
+                            <head>
+                                <meta name="viewport" content="width=device-width" />
+                                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                            </head>
+                            <body style="font-family: Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif; -webkit-font-smoothing:antialiased;  -webkit-text-size-adjust:none;">
+                                <table style="width: 100%;" class="body-wrap">
+                                    <tr>
+                                        <td></td>
+                                        <td class="container" bgcolor="#FFFFFF">
+
+                                            <div class="content">
+                                                <table style="width:100%;">
+                                                    <tr>
+                                                        <td>
+                                                            <h3>Hello,</h3>
+                                                            <p style="margin-bottom: 15px; font-size: 16px; font-weight:bold;" class="callout">Below is the request Detail:</p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Customer Type :</b> <span class="booking-id">' . (($this->request->data["user_type"] == 'car_dealer') ? __('Car Dealer') : __('Private User')) . '</span> </p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Marketplace :</b> ' . $this->request->data["marketplace"] . ' </p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Request Type :</b> ' . $this->request->data["type"] . '</p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Topic :</b> ' . $this->request->data["topic"] . '</p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Request Description :</b> ' . $this->request->data["my_request"] . ' </p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Name :</b> ' . trim($this->request->data["prefix_name"] . " " . $this->request->data["first_name"] . " " . $this->request->data["last_name"]) . ' </p>
+                                                            <p style="margin-bottom: 10px; font-weight: normal; font-size:14px; line-height:1.6;"><b> Email :</b> ' . $this->request->data["email"] . '</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </body>
+                        </html>';
+
+
+            $option = array();
+            $option = array(
+                'body' => $mailHtml,
+                'from' => 'developer@ef24.ch',
+                'fromname' => $this->request->data['first_name'],
+                'subject' => 'Contact us email'
+            );
+
+            if ($this->Email->contactEmail($option)) {
+                return json_encode(['success' => true, 'message' => 'Request has been send successfully.', 'data' => [] ]);
+            } else {
+                return json_encode(['success' => false, 'message' => 'We are unable to send your request. Please try again.', 'data' => []]);
+            }    
         }
         return json_encode(['success' => false, 'message' => 'Invalid Request', 'data' => []]);
     }
