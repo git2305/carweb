@@ -656,20 +656,12 @@ class ApiController extends AppController {
         $this->response->header('Access-Control-Allow-Headers','token');
         $this->autoRender = false;
         
-        App::uses('CakeText', 'Utility');
-        
         $this->loadModel('Vehicle');
         $this->loadModel('VehicleRegion');
         $this->loadModel('VehicleDamage');
         if ($this->request->is('post')) {
             
             $requestData = $this->data;
-            pr($requestData);
-            pr($_FILES); die;
-            
-            
-            
-            $requestData['Vehicle']['temp_id'] = CakeText::uuid();
             
             if( isset($requestData['Vehicle']['gen_condition']) && !empty($requestData['Vehicle']['gen_condition']) ){
                 $requestData['Vehicle']['gen_condition'] = implode(',', $requestData['Vehicle']['gen_condition']); //pr($tmp);die;
@@ -945,7 +937,6 @@ class ApiController extends AppController {
                
                 $vehicleId = 0;
                 if (isset($requestData['Vehicle']['id']) && !empty($requestData['Vehicle']['id'])) {
-                    
                     $vehicleId = $requestData['Vehicle']['id'];
                 } else {
                     $vehicleId = $this->Vehicle->getLastInsertId();
@@ -964,9 +955,9 @@ class ApiController extends AppController {
                     $this->VehicleDamage->save($pic);
                 }
                 
-                return json_encode(['success' => true, 'message' => 'Congratulations. You have added new vehicle', 'data' => [] ]);
+                return json_encode(['success' => true, 'message' => 'Congratulations. You have added new vehicle', 'data' => ['vehicle_temp_id' => $vehicleId ] ]);
             } else {
-                pr($this->Vehicle->validationErrors); die;
+               // pr($this->Vehicle->validationErrors); die;
                 return json_encode(['success' => false, 'message' => 'We are unable to add vehicle. Please try again', 'data' => [] ]);
             }
             
@@ -993,6 +984,7 @@ class ApiController extends AppController {
         $this->response->header('Access-Control-Allow-Origin', '*');
         $this->autoRender = false;
         $this->loadModel('Vehicle');
+        
         if ($this->request->is('post')) {
             
 //            $data = $this->data;
@@ -1166,6 +1158,45 @@ class ApiController extends AppController {
             } else {
                 return json_encode(['success' => false, 'message' => 'We are unable to send your request. Please try again.', 'data' => []]);
             }    
+        }
+        return json_encode(['success' => false, 'message' => 'Invalid Request', 'data' => []]);
+    }
+    
+    public function getVehicleTempDetail(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers','token');
+        $this->autoRender = false;
+       
+        if($this->request->is('get')) {
+            $this->loadModel('Vehicle');
+            $vehicleTempId = $this->request->query['vehicle_temp_id'];
+            if( $vehicleTempId != '' ) {
+                $this->Vehicle->unbindModel(
+                    array('hasMany' => array('VehicleFavourite','AuctionBid','Buyer')),
+                    array('hasOne' => array('User','Buyer'))
+                );
+                $vehicleData = $this->Vehicle->find('first', array( 'conditions'=> array( 'Vehicle.id' => $vehicleTempId ), 'recursive' => 1));
+                return json_encode(['success' => true, 'message' => '', 'data' => ['vehicleData' => $vehicleData ] ]);
+            } else {
+                return json_encode(['success' => true, 'message' => '', 'data' => [] ]);
+            }
+        } else {
+            return json_encode(['success' => false, 'message' => 'Invalid Request', 'data' => []]);
+        }
+    }
+    
+    public function activateVehicle(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers','token');
+        $this->autoRender = false;
+       
+        if($this->request->is('post')) {
+            $this->loadModel('Vehicle');
+            if($this->Vehicle->save($this->request->data)){
+                return json_encode(['success' => true, 'message' => 'Congratulations. You have buy new vehicle', 'data' => [] ]);
+            } else {
+                return json_encode(['success' => false, 'message' => 'We are unable to add vehicle. Please try again', 'data' => []]);
+            }            
         }
         return json_encode(['success' => false, 'message' => 'Invalid Request', 'data' => []]);
     }
