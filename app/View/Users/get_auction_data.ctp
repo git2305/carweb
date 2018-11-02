@@ -34,9 +34,12 @@
                                     $vehicleName .= ' / '.$data['Vehicle']['type'];
                                 }
                                 
-                                if( $data['Vehicle']['first_reg'] != '' ){
-                                    $firstRegDate = new DateTime( '01/'.$data['Vehicle']['first_reg']);
-                                    $vehicleName .= ' / '. $firstRegDate->format('Y');
+                                
+                                if( isset($data['Vehicle']['first_reg']) && $data['Vehicle']['first_reg'] != '' ){
+                                    $makeYearArr = explode('/', $data['Vehicle']['first_reg']);
+                                    if( isset($makeYearArr[1]) ){
+                                        $vehicleName .= ' / '. $makeYearArr[1];
+                                    }
                                 }
                                 
                                 if( $data['Vehicle']['kilometers'] != '' && $data['Vehicle']['kilometers'] > 0){
