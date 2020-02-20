@@ -1193,7 +1193,7 @@ class UsersController extends AppController {
                   echo 'emailsuccess';die; */
             } else {
                 $this->Vehicle->updateAll(array("Vehicle.status" => '0'), array("Vehicle.id" => $this->request->data['vehicle_id']));
-                echo json_encode(['success' => true, 'message' => 'Car sold successfully', 'data' => []]); die;
+                echo json_encode(['success' => true, 'message' => 'Congratulations. You have buy new vehicle', 'data' => []]); die;
             }
         } else {
             echo json_encode(['success' => false, 'message' => 'Invalid vehicle. Please try again', 'data' => []]); die;

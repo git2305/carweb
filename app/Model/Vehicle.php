@@ -29,11 +29,28 @@ class Vehicle extends Model {
             'className' => 'VehicleDoc',
             'foreignKey' => 'vehicle_id',
             'limit' => 1,
+//            'joinType' => 'INNER',
+//            'strategy' => 'join',
             'conditions' => array(
                 'file_type' => 2
             ),
         ),
     );
+    
+//    function afterFind($results, $primary=false) {
+//        if (!empty($results)) {
+//            foreach ($results as $i => $result) {
+//                if (!empty($result[0])) { // If the [0] key exists in a result...
+//                    foreach ($result[0] as $key => $value) { // ...cycle through all its fields...
+//                        $results[$i][$this->alias][$key] = $value; // ...move them to the main result...
+//                    }
+//                    unset($results[$i][0]); // ...and finally remove the [0] array
+//                }
+//            }
+//        }
+//        pr($results); die;
+//        return parent::afterFind($results, $primary=false); // Don't forget to call the parent::afterFind()
+//    }
     
 //    var $hasOne = array(
 //        'MyFavourite' => array(

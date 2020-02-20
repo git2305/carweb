@@ -774,3 +774,160 @@ msgstr ""
 msgid "Done"
 msgstr ""
 
+
+
+# Api Validation Messages
+
+msgid "Invalid language or page. Please try again."
+msgstr ""
+
+msgid "Invalid Request. Please try again."
+msgstr ""
+
+msgid "Vehicle not found. Please try again."
+msgstr ""
+
+msgid "Invalid vehicle ID. Please try again."
+msgstr ""
+
+msgid "No auctoin bidding data found. Please try again."
+msgstr ""
+
+msgid "Invalid session. Please logged in again."
+msgstr ""
+
+msgid "Vehicle is already added as your favourite list."
+msgstr ""
+
+msgid "Vehicle has been added to favourite successfully"
+msgstr ""
+
+msgid "Vehicle has been added to unfavourite successfully"
+msgstr ""
+
+msgid "User not exists in the system."
+msgstr ""
+
+msgid "Invalid invoice name. Please try again."
+msgstr ""
+
+msgid "Email preference has been saved successfully."
+msgstr ""
+
+msgid "Unable to update data. Please try again."
+msgstr ""
+
+msgid "Loggedin successfully."
+msgstr ""
+
+msgid "Invalid username or password."
+msgstr ""
+
+msgid "Required parameter missing. Please try again."
+msgstr ""
+
+msgid "Email already exists. Please enter different email."
+msgstr ""
+
+msgid "Username already exists.Please enter different username."
+msgstr ""
+
+msgid "Your account has been registered successfully."
+msgstr ""
+
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+msgid "Unable to create your account. Please try again."
+msgstr ""
+
+msgid "Password has been changed successfully."
+msgstr ""
+
+msgid "Unable to change password. Please try again."
+msgstr ""
+
+msgid "Invalid current password. Please try again."
+msgstr ""
+
+msgid "Congratulations. You have buy new vehicle."
+msgstr ""
+
+msgid "Car has been sold successfully."
+msgstr ""
+
+msgid "Vehicle image has been uploaded successfully."
+msgstr ""
+
+msgid "Unable to add vehicle. Please try again."
+msgstr ""
+
+msgid "Request has been send successfully. We will be get back to you soon."
+msgstr ""
+
+msgid "We are unable to submit your request. Please try again."
+msgstr ""
+
+msgid "Vehicle has been added successfully."
+msgstr ""
+
+msgid "Invalid vehicle image format. Please upload valid image type."
+msgstr ""
+
+msgid "Please select vehicle image."
+msgstr ""
+
+msgid "Vehicle damage image has been uploaded successfully."
+msgstr ""
+
+msgid "Your bid has been recorded successfully."
+msgstr ""
+
+msgid "Profile picture has been uploaded successfully."
+msgstr ""
+
+msgid "No user detail found. Please try again."
+msgstr ""
+
+msgid "User profile has been updated successfully."
+msgstr ""
+
+msgid "Unable to save profile information. Please try again."
+msgstr ""
+
+msgid "Vehicle has been deleted successfully."
+msgstr ""
+
+msgid "Vehicle damage image has been deleted successfully."
+msgstr ""
+
+msgid "File does not exist. Please try again."
+msgstr ""
+
+msgid "No vehicle damage image found. Please try again."
+msgstr ""
+
+msgid "No vehicle image found. Please try again."
+msgstr ""
+
+msgid "Vehicle image has been deleted successfully."
+msgstr ""
+
+msgid "No vehicle document image found. Please try again."
+msgstr ""
+
+msgid "Vehicle document image has been deleted successfully."
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+

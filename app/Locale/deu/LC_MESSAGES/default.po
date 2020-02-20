@@ -1002,7 +1002,7 @@ msgstr "Emailadresse eingeben"
 
 #: View/Users/register.ctp:155
 msgid "Login details"
-msgstr "Login Daten"
+msgstr "Details zur Anmeldung"
 
 #: View/Users/register.ctp:155
 msgid "Please note that your username will be displayed if you place a bid"
@@ -1904,4 +1904,155 @@ msgstr "numerisch"
 #: Model/VehicleRegion.php:validation for field name
 msgid "notBlank"
 msgstr "nicht leer"
+
+
+
+
+
+msgid "Invalid language or page. Please try again."
+msgstr "Ungültige Sprache oder Seite. Bitte versuchen Sie es erneut."
+
+msgid "Invalid Request. Please try again."
+msgstr "Ungültige Anfrage. Bitte versuchen Sie es erneut."
+
+msgid "Vehicle not found. Please try again."
+msgstr "Fahrzeug nicht gefunden. Bitte versuchen Sie es erneut."
+
+msgid "Ungültige Fahrzeug-ID. Bitte versuchen Sie es erneut."
+msgstr ""
+
+msgid "No auctoin bidding data found. Please try again."
+msgstr "Keine Auctoin-Gebotsdaten gefunden. Bitte versuchen Sie es erneut."
+
+msgid "Invalid session. Please logged in again."
+msgstr "Ungültige Sitzung. Bitte loggen Sie sich erneut ein."
+
+msgid "Vehicle is already added as your favourite list."
+msgstr "Das Fahrzeug ist bereits als Favoritenliste hinzugefügt."
+
+msgid "Vehicle has been added to favourite successfully"
+msgstr "Das Fahrzeug wurde erfolgreich zum Favoriten hinzugefügt."
+
+msgid "Vehicle has been added to unfavourite successfully"
+msgstr "Fahrzeug wurde erfolgreich zu Ungunsten von Unglücklichen hinzugefügt."
+
+msgid "User not exists in the system."
+msgstr "Benutzer ist nicht im System vorhanden."
+
+msgid "Invalid invoice name. Please try again."
+msgstr "Ungültiger Rechnungsname. Bitte versuchen Sie es erneut."
+
+msgid "Email preference has been saved successfully."
+msgstr "Die E-Mail-Einstellung wurde erfolgreich gespeichert."
+
+msgid "Unable to update data. Please try again."
+msgstr "Es ist nicht möglich, Daten zu aktualisieren. Bitte versuchen Sie es erneut."
+
+msgid "Loggedin successfully."
+msgstr "Erfolgreich angemeldet."
+
+msgid "Invalid username or password."
+msgstr "Ungültiger Benutzername oder Passwort."
+
+msgid "Required parameter missing. Please try again."
+msgstr "Erforderlicher Parameter fehlt. Bitte versuchen Sie es erneut."
+
+msgid "Email already exists. Please enter different email."
+msgstr "E-Mail ist bereits vorhanden. Bitte geben Sie eine andere E-Mail-Adresse ein."
+
+msgid "Username already exists.Please enter different username."
+msgstr "Benutzername existiert bereits, bitte geben Sie einen anderen Benutzernamen ein."
+
+msgid "Your account has been registered successfully."
+msgstr "Dein Konto wurde erfolgreich registriert."
+
+msgid "Something went wrong. Please try again."
+msgstr "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+
+msgid "Unable to create your account. Please try again."
+msgstr "Es ist nicht möglich, Ihr Konto zu erstellen. Bitte versuchen Sie es erneut."
+
+msgid "Password has been changed successfully."
+msgstr "Das Passwort wurde erfolgreich geändert."
+
+msgid "Unable to change password. Please try again."
+msgstr "Das Passwort kann nicht geändert werden. Bitte versuchen Sie es erneut."
+
+msgid "Invalid current password. Please try again."
+msgstr "Ungültiges aktuelles Passwort. Bitte versuchen Sie es erneut."
+
+msgid "Congratulations. You have buy new vehicle."
+msgstr "Herzlichen Glückwunsch. Du hast ein neues Fahrzeug gekauft."
+
+msgid "Car has been sold successfully."
+msgstr "Das Auto wurde erfolgreich verkauft."
+
+msgid "Vehicle image has been uploaded successfully."
+msgstr "Das Fahrzeugbild wurde erfolgreich hochgeladen."
+
+msgid "Unable to add vehicle. Please try again."
+msgstr "Das Fahrzeug kann nicht hinzugefügt werden. Bitte versuchen Sie es erneut."
+
+msgid "Request has been send successfully. We will be get back to you soon."
+msgstr "Die Anfrage wurde erfolgreich gesendet. Wir werden uns bald mit Ihnen in Verbindung setzen."
+
+msgid "We are unable to submit your request. Please try again."
+msgstr "Wir können Ihre Anfrage nicht bearbeiten. Bitte versuchen Sie es erneut."
+
+msgid "Vehicle has been added successfully."
+msgstr "Das Fahrzeug wurde erfolgreich hinzugefügt."
+
+msgid "Invalid vehicle image format. Please upload valid image type."
+msgstr "Ungültiges Fahrzeugbildformat. Bitte laden Sie einen gültigen Bildtyp hoch."
+
+msgid "Please select vehicle image."
+msgstr "Bitte wählen Sie ein Fahrzeugbild aus."
+
+msgid "Vehicle damage image has been uploaded successfully."
+msgstr "Das Schadensbild wurde erfolgreich hochgeladen."
+
+msgid "Your bid has been recorded successfully."
+msgstr "Ihr Gebot wurde erfolgreich erfasst."
+
+msgid "Profile picture has been uploaded successfully."
+msgstr "Das Profilbild wurde erfolgreich hochgeladen."
+
+msgid "No user detail found. Please try again."
+msgstr "Keine Benutzerdetails gefunden. Bitte versuchen Sie es erneut."
+
+msgid "User profile has been updated successfully."
+msgstr "Das Benutzerprofil wurde erfolgreich aktualisiert."
+
+msgid "Unable to save profile information. Please try again."
+msgstr "Es ist nicht möglich, Profilinformationen zu speichern. Bitte versuchen Sie es erneut."
+
+msgid "Vehicle has been deleted successfully."
+msgstr "Das Fahrzeug wurde erfolgreich gelöscht."
+
+msgid "Vehicle damage image has been deleted successfully."
+msgstr "Das Bild des Fahrzeugschadens wurde erfolgreich gelöscht."
+
+msgid "File does not exist. Please try again."
+msgstr "Datei existiert nicht. Bitte versuchen Sie es erneut."
+
+msgid "No vehicle damage image found. Please try again."
+msgstr "Kein Kfz-Schadensbild gefunden. Bitte versuchen Sie es erneut."
+
+msgid "No vehicle image found. Please try again."
+msgstr "Kein Fahrzeugbild gefunden. Bitte versuchen Sie es erneut."
+
+msgid "Vehicle image has been deleted successfully."
+msgstr "Das Fahrzeugbild wurde erfolgreich gelöscht."
+
+msgid "No vehicle document image found. Please try again."
+msgstr "Kein Fahrzeugdokumentbild gefunden. Bitte versuchen Sie es erneut."
+
+msgid "Vehicle document image has been deleted successfully."
+msgstr "Das Bild des Fahrzeugdokuments wurde erfolgreich gelöscht."
+
+msgid "Commercial Register"
+msgstr "Handelsregister"
+
+msgid "Yes"
+msgstr "Ja"
 
