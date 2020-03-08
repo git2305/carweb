@@ -72,13 +72,13 @@
                     <div class="col-md-9">
                         <?php
                         $marketPlaceOptions = array(
-                            'Used car market' => 'Used car market',
-                            'New cars' => 'New cars',
-                            'Parts & Accessory' => 'Parts & Accessory',
-                            'Motobikes' => 'Motobikes',
-                            'Commercial vehicles' => 'Commercial vehicles',
+                            'Used car market' => __('Used car market'),
+                            'New cars' => __('New cars'),
+                            'Parts & Accessory' => __('Parts & Accessory'),
+                            'Motobikes' => __('Motobikes'),
+                            'Commercial vehicles' => __('Commercial vehicles'),
                         );
-                        echo $this->Form->input('marketplace', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => $marketPlaceOptions));
+                        echo $this->Form->input('marketplace', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'options' => $marketPlaceOptions));
                         ?>
                     </div>
                 </div>
@@ -88,12 +88,12 @@
                     <div class="col-md-9">
                         <?php
                         $typeOptions = array(
-                            'Question' => 'Question',
-                            'Commendation' => 'Commendation',
-                            'Complaint' => 'Complaint',
-                            'Improvement' => 'Improvement',
+                            'Question' => __('Question'),
+                            'Commendation' => __('Commendation'),
+                            'Complaint' => __('Complaint'),
+                            'Improvement' => __('Improvement'),
                         );
-                        echo $this->Form->input('type', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => $typeOptions));
+                        echo $this->Form->input('type', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'options' => $typeOptions));
                         ?>
                     </div>
                 </div>
@@ -103,17 +103,17 @@
                     <div class="col-md-9">
                         <?php
                         $topicOptions = array(
-                            'New car' => 'New car',
-                            'Register' => 'Register',
-                            'Add Picture' => 'Add Picture',
-                            'Change car offer' => 'Change car offer',
-                            'Login' => 'Login',
-                            'Search' => 'Search',
-                            'Payed services' => 'Payed services',
-                            'Check car offer' => 'Check car offer',
-                            'Misc' => 'Misc',
+                            'New car' => __('New car'),
+                            'Register' => __('Register'),
+                            'Add Picture' => __('Add Picture'),
+                            'Change car offer' => __('Change car offer'),
+                            'Login' => __('Login'),
+                            'Search' => __('Search'),
+                            'Payed services' => __('Payed services'),
+                            'Check car offer' => __('Check car offer'),
+                            'Misc' => __('Misc'),
                         );
-                        echo $this->Form->input('topic', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => $topicOptions));
+                        echo $this->Form->input('topic', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'options' => $topicOptions));
                         ?>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                 <div class="form-group row">
                     <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("Form of address*") ?></label></div>
                     <div class="col-md-9">
-                        <?php echo $this->Form->input('prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
+                        <?php echo $this->Form->input('prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
                     </div>
                 </div>
 

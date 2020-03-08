@@ -7,15 +7,15 @@
                     <form method="POST" id="changepass_form">
                         <div class="form-group row">
                             <div class="col-md-3 col-sm-3"> <label for="UserOldPassword"><?php echo __('Current Password'); ?></label></div>
-                            <div class="col-md-9 col-sm-9"><?php echo $this->Form->input('User.current_password', array('type'=> 'password', 'div' => false, 'label' => false, "placeholder" => "Current Password", "class" => "validate[required] form-control")); ?></div>
+                            <div class="col-md-9 col-sm-9"><?php echo $this->Form->input('User.current_password', array('type'=> 'password', 'div' => false, 'label' => false, "placeholder" => __('Current Password'), "class" => "validate[required] form-control")); ?></div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-3 col-sm-3"> <label for="UserPassword"><?php echo __('New Password'); ?></label></div>
-                            <div class="col-md-9 col-sm-9"><?php echo $this->Form->input('User.password', array( 'type'=> 'password' ,'div' => false, 'label' => false, "placeholder" => "New Password", "class" => "validate[required] form-control")); ?></div>
+                            <div class="col-md-9 col-sm-9"><?php echo $this->Form->input('User.password', array( 'type'=> 'password' ,'div' => false, 'label' => false, "placeholder" => __('New Password'), "class" => "validate[required] form-control")); ?></div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-3 col-sm-3"> <label for="UserConfirmPassword"><?php echo __('Confirm New Password'); ?></label></div>
-                            <div class="col-md-9 col-sm-9"><?php echo $this->Form->input('User.confirm_password', array('type'=> 'password', 'div' => false, 'label' => false, "placeholder" => "Confirm New Password", "class" => "validate[required] form-control")); ?></div>
+                            <div class="col-md-3 col-sm-3"> <label for="UserConfirmPassword"><?php echo __('Confirm Password'); ?></label></div>
+                            <div class="col-md-9 col-sm-9"><?php echo $this->Form->input('User.confirm_password', array('type'=> 'password', 'div' => false, 'label' => false, "placeholder" => __('Confirm Password'), "class" => "validate[required] form-control")); ?></div>
                         </div>
                         
                         <div class="form-group row">

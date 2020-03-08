@@ -59,6 +59,8 @@
                         <select id="change-language" name="language" class="form-control input-small">
                             <option <?php if ($language == 'eng') { ?> selected="selected" <?php } ?>  value="eng">English</option>
                             <option <?php if ($language == 'deu') { ?> selected="selected" <?php } ?> value="deu">German</option>
+                            <option <?php if ($language == 'fra') { ?> selected="selected" <?php } ?> value="fra">French</option>
+                            <option <?php if ($language == 'ita') { ?> selected="selected" <?php } ?> value="ita">Italian</option>
                         </select>
                         <?php echo $this->Form->end(); ?>
                     </div>

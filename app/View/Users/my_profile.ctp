@@ -25,7 +25,7 @@
                     echo $this->Form->hidden('Company.user_id', array('value' => AuthComponent::User('id')));
                     ?>
 
-                    <div class="main-h3"><h3>Company Data</h3></div>
+                    <div class="main-h3"><h3><?php echo __("Company Data") ?></h3></div>
                     <div class="form-group">
                         <div class="col-lg-3"> <label for="exampleInputEmail1">Company</label></div>
                         <div class="col-lg-9"><?php echo $this->Form->input('Company.name', array('div' => false, 'label' => false, "placeholder" => "Company", "class" => "validate[required] form-control")); ?></div>

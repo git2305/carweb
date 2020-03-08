@@ -36,33 +36,33 @@
                         </div>
                         
                         <div class="form-group row">
-                            <div class="col-md-3"> <label for="CompanyName"><?= __("Company") ?></label></div>
+                            <div class="col-md-3"> <label for="CompanyName"><?php echo __("Company"); ?></label></div>
                             <div class="col-md-9">
                                 <?php echo $this->Form->input('Company.name', array('div' => false, 'label' => false, 'class' => 'form-control', 'placeholder' => __("Company"))); ?>
                             </div>
                         </div>
                         
                         <div class="form-group row">
-                            <div class="col-md-3"> <label for="CompanyStreet"><?= __("Street/no.") ?></label></div>
+                            <div class="col-md-3"> <label for="CompanyStreet"><?php echo __("Street/no."); ?></label></div>
                             <div class="col-md-9">
                                 <?php echo $this->Form->input('Company.street', array('div' => false, 'label' => false, 'class' => 'form-control', 'placeholder' => __("Address line 1"))); ?>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("PO box") ?></label></div>
+                            <div class="col-md-3"> <label for="exampleInputEmail1"><?php echo __("PO box"); ?></label></div>
                             <div class="col-md-9">
                                 <?php echo $this->Form->input('Company.pob', array('div' => false, 'label' => false, 'class' => 'form-control', 'placeholder' => __("Address line 2"))); ?>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("Postcode/town *") ?></label></div>
+                            <div class="col-md-3"> <label for="exampleInputEmail1"><?php echo __("Postcode/town *"); ?></label></div>
                             <div class="col-md-9">
                                 <?php echo $this->Form->input('Company.postcode', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control col-form-2', 'placeholder' => __("Postcode"))); ?>
                                 <?php echo $this->Form->input('Company.town', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control col-form-10', 'placeholder' => __("Town"))); ?>
                             </div>
                         </div>
                         <div class="form-group row">
-                                <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("Country*") ?></label></div>
+                                <div class="col-md-3"> <label for="exampleInputEmail1"><?php echo __("Country*"); ?></label></div>
                                 <div class="col-md-9">
                                     <select class="validate[required] form-control" name="data[Company][country]">
                                         <option>Switzerland</option>

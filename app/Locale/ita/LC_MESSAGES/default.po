@@ -1,0 +1,1235 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: 2020-02-21 13:21+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"Language: it\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#: Controller/VehiclesController.php:21
+msgid "Vehicle Detail"
+msgstr "Dettagli del veicolo"
+
+#: Controller/VehiclesController.php:30
+msgid "Add New Advertisement"
+msgstr "Add New Advertisement 1"
+
+#: Controller/VehiclesController.php:57
+msgid "Advertisement: Step1"
+msgstr "Pubblicità: Passo1"
+
+#: Controller/VehiclesController.php:84
+msgid "Advertisement: Step2"
+msgstr "Pubblicità: Passo2"
+
+#: Controller/VehiclesController.php:103
+msgid "Advertisement: Step3"
+msgstr "Pubblicità: Passo3"
+
+#: Controller/VehiclesController.php:204
+msgid "Advertisement: Step4"
+msgstr "Pubblicità: Passo4"
+
+#: View/Elements/front/footer.ctp:6;8
+msgid "Carauktion Ag"
+msgstr "Carauktion Ag"
+
+#: View/Elements/front/footer.ctp:9
+msgid "ch-25222565"
+msgstr "ch-25222565"
+
+#: View/Elements/front/footer.ctp:10
+msgid "telefon +0 55 553 40 00"
+msgstr "telefono +0 55 553 40 00"
+
+#: View/Elements/front/footer.ctp:11
+msgid "E-Mail info@chatonk.ch"
+msgstr "Email info@chatonk.ch"
+
+#: View/Elements/front/footer.ctp:15;17
+msgid "Car auction"
+msgstr "Asta di automobili"
+
+#: View/Elements/front/footer.ctp:18
+msgid "jobs"
+msgstr "lavori"
+
+#: View/Elements/front/footer.ctp:19
+msgid "Impressum"
+msgstr "Impressum"
+
+#: View/Elements/front/footer.ctp:20
+msgid "Prices"
+msgstr "Prezzi"
+
+# What does this acronym stand for? Perhaps Automatic Gear Box? For now I've left it as is for lack of context
+#: View/Elements/front/footer.ctp:21
+msgid "AGB"
+msgstr "AGB"
+
+#: View/Elements/front/footer.ctp:26
+msgid "Our Company"
+msgstr "La nostra azienda"
+
+#: View/Elements/front/footer.ctp:28
+msgid "About Us"
+msgstr "Riguardo a noi"
+
+#: View/Elements/front/footer.ctp:29
+msgid "FAQ"
+msgstr "Domande frequenti"
+
+#: View/Elements/front/footer.ctp:30
+msgid "Instructions"
+msgstr "Istruzioni"
+
+# Need more context for this. For now I've translated this as "outstandingly safe"
+#: View/Elements/front/footer.ctp:35
+msgid "Outstanding safe"
+msgstr "Straordinariamente sicuro"
+
+#: View/Elements/front/header.ctp:8
+msgid "Sign out"
+msgstr "Esci"
+
+#: View/Elements/front/header.ctp:11
+msgid "Sign up"
+msgstr "Registrati"
+
+#: View/Elements/front/header.ctp:12 View/Users/login.ctp:6;23
+msgid "Sign in"
+msgstr "Accedi"
+
+#: View/Elements/front/header.ctp:22 View/Vehicles/add_advertisement.ctp:10
+msgid "Add advertisement"
+msgstr "Aggiungi una pubblicità"
+
+#: View/Elements/front/header.ctp:32
+msgid "Toggle navigation"
+msgstr "Attiva/disattiva la navigazione"
+
+#: View/Elements/front/header.ctp:32
+msgid "Menu"
+msgstr "Menù"
+
+#: View/Elements/front/header.ctp:33;47
+msgid "+19 123-365-2525"
+msgstr "+19 123-365-2525"
+
+#: View/Elements/front/header.ctp:39
+msgid "Home"
+msgstr "Pagina iniziale"
+
+#: View/Elements/front/header.ctp:40
+msgid "Find a car"
+msgstr "Trova un'auto"
+
+#: View/Elements/front/header.ctp:41
+msgid "Used cars"
+msgstr "Auto usate"
+
+# Source text contains a typo, might want to fix it. I guess it's "specialist"
+#: View/Elements/front/header.ctp:42
+msgid "Specialst"
+msgstr "Specialista"
+
+#: View/Elements/front/header.ctp:43
+msgid "New"
+msgstr "Nuovo"
+
+# This is a verb, right? Not a link to the contacts page
+#: View/Elements/front/header.ctp:44
+msgid "Contact"
+msgstr "Contatta"
+
+#: View/Layouts/front.ctp:10
+msgid "Car Listing"
+msgstr "Inserzioni di auto"
+
+#: View/Users/admin_edit.ctp:9;12;21
+msgid "Edit user"
+msgstr "Modifica utente"
+
+#: View/Users/admin_edit.ctp:29 View/Users/login.ctp:10
+msgid "Username"
+msgstr "Nome utente"
+
+#: View/Users/admin_edit.ctp:36 View/Users/my_profile.ctp:82
+#: View/Users/register.ctp:99
+msgid "Form of address*"
+msgstr "Appellativo*"
+
+#: View/Users/admin_edit.ctp:73 View/Users/my_profile.ctp:131
+#: View/Users/register.ctp:148
+msgid "Preferred language"
+msgstr "Lingua preferita"
+
+#: View/Users/admin_edit.ctp:85 View/Users/my_profile.ctp:149
+#: View/Users/register.ctp:175
+msgid "How did you find out about us?*"
+msgstr "Come sei venuto a sapere di noi?*"
+
+#: View/Users/admin_edit.ctp:99
+msgid "Status"
+msgstr "Stato"
+
+#: View/Users/admin_edit.ctp:101
+msgid "Please Select"
+msgstr "Per favore seleziona"
+
+#: View/Users/admin_listing.ctp:59 View/Vehicles/admin_listing.ctp:37
+msgid "Action"
+msgstr "Azione"
+
+#: View/Users/index.ctp:10
+msgid "Quick Search"
+msgstr "Ricerca rapida"
+
+#: View/Users/index.ctp:11
+msgid "Search by body type"
+msgstr "Cerca per tipo di carrozzeria"
+
+#: View/Users/index.ctp:19;44
+msgid "Make:"
+msgstr "Marca:"
+
+#: View/Users/index.ctp:23;48
+msgid "Model:"
+msgstr "Modello:"
+
+#: View/Users/index.ctp:27;52
+msgid "Region:"
+msgstr "Regione:"
+
+#: View/Users/index.ctp:31;56
+msgid "Min Year:"
+msgstr "Anno min.:"
+
+#: View/Users/index.ctp:35;60
+msgid "Max Year:"
+msgstr "Anno max.:"
+
+#: View/Users/index.ctp:38;63 View/Vehicles/add_advertisement.ctp:29
+msgid "Search"
+msgstr "Cerca"
+
+#: View/Users/index.ctp:119
+msgid "Recent"
+msgstr "Recente"
+
+#: View/Users/index.ctp:119
+msgid "Car submissions"
+msgstr "Auto presentate"
+
+#: View/Users/login.ctp:12
+msgid "Enter your username"
+msgstr "Inserisci il tuo nome utente"
+
+#: View/Users/login.ctp:16
+msgid "Password"
+msgstr "Password"
+
+#: View/Users/login.ctp:18
+msgid "Enter your password"
+msgstr "Inserisci la tua password"
+
+#: View/Users/my_profile.ctp:80 View/Users/register.ctp:97
+msgid "Personal details"
+msgstr "Dettagli personali"
+
+#: View/Users/my_profile.ctp:89 View/Users/register.ctp:106
+msgid "First name*"
+msgstr "Nome*"
+
+#: View/Users/my_profile.ctp:91 View/Users/register.ctp:108
+msgid "Insert first name"
+msgstr "Inserisci il nome"
+
+#: View/Users/my_profile.ctp:96 View/Users/register.ctp:113
+msgid "Surname*"
+msgstr "Cognome*"
+
+#: View/Users/my_profile.ctp:98 View/Users/register.ctp:115
+msgid "Insert last name"
+msgstr "Inserisci il cognome"
+
+#: View/Users/my_profile.ctp:102 View/Users/register.ctp:119
+msgid "Email*"
+msgstr "Email*"
+
+#: View/Users/my_profile.ctp:108 View/Users/register.ctp:125
+msgid "Telephone *"
+msgstr "Telefono *"
+
+#: View/Users/my_profile.ctp:116;127 View/Users/register.ctp:133;144
+msgid "Area code without the \"0\", Number plus extension"
+msgstr "Codice di zona senza lo \"0\", Numero più estensione"
+
+#: View/Users/my_profile.ctp:119 View/Users/register.ctp:136
+msgid "Mobile"
+msgstr "Mobile"
+
+#: View/Users/my_profile.ctp:138 View/Users/register.ctp:156
+msgid "Username*"
+msgstr "Nome utente*"
+
+#: View/Users/my_profile.ctp:140 View/Users/register.ctp:158
+msgid "Insert username"
+msgstr "Inserisci il nome utente"
+
+#: View/Users/my_profile.ctp:143 View/Users/register.ctp:159
+msgid "(Min. 6, max. 8 characters)"
+msgstr "(Min. 6, max. 8 caratteri)"
+
+# I interpreted this as referring to the year of registration for the car. It can also refer to an account registration, or to a place where the user can upload the registration documents. Please let me know if this needs to be changed
+#: View/Users/my_profile.ctp:165 View/Users/register.ctp:6;196
+msgid "Registration"
+msgstr "Immatricolazione"
+
+#: View/Users/register.ctp:9
+msgid "Company Data"
+msgstr "Dati dell'azienda"
+
+#: View/Users/register.ctp:11;13
+msgid "Company"
+msgstr "Azienda"
+
+#: View/Users/register.ctp:17;19
+msgid "Addition"
+msgstr "Aggiunta"
+
+#: View/Users/register.ctp:23
+msgid "Street/No."
+msgstr "Via e numero"
+
+#: View/Users/register.ctp:25
+msgid "Address line 1"
+msgstr "Indirizzo, riga 1"
+
+#: View/Users/register.ctp:29
+msgid "PO Box"
+msgstr "Casella postale"
+
+#: View/Users/register.ctp:31
+msgid "Address line 2"
+msgstr "Indirizzo, riga 1"
+
+#: View/Users/register.ctp:35
+msgid "Postcode/town *"
+msgstr "Codice postale/città *"
+
+#: View/Users/register.ctp:37
+msgid "Postcode"
+msgstr "Codice postale"
+
+#: View/Users/register.ctp:38
+msgid "Town"
+msgstr "Città"
+
+#: View/Users/register.ctp:41
+msgid "Country*"
+msgstr "Paese*"
+
+#: View/Users/register.ctp:79
+msgid "Car dealership"
+msgstr "Concessionaria auto"
+
+#: View/Users/register.ctp:85
+msgid "Motorcycle dealership"
+msgstr "Concessionaria moto"
+
+#: View/Users/register.ctp:91
+msgid "Commercial vehicle dealership"
+msgstr "Concessionaria veicoli commerciali"
+
+#: View/Users/register.ctp:121
+msgid "Insert email address"
+msgstr "Inserisci l'indirizzo email"
+
+#: View/Users/register.ctp:153
+msgid "Login details"
+msgstr "Dettagli di accesso"
+
+#: View/Users/register.ctp:153
+msgid "Please note that your username will be displayed if you place a bid"
+msgstr "Si ricorda che il nome utente verrà mostrato se effettui un'offerta"
+
+#: View/Users/register.ctp:163
+msgid "Password*"
+msgstr "Password*"
+
+#: View/Users/register.ctp:165
+msgid "Insert password"
+msgstr "Inserisci la password"
+
+#: View/Users/register.ctp:166
+msgid "At least 8 characters, uppercase/lowercase letters and numbers"
+msgstr "Almeno 8 caratteri, lettere minuscole , maiuscole e numeri"
+
+#: View/Users/register.ctp:169
+msgid "Re-enter password*"
+msgstr "Inserisci di nuovo la password*"
+
+#: View/Users/register.ctp:171
+msgid "Confirm your password"
+msgstr "Conferma la tua password"
+
+#: View/Users/register.ctp:172
+msgid "Please note that your............."
+msgstr "Si ricorda che il tuo............."
+
+#: View/Users/register.ctp:185
+msgid ""
+"I hereby confirm that I have read and understood the General Terms and "
+"Conditions and that I agree to them.*"
+msgstr ""
+"Confermo di aver letto e compreso i Termini e le Condizioni Generali, e di "
+"accettarli.*"
+
+#: View/Users/register.ctp:186
+msgid ""
+"CARAUKTION AG is hereby authorised to obtain external information about the "
+"company/person to be registered.*"
+msgstr ""
+"CARAUKTION AG è autorizzata a ottenere informazioni esterne sulla compagnia/"
+"persona da registrare.*"
+
+#: View/Users/register.ctp:191
+msgid "security check"
+msgstr "controllo di sicurezza"
+
+#: View/Users/register.ctp:192
+msgid "I'm not a robot"
+msgstr "Non sono un robot"
+
+#: View/Vehicles/add_advertisement.ctp:15
+msgid "1st reg. *"
+msgstr "1^ immatr. *"
+
+#: View/Vehicles/add_advertisement.ctp:22
+msgid "Model No. *"
+msgstr "N° di modello *"
+
+#: View/Vehicles/add_advertisement.ctp:37
+msgid "Choose your vehicle category"
+msgstr "Scegli la categoria del veicolo"
+
+#: View/Vehicles/add_advertisement.ctp:44
+msgid "Add category"
+msgstr "Aggiungi una categoria"
+
+#: View/Vehicles/add_advertisement.ctp:46
+msgid "--Select category--"
+msgstr "--Seleziona la categoria--"
+
+#: View/Vehicles/add_advertisement.ctp:50 View/Vehicles/step1.ctp:256
+#: View/Vehicles/step2.ctp:100 View/Vehicles/step3.ctp:55
+msgid "Next"
+msgstr "Successivo"
+
+#: View/Vehicles/admin_listing.ctp:9
+msgid "Vehicle listing"
+msgstr "Inserzioni di veicoli"
+
+#: View/Vehicles/admin_listing.ctp:24
+msgid "Manage vehicles"
+msgstr "Gestisci i veicoli"
+
+#: View/Vehicles/admin_listing.ctp:29
+msgid "Model, Type"
+msgstr "Modello, tipo"
+
+#: View/Vehicles/admin_listing.ctp:30
+msgid "Body type"
+msgstr "Tipo di carrozzeria"
+
+#: View/Vehicles/admin_listing.ctp:31
+msgid "Doors"
+msgstr "Porte"
+
+#: View/Vehicles/admin_listing.ctp:32 View/Vehicles/step1.ctp:119
+msgid "HP"
+msgstr "Cavalli"
+
+#: View/Vehicles/admin_listing.ctp:33
+msgid "Fuel"
+msgstr "Carburante"
+
+#: View/Vehicles/admin_listing.ctp:34
+msgid "Gear"
+msgstr "Cambio"
+
+#: View/Vehicles/admin_listing.ctp:35
+msgid "Factory price"
+msgstr "Prezzo di fabbrica"
+
+#: View/Vehicles/admin_listing.ctp:36
+msgid "Created"
+msgstr "Data di creazione"
+
+#: View/Vehicles/detail.ctp:7
+msgid "ALFA ROMEO"
+msgstr "ALFA ROMEO"
+
+#: View/Vehicles/step1.ctp:9;18 View/Vehicles/step2.ctp:9
+#: View/Vehicles/step3.ctp:9 View/Vehicles/step4.ctp:9
+msgid "Vehicle Data"
+msgstr "Dati del veicolo"
+
+#: View/Vehicles/step1.ctp:10 View/Vehicles/step3.ctp:10
+#: View/Vehicles/step4.ctp:10
+msgid "Condition"
+msgstr "Condizione"
+
+#: View/Vehicles/step1.ctp:11 View/Vehicles/step2.ctp:11
+#: View/Vehicles/step3.ctp:11 View/Vehicles/step4.ctp:11
+msgid "Documents & Pictures"
+msgstr "Documenti e immagini"
+
+#: View/Vehicles/step1.ctp:12 View/Vehicles/step2.ctp:12
+#: View/Vehicles/step3.ctp:12 View/Vehicles/step4.ctp:12;18
+msgid "Auction"
+msgstr "Asta"
+
+#: View/Vehicles/step1.ctp:19 View/Vehicles/step2.ctp:19
+#: View/Vehicles/step4.ctp:19
+msgid "Fields marked with asterisk (*) are mandatory"
+msgstr "I campi contrassegnati con un asterisco (*) sono obbligatori"
+
+#: View/Vehicles/step1.ctp:25
+msgid "Brand*"
+msgstr "Marca*"
+
+#: View/Vehicles/step1.ctp:27
+msgid "Brand name"
+msgstr "Nome della marca"
+
+#: View/Vehicles/step1.ctp:32
+msgid "Model *"
+msgstr "Modello *"
+
+#: View/Vehicles/step1.ctp:34
+msgid "Model"
+msgstr "Modello"
+
+#: View/Vehicles/step1.ctp:39;41
+msgid "Type"
+msgstr "Tipo"
+
+#: View/Vehicles/step1.ctp:46
+msgid "Body type *"
+msgstr "Tipo di carrozzeria *"
+
+#: View/Vehicles/step1.ctp:59
+msgid "--Select body type--"
+msgstr "--Seleziona il tipo di carrozzeria--"
+
+#: View/Vehicles/step1.ctp:65
+msgid "Doors *"
+msgstr "Porte *"
+
+#: View/Vehicles/step1.ctp:67;85;92;111;165;172 View/Vehicles/step2.ctp:74
+#: View/Vehicles/step4.ctp:37
+msgid "--Please select--"
+msgstr "--Per favore seleziona--"
+
+#: View/Vehicles/step1.ctp:83
+msgid "Wheel Drive *"
+msgstr "Trazione *"
+
+#: View/Vehicles/step1.ctp:90
+msgid "Gear *"
+msgstr "Cambio *"
+
+#: View/Vehicles/step1.ctp:97
+msgid "Fuel *"
+msgstr "Carburante *"
+
+#: View/Vehicles/step1.ctp:117
+msgid "Performance *"
+msgstr "Prestazioni *"
+
+#: View/Vehicles/step1.ctp:122
+msgid "KW"
+msgstr "KW"
+
+#: View/Vehicles/step1.ctp:127
+msgid "Number of seats "
+msgstr "Numero di posti "
+
+#: View/Vehicles/step1.ctp:130
+msgid "Please select"
+msgstr "Per favore seleziona"
+
+#: View/Vehicles/step1.ctp:149
+msgid "1st Reg. *"
+msgstr "1^ immatr. *"
+
+#: View/Vehicles/step1.ctp:151
+msgid "1st Registration"
+msgstr "Prima immatricolazione"
+
+#: View/Vehicles/step1.ctp:156
+msgid "Exterior color *"
+msgstr "Colore esterno *"
+
+#: View/Vehicles/step1.ctp:158
+msgid "--Please choose color--"
+msgstr "--Scegli il colore--"
+
+#: View/Vehicles/step1.ctp:163 View/Vehicles/step2.ctp:54
+msgid "Car finish"
+msgstr "Tipo di verniciatura"
+
+#: View/Vehicles/step1.ctp:170
+msgid "Interior color *"
+msgstr "Colore interno *"
+
+#: View/Vehicles/step1.ctp:178
+msgid "Special equipment"
+msgstr "Attrezzatura speciale"
+
+#: View/Vehicles/step1.ctp:185
+msgid "Serial equipment"
+msgstr "Equipaggiamento di serie"
+
+#: View/Vehicles/step1.ctp:198
+msgid "Frame No."
+msgstr "Telaio N°"
+
+#: View/Vehicles/step1.ctp:205
+msgid "Model No."
+msgstr "Modello N°"
+
+#: View/Vehicles/step1.ctp:212
+msgid "Register No."
+msgstr "Immatricolazione N°"
+
+#: View/Vehicles/step1.ctp:219
+msgid "Vehicle No."
+msgstr "Veicolo N°"
+
+#: View/Vehicles/step1.ctp:226
+msgid "Additional information"
+msgstr "Ulteriori informazioni"
+
+#: View/Vehicles/step1.ctp:233
+msgid "Factory price of vehicle"
+msgstr "Prezzo di fabbrica del veicolo"
+
+#: View/Vehicles/step1.ctp:254 View/Vehicles/step2.ctp:98
+#: View/Vehicles/step3.ctp:53 View/Vehicles/step4.ctp:52
+msgid "Previous"
+msgstr "Precedente"
+
+#: View/Vehicles/step2.ctp:10;18
+msgid "Conditions"
+msgstr "Condizioni"
+
+#: View/Vehicles/step2.ctp:25
+msgid "Gen. condition"
+msgstr "Condizioni generali"
+
+#: View/Vehicles/step2.ctp:28
+msgid "Vehicle involved in accident"
+msgstr "Veicolo coinvolto in un incidente"
+
+#: View/Vehicles/step2.ctp:29
+msgid "Dog owner"
+msgstr "Proprietario di un cane"
+
+#: View/Vehicles/step2.ctp:30
+msgid "Smoker's vehicle"
+msgstr "Veicolo di un fumatore"
+
+#: View/Vehicles/step2.ctp:31
+msgid "Hail damage"
+msgstr "Danni da grandine"
+
+#: View/Vehicles/step2.ctp:36
+msgid "Vehicle inspection"
+msgstr "Ispezione del veicolo"
+
+#: View/Vehicles/step2.ctp:43
+msgid "Repairs*"
+msgstr "Riparazioni*"
+
+# If the Italian version has prices in Euros, this should be changed to EUR
+#: View/Vehicles/step2.ctp:45 View/Vehicles/step4.ctp:28
+msgid "CHF"
+msgstr "CHF"
+
+#: View/Vehicles/step2.ctp:50
+msgid "Mechanics"
+msgstr "Meccanica"
+
+#: View/Vehicles/step2.ctp:51;55;79;83
+msgid "Multilingual"
+msgstr "Multilingue"
+
+#: View/Vehicles/step2.ctp:64
+msgid "Vehicle registration document"
+msgstr "Carta di circolazione del veicolo"
+
+#: View/Vehicles/step2.ctp:65;69
+msgid "Available"
+msgstr "Disponibile"
+
+#: View/Vehicles/step2.ctp:65
+msgid "Will be supplied later"
+msgstr "Disponibile successivamente"
+
+#: View/Vehicles/step2.ctp:68
+msgid "Service record"
+msgstr "Storico revisioni e servizio"
+
+#: View/Vehicles/step2.ctp:69
+msgid "Incomplete"
+msgstr "Incompleto"
+
+#: View/Vehicles/step2.ctp:69
+msgid "Missing"
+msgstr "Mancante"
+
+#: View/Vehicles/step2.ctp:73
+msgid "Number of keys*"
+msgstr "Numero di chiavi*"
+
+#: View/Vehicles/step2.ctp:78
+msgid "Body"
+msgstr "Carrozzeria"
+
+#: View/Vehicles/step2.ctp:82
+msgid "Other"
+msgstr "Altro"
+
+#: View/Vehicles/step3.ctp:17
+msgid "Documents & pictures"
+msgstr "Documenti e immagini"
+
+#: View/Vehicles/step3.ctp:19
+msgid "Documents of vehicles"
+msgstr "Documenti dei veicoli"
+
+#: View/Vehicles/step3.ctp:20
+msgid ""
+"You can upload vehicle documents such as expert's report. Maximum file size "
+"18 MB, minimum image size: 370X490 pixels."
+msgstr ""
+"Puoi caricare i documenti relativi ai veicoli, come le perizie. La "
+"dimensione massima del file è di 18 MB, la risoluzione minima è 370X490 "
+"pixel."
+
+#: View/Vehicles/step3.ctp:36
+msgid "Pictures of vehicles"
+msgstr "Immagini di veicoli"
+
+#: View/Vehicles/step3.ctp:37
+msgid ""
+"You can upload a maximum of 20 vehicle images. Maximum file size 5 MB, "
+"minimum image resolution: 370X490 pixels. Only images in landscape "
+"orientation can be uploaded."
+msgstr ""
+"Puoi caricare fino a un massimo di 20 immagini di veicoli. La dimensione "
+"massima del file è di 5 MB, la risoluzione minima è 370X490 pixel. Possono "
+"essere caricate solo immagini con orientamento orizzontale."
+
+#: View/Vehicles/step4.ctp:26
+msgid "Minimum price *"
+msgstr "Prezzo minimo *"
+
+#: View/Vehicles/step4.ctp:35
+msgid "To be transported by the *"
+msgstr "Trasporto a cura del *"
+
+#: View/Vehicles/step4.ctp:54
+msgid "Done"
+msgstr "Fatto"
+
+# Api Validation Messages
+msgid "Invalid language or page. Please try again."
+msgstr "Linguaggio o pagina non validi. Per favore riprova."
+
+msgid "Invalid Request. Please try again."
+msgstr "Richiesta non valida. Per favore riprova."
+
+msgid "Vehicle not found. Please try again."
+msgstr "Veicolo non trovato. Per favore riprova."
+
+msgid "Invalid vehicle ID. Please try again."
+msgstr "ID del veicolo non valido. Per favore riprova."
+
+msgid "No auction bidding data found. Please try again."
+msgstr "Nessun dato sulle offerte dell'asta trovato. Per favore riprova."
+
+msgid "Invalid session. Please logged in again."
+msgstr "Sessione non valida. Per favore riprova."
+
+msgid "Vehicle is already added to your favourite list."
+msgstr "Il veicolo è già stato aggiunto alla tua lista dei preferiti."
+
+msgid "Vehicle has been added to favourite successfully."
+msgstr "Il veicolo è stato aggiunto ai preferiti."
+
+msgid "Vehicle has been added to unfavourite successfully."
+msgstr "Il veicolo è stato aggiunto alla lista dei non preferiti."
+
+msgid "User does not exist in the system."
+msgstr "L'utente non esiste nel sistema."
+
+msgid "Invalid invoice name. Please try again."
+msgstr "Nome della fattura non valido. Per favore riprova."
+
+msgid "Email preference has been saved successfully."
+msgstr "Le preferenze riguardo l'email sono state salvate."
+
+msgid "Unable to update data. Please try again."
+msgstr "Impossibile aggiornare i dati. Per favore riprova."
+
+msgid "Login successful."
+msgstr "Accesso riuscito."
+
+msgid "Invalid username or password."
+msgstr "Nome utente o password non validi."
+
+msgid "Required parameter missing. Please try again."
+msgstr "Manca un parametro necessario. Per favore riprova."
+
+msgid "Email already exists. Please enter different email."
+msgstr "L'email esiste già. Per favore inseriscine una diversa."
+
+msgid "Username already exists.Please enter different username."
+msgstr "Il nome utente esiste già. Per favore inseriscine uno diverso."
+
+msgid "Your account has been registered successfully."
+msgstr "La creazione del tuo account è riuscita."
+
+msgid "Something went wrong. Please try again."
+msgstr "Si è verificato un errore. Per favore riprova."
+
+msgid "Unable to create your account. Please try again."
+msgstr "Impossibile creare l'account. Per favore riprova."
+
+msgid "Password has been changed successfully."
+msgstr "La password è stata cambiata."
+
+msgid "Unable to change password. Please try again."
+msgstr "Impossibile modificare la password. Per favore riprova."
+
+msgid "Invalid current password. Please try again."
+msgstr "Password attuale errata. Per favore riprova."
+
+msgid "Congratulations. You have bought a new vehicle."
+msgstr "Complimenti. Hai acquistato un nuovo veicolo."
+
+msgid "Car has been sold successfully."
+msgstr "L'autovettura è stata venduta."
+
+msgid "Vehicle image has been uploaded successfully."
+msgstr "L'immagine del veicolo è stata caricata."
+
+msgid "Unable to add vehicle. Please try again."
+msgstr "Impossibile aggiungere il veicolo. Per favore riprova."
+
+msgid "Request has been send successfully. We will get back to you soon."
+msgstr "La richiesta è stata inviata. Ti contatteremo presto."
+
+msgid "We are unable to submit your request. Please try again."
+msgstr "Non siamo riusciti a inviare la tua richiesta. Per favore riprova."
+
+msgid "Vehicle has been added successfully."
+msgstr "Il veicolo è stato aggiunto."
+
+msgid "Invalid vehicle image format. Please upload valid image type."
+msgstr ""
+"Il formato dell'immagine del veicolo non è valido. Per favore carica "
+"un'immagine dal formato valido."
+
+msgid "Please select vehicle image."
+msgstr "Per favore seleziona un'immagine del veicolo."
+
+msgid "Vehicle damage image has been uploaded successfully."
+msgstr "L'immagine relativa ai danni del veicolo è stata caricata."
+
+msgid "Your bid has been recorded successfully."
+msgstr "La tua offerta è stata registrata."
+
+msgid "Profile picture has been uploaded successfully."
+msgstr "L'immagine di profilo è stata caricata."
+
+msgid "No user detail found. Please try again."
+msgstr "Nessun dettaglio sull'utente trovato. Per favore riprova."
+
+msgid "User profile has been updated successfully."
+msgstr "Il profilo utente è stato aggiornato."
+
+msgid "Unable to save profile information. Please try again."
+msgstr "Impossibile salvare le informazioni del profilo. Per favore riprova."
+
+msgid "Vehicle has been deleted successfully."
+msgstr "Il veicolo è stato eliminato."
+
+msgid "Vehicle damage image has been deleted successfully."
+msgstr "L'immagine relativa ai danni del veicolo è stata eliminata."
+
+msgid "File does not exist. Please try again."
+msgstr "Il file non esiste. Per favore riprova."
+
+msgid "No vehicle damage image found. Please try again."
+msgstr ""
+"Nessuna immagine relativa ai danni del veicolo trovata. Per favore riprova."
+
+msgid "No vehicle image found. Please try again."
+msgstr "Nessuna immagine del veicolo trovata. Per favore riprova."
+
+msgid "Vehicle image has been deleted successfully."
+msgstr "L'immagine del veicolo è stata eliminata."
+
+msgid "No vehicle document image found. Please try again."
+msgstr ""
+"Nessuna immagine della documentazione del veicolo trovata. Per favore "
+"riprova."
+
+msgid "Vehicle document image has been deleted successfully."
+msgstr "L'immagine della documentazione del veicolo è stata eliminata."
+
+
+
+
+
+
+#: Change on 09-03-2020
+
+
+msgid "How it works"
+msgstr "Come funziona"
+
+msgid "Contact Us"
+msgstr "Contattaci"
+
+msgid "I am"
+msgstr "Io sono"
+
+msgid "Marktplatz"
+msgstr "Piazza del mercato"
+
+msgid "I have a"
+msgstr "Ho un"
+
+msgid "Topic"
+msgstr "Argomento"
+
+msgid "My Request"
+msgstr "La mia richiesta"
+
+msgid "Forgot Password?"
+msgstr "Dimenticato la password?"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Enter your email"
+msgstr "Inserisci la tua email"
+
+msgid "Forgot Password"
+msgstr "Password dimenticata"
+
+msgid "Submit"
+msgstr "Invia"
+
+msgid "Administrator"
+msgstr "Amministratore"
+
+msgid "Make"
+msgstr "Make"
+
+msgid "Model"
+msgstr "Modello"
+
+msgid "Min Year"
+msgstr "Anno Minimo"
+
+msgid "Max Year"
+msgstr "Anno Massimo"
+
+msgid "Region"
+msgstr "Regione"
+
+msgid "No Record Found"
+msgstr "Nessun record trovato"
+
+msgid "Useful Links"
+msgstr "Link utili"
+
+msgid "Security Check"
+msgstr "Controllo di sicurezza"
+
+msgid "Please Select"
+msgstr "Seleziona per favore"
+
+msgid "Used car market"
+msgstr "Mercato dell'usato"
+
+msgid "New cars"
+msgstr "Auto nuove"
+
+msgid "Parts & Accessory"
+msgstr "Ricambi e accessori"
+
+msgid "Motobikes"
+msgstr "Motociclette"
+
+msgid "Commercial vehicles"
+msgstr "Veicoli commerciali"
+
+msgid "Question"
+msgstr "Domanda"
+
+msgid "Commendation"
+msgstr "Encomio"
+
+msgid "Complaint"
+msgstr "Reclamo"
+
+msgid "Improvement"
+msgstr "Miglioramento"
+
+msgid "New car"
+msgstr "Auto nuova"
+
+msgid "Register"
+msgstr "Registro"
+
+msgid "Add Picture"
+msgstr "Aggiungi immagine"
+
+msgid "Change car offer"
+msgstr "Cambia offerta auto"
+
+msgid "Search"
+msgstr "Ricerca"
+
+msgid "Payed services"
+msgstr "Servizi a pagamento"
+
+msgid "Check car offer"
+msgstr "Controlla offerta auto"
+
+msgid "Misc"
+msgstr "Varie"
+
+msgid "First Name"
+msgstr "Nome"
+
+msgid "Last Name"
+msgstr "Cognome"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Send Request"
+msgstr "Invia richiesta"
+
+msgid "Calculate route"
+msgstr "Calcolare il percorso"
+
+msgid "Only show shortlisted"
+msgstr "Mostra solo i selezionati"
+
+msgid "My Corner"
+msgstr "Il mio angolo"
+
+msgid "My Vehicles"
+msgstr "I miei veicoli"
+
+msgid "Vehiclea in Auktion"
+msgstr "Veicoli in Auktion"
+
+msgid "My Favourite Vehicles"
+msgstr "I miei veicoli preferiti"
+
+msgid "Sub Users"
+msgstr "Sottoutilizzatori"
+
+msgid "Add Sub User"
+msgstr "Aggiungi utente secondario"
+
+msgid "Sub Users Listing"
+msgstr "Elenco dei subutenti"
+
+msgid "Profile"
+msgstr "Profilo"
+
+msgid "Change Profile Data"
+msgstr "Cambiare i dati del profilo"
+
+msgid "Change Password"
+msgstr "Cambiare la password"
+
+msgid "Delete Account"
+msgstr "Cancellare il conto"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Email Preference"
+msgstr "Preferenze e-mail"
+
+msgid "Invoices"
+msgstr "Fatture"
+
+msgid "No Record Found"
+msgstr "Nessun record trovato"
+
+msgid "Add"
+msgstr "Aggiungi"
+
+msgid "Sub User"
+msgstr "Sottoutente"
+
+msgid "Parent User"
+msgstr "Utente genitore"
+
+msgid "Mobile Number"
+msgstr "Numero di cellulare"
+
+msgid "Contact Number"
+msgstr "Numero di contatto"
+
+msgid "About Yourself"
+msgstr "Di te stesso"
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Enter first name"
+msgstr "Inserisci il tuo nome"
+
+msgid "Enter last name"
+msgstr "Inserisci il cognome"
+
+msgid "Enter email address"
+msgstr "Inserisci indirizzo e-mail"
+
+msgid "Enter mobile number"
+msgstr "Inserire il numero di cellulare"
+
+msgid "Enter phone number"
+msgstr "Inserire il numero di telefono"
+
+msgid "Write something about you.."
+msgstr "Scrivi qualcosa di te.."
+
+msgid "About Fleet"
+msgstr "Sulla flotta"
+
+msgid "Advertisement"
+msgstr "Annuncio"
+
+msgid "Event"
+msgstr "Evento"
+
+msgid "Le Garage"
+msgstr "Le Garage"
+
+msgid "Other"
+msgstr "Altro"
+
+msgid "Personal recommendation"
+msgstr "Raccomandazione personale"
+
+msgid "Search engine"
+msgstr "Motore di ricerca"
+
+msgid "Inactive"
+msgstr "Inattivo"
+
+msgid "Active"
+msgstr "Attivo"
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Current Password"
+msgstr "Password attuale"
+
+msgid "New Password"
+msgstr "Nuova password"
+
+msgid "Confirm Password"
+msgstr "Conferma password"
+
+msgid "Change"
+msgstr "Cambiare"
+
+msgid "Are you sure you want to delete account?"
+msgstr "Sei sicuro di voler cancellare l'account?"
+
+msgid "Send Email Notifications ?"
+msgstr "Inviare notifiche via e-mail?"
+
+msgid "Preference"
+msgstr "Preferenze"
+
+msgid "Company Data"
+msgstr "Dati aziendali"
+
+msgid "Search your vehicle by production duation and vehicel make and model."
+msgstr "Cerca il tuo veicolo in base alla produzione, alla marca e al modello del veicolo"
+
+msgid "--Select Year--"
+msgstr "--Selezionare l'anno--"
+
+msgid "--Select Month--"
+msgstr "--Seleziona il mese--"
+
+msgid "--Select Make--"
+msgstr "--Selezionare Make--"
+
+msgid "--Select Model--"
+msgstr "--Selezionare il modello--"
+
+msgid "Vehicle Damage"
+msgstr "Danni al veicolo"
+
+msgid "Vehicle inspection Date"
+msgstr "Data di ispezione del veicolo"
+
+msgid "Swiss Car"
+msgstr "Auto svizzera"
+
+msgid "24 hours"
+msgstr "24 ore"
+
+msgid "48 hours"
+msgstr "48 ore"
+
+msgid "Buy now Price"
+msgstr "Compra ora Prezzo"
+
+msgid "Increase with"
+msgstr "Aumenta con"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

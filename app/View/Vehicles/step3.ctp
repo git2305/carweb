@@ -29,12 +29,12 @@
                                 <div class="form-group row">
                                     <div class="col-md-4"> <label for="exampleInputEmail1"><?= __('Auction Duration *') ?></label></div>
                                     <div class="col-md-8">
-                                        <?php echo $this->Form->input('Vehicle.auction_duration', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('--Please Select--'), 'type' => 'select', 'options' => array('1' => '24 hours', '2' => '48 hours', '3' => '72 hours'))); ?>
+                                        <?php echo $this->Form->input('Vehicle.auction_duration', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array('1' => __('24 hours'), '2' => __('48 hours')))); //'3' => '72 hours' ?>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <div class="col-md-4"> <label for="exampleInputEmail1"><?= __('Buy now Price *') ?></label></div>
+                                    <div class="col-md-4"> <label for="exampleInputEmail1"><?php echo __('Buy now Price'); ?> *</label></div>
                                     <div class="col-md-8">
                                         <?php echo $this->Form->input('Vehicle.buy_price', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'placeholder' => __('CHF'), 'class' => 'validate[required] form-control')); ?>
                                     </div>
@@ -46,7 +46,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4"> <label for="exampleInputEmail1"><?= __('To be transported by the *') ?></label></div>
                                     <div class="col-md-8">
-                                        <?php echo $this->Form->input('Vehicle.transport_medium', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('--Please Select--'), 'type' => 'select', 'options' => array('Local Transporters' => 'Local Transporters'))); ?>
+                                        <?php echo $this->Form->input('Vehicle.transport_medium', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array('Local Transporters' => 'Local Transporters'))); ?>
                                     </div>
                                 </div>
                                 

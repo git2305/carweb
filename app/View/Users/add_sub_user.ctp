@@ -24,7 +24,7 @@
                                     </div>
                                     
                                     <div class="form-group">
-                                        <div class="col-md-4 control-label"> <label for="exampleInputEmail1"><?= __("Password*") ?></label></div>
+                                        <div class="col-md-4 control-label"> <label for="exampleInputEmail1"><?= __("Password") ?> *</label></div>
                                         <div class="col-md-8">
                                             <?php echo $this->Form->input('User.password', array('div' => false, 'label' => false, 'placeholder' => __("Insert password"), 'class' => 'validate[required,minSize[8]] form-control', 'style' => 'margin:0', 'id' => 'pass')); ?>
                                             <p><?= __("At least 8 characters, uppercase/lowercase letters and numbers") ?></p></div>
@@ -44,73 +44,73 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-lg-4 control-label" for="userName">Fist Name *</label>
+                                        <label class="col-lg-4 control-label" for="userName"><?php echo __('First Name');?> *</label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.fname', array('div' => false, 'label' => false, "placeholder" => "Enter first name", "class" => "validate[required] form-control", "required")); ?>
+                                            <?php echo $this->Form->input('User.fname', array('div' => false, 'label' => false, "placeholder" => __('Enter first name'), "class" => "validate[required] form-control", "required")); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-lg-4 control-label" for="emailAddress">Last Name *</label>
+                                        <label class="col-lg-4 control-label" for="emailAddress"><?php echo __('Last Name');?> *</label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.lname', array('div' => false, 'label' => false, "placeholder" => "Enter last name", "class" => "validate[required] form-control", "required")); ?>
+                                            <?php echo $this->Form->input('User.lname', array('div' => false, 'label' => false, "placeholder" => __('Enter last name'), "class" => "validate[required] form-control", "required")); ?>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group">
-                                        <label class="col-lg-4 control-label" for="pass1">Email *</label>
+                                        <label class="col-lg-4 control-label" for="email"><?php echo __('Email'); ?> *</label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.email', array('div' => false, 'label' => false, "placeholder" => "Enter email address", "class" => "validate[required] form-control", "required")); ?>
+                                            <?php echo $this->Form->input('User.email', array('div' => false, 'label' => false, "placeholder" => __('Enter email address'), "class" => "validate[required] form-control", "required")); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-lg-4 control-label" for="passWord2">Mobile Number</label>
+                                        <label class="col-lg-4 control-label" for="mobile"><?php echo __('Mobile Number'); ?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.mobile', array('div' => false, 'label' => false, "placeholder" => "Enter mobile number", "class" => "form-control")); ?>
+                                            <?php echo $this->Form->input('User.mobile', array('div' => false, 'label' => false, "placeholder" => __('Enter mobile number'), "class" => "form-control")); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-lg-4 control-label" for="passWord2">Contact Number</label>
+                                        <label class="col-lg-4 control-label" for="phone"><?php echo __('Contact Number');?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.phone', array('div' => false, 'label' => false, "placeholder" => "Enter phone number", "class" => "form-control")); ?>
+                                            <?php echo $this->Form->input('User.phone', array('div' => false, 'label' => false, "placeholder" => __('Enter phone number'), "class" => "form-control")); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label" for="UserLanguage"><?= __("Preferred language") ?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => 'Please Select', 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
+                                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-lg-4 control-label" for="passWord2">About Yourself</label>
+                                        <label class="col-lg-4 control-label" for="biodata"><?php echo __('About Yourself');?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.biodata', array('div' => false, 'label' => false, "placeholder" => "Write something about you..", "class" => "form-control")); ?>
+                                            <?php echo $this->Form->input('User.biodata', array('div' => false, 'label' => false, "placeholder" => __("Write something about you.."), "class" => "form-control")); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label" for="form-validation-field-0"><?= __("How did you find out about us?*") ?></label>
                                         <div class="col-lg-8">
                                             <select class="validate[required] form-control" style="margin:0" name="data[User][site_reference]">
-                                                <option value="FLEET">About Fleet</option>
-                                                <option value="AD">Advertisement</option>
-                                                <option value="EVENT">Event</option>
-                                                <option value="GARAGE">Le Garage</option>
-                                                <option value="OTHER">Other</option>
-                                                <option value="RECOMMENDATION">Personal recommendation</option>
-                                                <option value="SEARCHENGINE">Search engine</option>
+                                                <option value="FLEET"><?php echo __('About Fleet');?></option>
+                                                <option value="AD"><?php echo __('Advertisement');?></option>
+                                                <option value="EVENT"><?php echo __('Event');?></option>
+                                                <option value="GARAGE"><?php echo __('Le Garage');?></option>
+                                                <option value="OTHER"><?php echo __('Other');?></option>
+                                                <option value="RECOMMENDATION"><?php echo __('Personal recommendation');?></option>
+                                                <option value="SEARCHENGINE"><?php echo __('Search engine');?></option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label" for="UserStatus"><?= __("Status") ?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.status', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array(0 => 'Inactive', 1 => 'Active'))); ?>
+                                            <?php echo $this->Form->input('User.status', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array(0 => __('Inactive'), 1 => __('Active')))); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label"></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->button('Reset', array('type' => 'reset', 'class' => 'btn btn-default waves-effect waves-light m-l-5')); ?>
-                                            <?php echo $this->Form->button('Submit', array('type' => 'submit', 'class' => 'btn btn-primary waves-effect waves-light')); ?>
+                                            <?php echo $this->Form->button(__('Reset'), array('type' => 'reset', 'class' => 'btn btn-default waves-effect waves-light m-l-5')); ?>
+                                            <?php echo $this->Form->button(__('Submit'), array('type' => 'submit', 'class' => 'btn btn-primary waves-effect waves-light')); ?>
                                         </div>
                                     </div>
                                 </form>
