@@ -1574,5 +1574,22 @@ class UsersController extends AppController {
         }
         return $this->redirect(['action' => 'subUsers', base64_encode($id)]);
     }
+    
+    public function subUserVehicles( $id ){
+        $this->layout = 'front';
+        $this->loadModel('Vehicle');
+        $this->set('PAGE_TITLE', 'Sub Users Vehicles');
+        
+        if ($id) { $id = base64_decode($id); }
+        
+        $this->Vehicle->unbindModel(
+            ['hasMany' => ['AuctionBid','VehicleFavourite'],'hasOne' => ['VehicleImage'] ]
+        );
+        
+        $this->Paginator->settings = array('limit' => 10, 'conditions' => array('Vehicle.seller_id' => $id), 'order' => 'Vehicle.created DESC', 'recursive' => 2);
+        $subUserVehicles = $this->Paginator->paginate('Vehicle');
+        
+        $this->set('subUserVehicles', $subUserVehicles);
+    }
 
 }

@@ -505,8 +505,8 @@ class VehiclesController extends AppController {
             }
             $tmp['Vehicle']['auction_ovr_tym'] = date('Y-m-d H:m:s', strtotime('+' . $timeAdd)); //pr($tmp);die;
             $tmp['Vehicle']['status'] = 1;
+            
             if ($this->Vehicle->save($tmp)) {
-                
                 $vehicleId = $this->Vehicle->getLastInsertID();
                 $auctionTime = date('s', strtotime($tmp['Vehicle']['auction_ovr_tym']) );
                 $this->Redis->setRedisKey('vehicle_'.$vehicleId, $auctionTime);
@@ -903,7 +903,7 @@ class VehiclesController extends AppController {
             $minAuctionPrice = max($bidingPriceArray);
         }
         
-        $bidDropdown = [];
+        /*$bidDropdown = [];
         if( $minAuctionPrice > 0 ){
             for( $i = $minAuctionPrice + $vehicles['Vehicle']['increase_with']; $i <= $minAuctionPrice * 2; $i = $i + $vehicles['Vehicle']['increase_with'] ){ //increase_with
                 $i = (int) $i;
@@ -916,10 +916,12 @@ class VehiclesController extends AppController {
             }
         }
         
+        $bidDropdown['custom'] = __('Custom Price');*/
+        
         $datas['Vehicle'] = $vehicles;
         $datas['buyerArr'] = $buyerArr;
         $datas['minAuctionPrice'] = $minAuctionPrice;
-        $datas['bidDropDown'] = $bidDropdown;
+        //$datas['bidDropDown'] = $bidDropdown;
         $this->set('vehicle', $datas);
     }
 
@@ -927,15 +929,21 @@ class VehiclesController extends AppController {
         $id = base64_decode($id);
         $this->layout = 'front';
         $this->set('PAGE_TITLE', __('Vehicle Detail'));
-        if(base64_decode($this->params['pass']['1']) == 'sold_vehicles'){
-			$conditions = array('Vehicle.id' => $id,'is_sell'=>'1');
-		}else if(base64_decode($this->params['pass']['1']) == 'purchased_vehicles'){
-			$conditions = array('Vehicle.id' => $id,'Vehicle.is_sell' => 1,'Vehicle.buyer_id' => AuthComponent::User('id'));
-		}else if(base64_decode($this->params['pass']['1']) == 'fav_vehicles'){
-			$conditions = array('Vehicle.id' => $id);
-		}else{
-			$conditions = array('Vehicle.id' => $id);
-		}
+        
+        if( isset($this->params['pass']['1']) ){
+            if(base64_decode($this->params['pass']['1']) == 'sold_vehicles'){
+                $conditions = array('Vehicle.id' => $id,'is_sell'=>'1');
+            }else if(base64_decode($this->params['pass']['1']) == 'purchased_vehicles'){
+                $conditions = array('Vehicle.id' => $id,'Vehicle.is_sell' => 1,'Vehicle.buyer_id' => AuthComponent::User('id'));
+            }else if(base64_decode($this->params['pass']['1']) == 'fav_vehicles'){
+                $conditions = array('Vehicle.id' => $id);
+            }else{
+                $conditions = array('Vehicle.id' => $id);
+            }
+        } else {
+            $conditions = array('Vehicle.id' => $id);
+        }
+        
         $vehicles = $this->Vehicle->find('first', array('recursive'=> 2, 'contain'=>['AuctionBid' ] , 'conditions' => $conditions));
         $this->set('vehicle', $vehicles);
     }
