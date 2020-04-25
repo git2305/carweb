@@ -2485,6 +2485,192 @@ class ApiController extends AppController {
             return json_encode(['success' => false, 'message' => $this->translate('Invalid Request. Please try again.'), 'data' => []]);
         }
     }
+    
+    
+    /*
+     * Get Vehicle auction detail page
+     */
+
+    public function getSubUsers() {
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers', 'token, language');
+        $this->autoRender = false;
+        if ($this->request->is('get')) {
+            
+            $token = $this->request->header('token');
+            
+            if ($token) {
+                $this->loadModel('User');
+                $userData = $this->User->find('first', array(
+                    'conditions' => array('token' => $token)
+                ));
+                
+                if (!empty($userData)) {
+                    $subUsersData= $this->User->find('all', array(
+                        'fields' => ['id', 'fname','lname'],
+                        'conditions' => array('parent_id' => $userData['User']['id'])
+                    ));
+                    
+                    return json_encode(['success' => true, 'message' => '', 'data' =>  $subUsersData ]);
+                    
+                } else {
+                    return json_encode(['success' => false, 'message' => $this->translate('No user detail found. Please try again.'), 'data' => []]);
+                }
+                
+            } else{
+                return json_encode(['success' => false, 'message' => $this->translate('Invalid session. Please logged in again.'), 'data' => []]);
+            }
+            
+        } else {
+            return json_encode(['success' => false, 'message' => $this->translate('Invalid Request. Please try again.'), 'data' => []]);
+        }
+    }
+    
+    public function deleteSubUser(){
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers', 'token, language');
+        $this->autoRender = false;
+
+        if ($this->request->is('post')) {
+            $token = $this->request->header('token');
+            
+            if ($token) {
+                $this->loadModel('User');
+                $userData = $this->User->find('first', array(
+                    'conditions' => array('token' => $token)
+                ));
+                
+                if (!empty($userData)) {
+                    $subUserId = $this->request->data['subUserId'];
+                    
+                    $subUserData = $this->User->find('first', array(
+                        'conditions'=>array('id' => $subUserId ),
+                        'recursive' => -1
+                    ));
+                    
+                    if( !empty($subUserData) && $this->User->delete($subUserData['User']['id']) ){
+                        return json_encode(['success' => true, 'message' => $this->translate('Sub user account has been deleted successfully.'), 'data' => []]);
+                    } else {
+                        return json_encode(['success' => false, 'message' => $this->translate('No sub user account found. Please try again.'), 'data' => []]);
+                    }
+                } else {
+                    return json_encode(['success' => false, 'message' => $this->translate('No user detail found. Please try again.'), 'data' => []]);
+                }
+            } else {
+                return json_encode(['success' => false, 'message' => $this->translate('Invalid session. Please logged in again.'), 'data' => []]);
+            }
+        } else {
+            return json_encode(['success' => false, 'message' => $this->translate('Invalid Request. Please try again.'), 'data' => []]);
+        }
+    }
+    
+    
+    public function getUserData( $userId ) {
+        
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers', 'token, language');
+        $this->autoRender = false;
+        $this->loadModel('User');
+        if ($this->request->is('get')) {
+
+            $token = $this->request->header('token');
+            
+            if( $token ){
+                
+                $userData = $this->User->find('first', array(
+                    'conditions' => array('id' => $userId),
+                    'recursive' => -1
+                ));
+
+                if (!empty($userData)) {
+
+                    if ($userData['User']['image'] != '' && file_exists(WWW_ROOT . 'img/users/thumb/' . $userData['User']['image'])) {
+                        $userData['User']['image'] = Router::url('/', true) . 'img/users/thumb/' . $userData['User']['image'];
+                    } else {
+                        $userData['User']['image'] = null;
+                    }
+                    
+                    $userData['User']['password'] = '';
+
+                    return json_encode(['success' => true, 'message' => '', 'data' => ['userData' => $userData]]);
+                } else {
+                    return json_encode(['success' => false, 'message' => $this->translate('No user detail found. Please try again.'), 'data' => []]);
+                }
+            } else {
+                return json_encode(['success' => false, 'message' => $this->translate('Invalid session. Please logged in again.'), 'data' => []]);
+            }
+        } else {
+            return json_encode(['success' => false, 'message' => $this->translate('Invalid Request. Please try again.'), 'data' => []]);
+        }
+        
+        return json_encode(['success' => false, 'message' => $this->translate('Invalid Request. Please try again.'), 'data' => []]);
+    }
+    
+    
+    public function addUpdateUser() {
+        $this->response->header('Access-Control-Allow-Origin', '*');
+        $this->response->header('Access-Control-Allow-Headers', 'token, language');
+        $this->autoRender = false;
+        $isEdit = false;
+
+        if ($this->request->is('post')) {
+
+            $this->loadModel('User');
+
+            $token = $this->request->header('token');
+
+            $data = $this->request->data;
+            
+
+            $userData = $this->User->find('first', array(
+                'conditions' => array('token' => $token)
+            ));
+
+            if (!empty($userData)) {
+                
+                if( isset($data['User']['id']) && $data['User']['id'] != '' ){
+                    
+                    $subUserData = $this->User->find('first', array(
+                        'conditions' => array('id' => $data['User']['id']),
+                        'recursive' => -1
+                    ));
+                    $data['User']['id'] = $subUserData['User']['id'];
+                    
+                    $isEdit = true;
+                }
+                
+                $data['User']['id'] = $userData['User']['parent_id'];
+                
+                if( $isEdit == false ){
+                    $data['User']['company_id'] = $userData['User']['company_id'];
+                    $data['User']['role_id'] = 2;   
+                    $data['User']['terms'] = $userData['User']['terms'];
+                    $data['User']['tokenhash'] = Security::hash(CakeText::uuid(), 'sha512', true); 
+                    $data['User']['token'] = Security::hash(CakeText::uuid(), 'sha512', true); 
+                }
+                        
+                if ($this->User->save($data)) {
+                    $this->User->Company->save($data);
+                    
+                    if($isEdit){
+                        return json_encode(['success' => true, 'message' => $this->translate('User account has been updated successfully.'), 'data' => []]);
+                    } else {
+                        return json_encode(['success' => true, 'message' => $this->translate('User account has been created successfully.'), 'data' => []]);
+                    }
+                    
+                } else {
+                    return json_encode(['success' => false, 'message' => $this->translate('Unable to save profile information. Please try again.'), 'data' => []]);
+                }
+                
+            } else {
+                return json_encode(['success' => false, 'message' => $this->translate('No user detail found. Please try again.'), 'data' => []]);
+            }
+
+            
+        } else {
+            return json_encode(['success' => false, 'message' => $this->translate('Invalid Request. Please try again.'), 'data' => []]);
+        }
+    }
 
 }
 

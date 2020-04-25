@@ -11,7 +11,7 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active"><a href="#UsedCars" aria-controls="UsedCars" role="tab" data-toggle="tab"><?php echo __("Quick Search"); ?></a></li>
-                    <li role="presentation"><a href="#NewCars" aria-controls="NewCars" role="tab" data-toggle="tab"><?php echo __("Search By Body Type"); ?></a></li>
+                    <li role="presentation"><a href="#NewCars" aria-controls="NewCars" role="tab" data-toggle="tab"><?php echo __("Search by body type"); ?></a></li>
                 </ul>
 
                 <!-- Tab panes -->
@@ -21,18 +21,18 @@
                             <div class="form-group">
                                 <label><?= __("Make") ?></label>
                                 <select id="vehicleMake" class="form-control">
-                                    <option value=""><?php echo __('Select Make'); ?></option>
+                                    <option value=""><?php echo __('Select make'); ?></option>
                                 </select>
                             </div>
                             <div class="form-group left">
                                 <label for="exampleInputEmail1">Model</label>
                                 <select id="vehicleModel" class="form-control">
-                                    <option value=""><?php echo __('Select Model'); ?></option>
+                                    <option value=""><?php echo __('Select model'); ?></option>
                                 </select>
                             </div>
                             <div class="form-group right">
                                 <label for="exampleInputEmail1"><?= __("Region") ?></label>
-                                <?php echo $this->Form->input('vehicle_regions', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Select Region--'), 'type' => 'select', 'options' => $region_data)); ?>
+                                <?php echo $this->Form->input('vehicle_regions', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Select Region'), 'type' => 'select', 'options' => $region_data)); ?>
                             </div>
                             <div class="form-group left">
                                 <label for="exampleInputEmail1"><?= __("Min Year") ?></label>
@@ -43,12 +43,12 @@
                                         $minArr[$i] = $i;
                                         $maxArr[$i] = $i;
                                     }
-                                    echo $this->Form->input('min_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Min Year--'), 'type' => 'select', 'options' => $minArr));
+                                    echo $this->Form->input('min_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Min Year'), 'type' => 'select', 'options' => $minArr));
                                 ?>
                             </div>
                             <div class="form-group right">
                                 <label for="exampleInputEmail1"><?= __("Max Year") ?></label>
-                                <?php echo $this->Form->input('max_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Max Year--'), 'type' => 'select', 'options' => $maxArr)); ?>
+                                <?php echo $this->Form->input('max_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Max Year'), 'type' => 'select', 'options' => $maxArr)); ?>
                             </div>
                             <div class="text-right"> <button type="button" class="btn btn-default btnQuickSearch"><?php echo __("Search"); ?></button></div>
                         </form>

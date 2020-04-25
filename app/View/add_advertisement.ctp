@@ -49,15 +49,15 @@
                                     <div class="row">
                                         <div class="col-sm-6 form-group-field">
                                             <?php
-                                                echo $this->Form->input('Vehicle.year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleYear', 'empty' => __('--Select Year--'), 'type' => 'select', 'options' => $yearData));
-                                                echo $this->Form->input('Vehicle.make', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleMake', 'empty' => __('--Select Make--'), 'type' => 'select'));
+                                                echo $this->Form->input('Vehicle.year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleYear', 'empty' => __('Select Year'), 'type' => 'select', 'options' => $yearData));
+                                                echo $this->Form->input('Vehicle.make', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleMake', 'empty' => __('Select Make'), 'type' => 'select'));
                                             ?>
                                         </div>    
                                         <div class="col-sm-6 form-group-field">
                                             <?php
-                                                echo $this->Form->input('Vehicle.month', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleMonth', 'empty' => __('--Select Month--'), 'type' => 'select', 'options' => $monthData));
-                                                echo $this->Form->input('Vehicle.model', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleModel', 'empty' => __('--Select Model--'), 'type' => 'select'));
-                                                //echo $this->Form->input('Vehicle.category_id', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Select Category--'), 'type' => 'select', 'options' => @$category_data));
+                                                echo $this->Form->input('Vehicle.month', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleMonth', 'empty' => __('Select Month'), 'type' => 'select', 'options' => $monthData));
+                                                echo $this->Form->input('Vehicle.model', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control vehicleModel', 'empty' => __('Select Model'), 'type' => 'select'));
+                                                //echo $this->Form->input('Vehicle.category_id', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Select Category'), 'type' => 'select', 'options' => @$category_data));
                                             ?>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
 //
 //                            $('#VehicleMake').html(makeOptions);
 //                        } else {
-//                            $('#VehicleMake').html('<option value=""><?php echo __("Please Select"); ?></option>');
+//                            $('#VehicleMake').html('<option value=""><?php echo __("Please select"); ?></option>');
 //                        }
                     }
                 });
@@ -145,7 +145,7 @@
 //
 //                        $('#VehicleModel').html(makeOptions);
 //                    } else {
-//                        $('#VehicleModel').html('<option value=""><?php echo __("Please Select"); ?></option>');
+//                        $('#VehicleModel').html('<option value=""><?php echo __("Please select"); ?></option>');
 //                    }
                 }
             });

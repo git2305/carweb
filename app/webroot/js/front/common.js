@@ -1,23 +1,19 @@
 
-var l = window.location;
-var BASE_URL = l.protocol + "//" + l.host + "/carlisting/" + l.pathname.split('/')[1] + "/";
-
 $(document).ready(function () {
 
     /*
-     * By Aniruddh 
-     *  
+     *   
      * Biding Function
      *
      */
-
-    $('.btnBid').click(function () {
-
+    
+    $('.btnBidWithIncrease').click(function(){
         if ($('#user_id').val() == '') {
             location.href = siteUrl + '/Users/login';
         } else {
 
-            var auctionBidAmount = $('.auctionBid').val();
+            var auctionBidAmount = parseFloat($(this).attr('data-max-bid')) + parseFloat($('.auctionBid').val());
+            
             var user_id = $('#user_id').val();
             var car_id = $(this).attr('data-id');
            
@@ -31,8 +27,53 @@ $(document).ready(function () {
                 },
                 success: function (result)
                 {
+                    alertify.notify('Your bid is successfully save.', 'success');
                     
-                    $.ajax({
+                    setTimeout(function(){
+                        location.reload();
+                    }, 2500)
+                   
+                }
+            });
+        }
+    });
+
+    $('.btnBid').click(function () {
+
+        if ($('#user_id').val() == '') {
+            location.href = siteUrl + '/Users/login';
+        } else {
+
+             var auctionBidAmount =  $('#custom_auction_bid').val()
+             
+             if( auctionBidAmount < $(this).attr('data-max-bid') ){
+                 alert('Bid should be higher than maximum bid value.');
+                 return false;
+             }
+            
+            
+            
+            var user_id = $('#user_id').val();
+            var car_id = $(this).attr('data-id');
+           
+            $.ajax({
+                url: siteUrl + '/Users/addUpdateUserBid',
+                type: 'post', // performing a POST request
+                data: {
+                    biding_amount: auctionBidAmount,
+                    user_id: user_id,
+                    vehicle_id: car_id,
+                },
+                success: function (result)
+                {
+                    alertify.notify('Your bid is successfully save.', 'success');
+                    
+                    setTimeout(function(){
+                        location.reload();
+                    }, 2500)
+                    
+                    
+                    /*$.ajax({
                         url: siteUrl + "/Vehicles/getRecentOffers",
                         method: 'get',
                         data: { vehicle_id: $('#vehicle_id').val()},
@@ -45,7 +86,7 @@ $(document).ready(function () {
                         location.reload();
                     } else {
                         alertify.notify('Your bid is successfully save.', 'success');
-                    }
+                    }*/
 
                 }
             });
@@ -244,14 +285,14 @@ $(document).ready(function () {
 //        });
 //    });
 
-    $("#vehicleMake").select2({ placeholder: "Select Make", allowClear: true });
-    $("#vehicleModel").select2({ placeholder: "Select Model", allowClear: true });
+    $("#vehicleMake").select2({ placeholder: lbl_select_make, allowClear: true });
+    $("#vehicleModel").select2({ placeholder: lbl_select_model, allowClear: true });
 
     $("#vehicleMake").select2({
         minimumInputLength: 1,
         minimumResultsForSearch: 10,
         allowClear: true,
-        placeholder: "Select Make",
+        placeholder: lbl_select_make,
         ajax: {
             url: siteUrl + '/vehicles/getAllMakes',
             dataType: "json",
@@ -282,7 +323,7 @@ $(document).ready(function () {
         minimumInputLength: 1,
         minimumResultsForSearch: 10,
         allowClear: true,
-        placeholder: "Select Model",
+        placeholder: lbl_select_model,
         ajax: {
             url: siteUrl + '/vehicles/getModelByMake',
             dataType: "json",

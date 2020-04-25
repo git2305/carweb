@@ -39,7 +39,7 @@
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label" for="UserPrefixName"><?= __("Form of address*") ?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
+                                            <?php echo $this->Form->input('User.prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
                                         </div>
                                     </div>
 
@@ -77,7 +77,7 @@
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label" for="UserLanguage"><?= __("Preferred language") ?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
+                                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -103,7 +103,7 @@
                                     <div class="form-group">
                                         <label class="col-lg-4 control-label" for="UserStatus"><?= __("Status") ?></label>
                                         <div class="col-lg-8">
-                                            <?php echo $this->Form->input('User.status', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array(0 => __('Inactive'), 1 => __('Active')))); ?>
+                                            <?php echo $this->Form->input('User.status', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array(0 => __('Inactive'), 1 => __('Active')))); ?>
                                         </div>
                                     </div>
                                     <div class="form-group">

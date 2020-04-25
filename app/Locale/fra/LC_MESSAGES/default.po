@@ -174,13 +174,21 @@ msgstr "Langue préférée"
 msgid "How did you find out about us?*"
 msgstr "Comment nous avez-vous trouvé?*"
 
+#: Controller/VehiclesController.php:694;717
+#: View/Elements/front/header.ctp:17
+#: View/Elements/front/header_bkp_20_01.ctp:37
+msgid "Vehicles Sold"
+msgstr "Véhicules vendus"
+
+#: Controller/VehiclesController.php:778;800
+#: View/Elements/front/header.ctp:18
+#: View/Elements/front/header_bkp_20_01.ctp:38
+msgid "Vehicles Purchased"
+msgstr "Véhicules achetés"
+
 #: View/Users/admin_edit.ctp:99
 msgid "Status"
 msgstr "Statut"
-
-#: View/Users/admin_edit.ctp:101
-msgid "Please Select"
-msgstr "Veuillez sélectionner"
 
 #: View/Users/admin_listing.ctp:59 View/Vehicles/admin_listing.ctp:37
 msgid "Action"
@@ -425,8 +433,8 @@ msgid "Add category"
 msgstr "Ajouter une catégorie"
 
 #: View/Vehicles/add_advertisement.ctp:46
-msgid "--Select category--"
-msgstr "--Choisir catégorie--"
+msgid "Select category"
+msgstr "Choisir catégorie"
 
 #: View/Vehicles/add_advertisement.ctp:50 View/Vehicles/step1.ctp:256
 #: View/Vehicles/step2.ctp:100 View/Vehicles/step3.ctp:55
@@ -527,17 +535,12 @@ msgid "Body type *"
 msgstr "Type de voiture*"
 
 #: View/Vehicles/step1.ctp:59
-msgid "--Select body type--"
-msgstr "--Choisir type de voiture--"
+msgid "Select body type"
+msgstr "Choisir type de voiture"
 
 #: View/Vehicles/step1.ctp:65
 msgid "Doors *"
 msgstr "Portes *"
-
-#: View/Vehicles/step1.ctp:67;85;92;111;165;172 View/Vehicles/step2.ctp:74
-#: View/Vehicles/step4.ctp:37
-msgid "--Please select--"
-msgstr "--Veuillez choisir--"
 
 #: View/Vehicles/step1.ctp:83
 msgid "Wheel Drive *"
@@ -580,8 +583,8 @@ msgid "Exterior color *"
 msgstr "Couleur extérieure *"
 
 #: View/Vehicles/step1.ctp:158
-msgid "--Please choose color--"
-msgstr "--Veuillez choisir couleur--"
+msgid "Please choose color"
+msgstr "Veuillez choisir couleur"
 
 #: View/Vehicles/step1.ctp:163 View/Vehicles/step2.ctp:54
 msgid "Car finish"
@@ -602,6 +605,10 @@ msgstr "Équipement de série"
 #: View/Vehicles/step1.ctp:198
 msgid "Frame No."
 msgstr "Numéro cadre."
+
+#: View/Users/index.ctp:11
+msgid "Search By Body Type"
+msgstr "Recherche par type de corps"
 
 #: View/Vehicles/step1.ctp:205
 msgid "Model No."
@@ -740,8 +747,12 @@ msgstr ""
 "pixels. Envoyez seulement des photos en orientation paysage."
 
 #: View/Vehicles/step4.ctp:26
-msgid "Minimum price *"
+msgid "Minimum Price *"
 msgstr "Prix minimum *"
+
+#: View/Vehicles/step4.ctp:31
+msgid "Auction Duration *"
+msgstr "Durée de la vente aux enchères"
 
 #: View/Vehicles/step4.ctp:35
 msgid "To be transported by the *"
@@ -902,3 +913,371 @@ msgstr ""
 
 msgid "Vehicle document image has been deleted successfully."
 msgstr "L'image du document du véhicule a bien été reçue."
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Only show favourites"
+msgstr "N'afficher que les favoris"
+
+
+
+
+
+
+
+
+msgid "How it works"
+msgstr "Comment ça marche"
+
+msgid "Contact Us"
+msgstr "Contactez-nous"
+
+msgid "I am"
+msgstr "Je suis"
+
+msgid "Marktplatz"
+msgstr "Marktplatz"
+
+msgid "I have a"
+msgstr "J'ai un"
+
+msgid "Topic"
+msgstr "Sujet"
+
+msgid "My Request"
+msgstr "Ma demande"
+
+msgid "Forgot Password?"
+msgstr "Mot de passe oublié ?"
+
+msgid "Login"
+msgstr "Connexion"
+
+msgid "Enter your email"
+msgstr "Saisissez votre adresse électronique"
+
+msgid "Forgot Password"
+msgstr "Mot de passe oublié"
+
+msgid "Submit"
+msgstr "Soumettre"
+
+msgid "Administrator"
+msgstr "Administrateur"
+
+msgid "Make"
+msgstr "Faire"
+
+msgid "Model"
+msgstr "Modèle"
+
+msgid "Min Year"
+msgstr "Min Année"
+
+msgid "Max Year"
+msgstr "Année maximale"
+
+msgid "Region"
+msgstr "Région"
+
+msgid "No Record Found"
+msgstr "Aucun enregistrement trouvé"
+
+msgid "Useful Links"
+msgstr "Liens utiles"
+
+msgid "Security Check"
+msgstr "Contrôle de sécurité"
+
+msgid "Used car market"
+msgstr "Marché des voitures d'occasion"
+
+msgid "New cars"
+msgstr "Voitures neuves"
+
+msgid "Parts & Accessory"
+msgstr "Pièces et accessoires"
+
+msgid "Motobikes"
+msgstr "Motos"
+
+msgid "Commercial vehicles"
+msgstr "Véhicules utilitaires"
+
+msgid "Question"
+msgstr "Question"
+
+msgid "Commendation"
+msgstr "Mention élogieuse"
+
+msgid "Complaint"
+msgstr "Plainte"
+
+msgid "Improvement"
+msgstr "Amélioration"
+
+msgid "New car"
+msgstr "Voiture neuve"
+
+msgid "Register"
+msgstr "S'inscrire"
+
+msgid "Add Picture"
+msgstr "Ajouter une image"
+
+msgid "Change car offer"
+msgstr "Offre de changement de voiture"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "Payed services"
+msgstr "Services payants"
+
+msgid "Check car offer"
+msgstr "Vérifier l'offre de voiture"
+
+msgid "Misc"
+msgstr "Divers"
+
+msgid "First Name"
+msgstr "Prénom"
+
+msgid "Last Name"
+msgstr "Nom de famille"
+
+msgid "Email"
+msgstr "Courrier électronique"
+
+msgid "Send Request"
+msgstr "Envoyer une demande"
+
+msgid "Calculate route"
+msgstr "Calculer l'itinéraire"
+
+msgid "Only show shortlisted"
+msgstr "Afficher seulement la liste restreinte"
+
+msgid "My Corner"
+msgstr "Mon Coin"
+
+msgid "My Vehicles"
+msgstr "Mes véhicules"
+
+msgid "Vehiclea in Auktion"
+msgstr "Vehiclea in Auktion"
+
+msgid "My Favourite Vehicles"
+msgstr "Mes véhicules préférés"
+
+msgid "Sub Users"
+msgstr "Sous-utilisateurs"
+
+msgid "Add Sub User"
+msgstr "Ajouter un sous-utilisateur"
+
+msgid "Sub Users Listing"
+msgstr "Liste des sous-utilisateurs"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Change Profile Data"
+msgstr "Changer les données du profil"
+
+msgid "Change Password"
+msgstr "Changer de mot de passe"
+
+msgid "Delete Account"
+msgstr "Supprimer le compte"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Email Preference"
+msgstr "Préférence de courrier électronique"
+
+msgid "Invoices"
+msgstr "Factures"
+
+msgid "No Record Found"
+msgstr "Aucun enregistrement trouvé"
+
+msgid "Add"
+msgstr "Ajouter"
+
+msgid "Sub User"
+msgstr "Sous-utilisateur"
+
+msgid "Parent User"
+msgstr "Parent utilisateur"
+
+msgid "Mobile Number"
+msgstr "Numéro de téléphone portable"
+
+msgid "Contact Number"
+msgstr "Numéro de contact"
+
+msgid "About Yourself"
+msgstr "A propos de vous"
+
+msgid "Status"
+msgstr "Statut"
+
+msgid "Reset"
+msgstr "Réinitialiser"
+
+msgid "Enter first name"
+msgstr "Saisir le prénom"
+
+msgid "Enter last name"
+msgstr "Entrez votre nom de famille"
+
+msgid "Enter email address"
+msgstr "Saisir l'adresse électronique"
+
+msgid "Enter mobile number"
+msgstr "Saisir le numéro de téléphone portable"
+
+msgid "Enter phone number"
+msgstr "Entrer le numéro de téléphone"
+
+msgid "Write something about you.."
+msgstr "Ecrivez quelque chose sur vous..."
+
+msgid "About Fleet"
+msgstr "A propos de la flotte"
+
+msgid "Advertisement"
+msgstr "Publicité"
+
+msgid "Event"
+msgstr "Evénement"
+
+msgid "Le Garage"
+msgstr "Le Garage"
+
+msgid "Other"
+msgstr "Autres"
+
+msgid "Personal recommendation"
+msgstr "Recommandation personnelle"
+
+msgid "Search engine"
+msgstr "Moteur de recherche"
+
+msgid "Inactive"
+msgstr "Inactif"
+
+msgid "Active"
+msgstr "Actif"
+
+msgid "Edit"
+msgstr "Éditer"
+
+msgid "Save"
+msgstr "Sauvegarder"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Current Password"
+msgstr "Mot de passe actuel"
+
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+msgid "Change"
+msgstr "Changement"
+
+msgid "Are you sure you want to delete account?"
+msgstr "Etes-vous sûr de vouloir supprimer votre compte ?"
+
+msgid "Send Email Notifications ?"
+msgstr "Envoyer des notifications par courrie ?"
+
+msgid "Preference"
+msgstr "Préférence"
+
+msgid "Company Data"
+msgstr "Données sur les entreprises"
+
+msgid "Search your vehicle by production duation and vehicel make and model."
+msgstr "Recherchez votre véhicule par marque et modèle de véhicule."
+
+msgid "Select Year"
+msgstr "Sélectionnez l'année"
+
+msgid "Select Month"
+msgstr "Sélectionnez le mois"
+
+msgid "Select Make"
+msgstr "Sélectionnez la marque"
+
+msgid "Select Model"
+msgstr "Choisir un modèle"
+
+msgid "Vehicle Damage"
+msgstr "Dommages aux véhicules"
+
+msgid "Vehicle inspection Date"
+msgstr "Date de l'inspection du véhicule"
+
+msgid "Swiss Car"
+msgstr "Voiture suisse"
+
+msgid "24 hours"
+msgstr "24 heures"
+
+msgid "48 hours"
+msgstr "48 heures"
+
+msgid "Buy now Price"
+msgstr "prix d'achat"
+
+msgid "Increase with"
+msgstr "Augmenter avec"
+
+msgid "Sort by"
+msgstr "Trier par"
+
+msgid "YEAR OLD-NEW"
+msgstr "ANNÉE ANCIENNE-NEUVE"
+
+msgid "YEAR NEW-OLD"
+msgstr "ANNÉE NOUVELLE-ANNÉE"
+
+msgid "PRICE LOW-HIGH"
+msgstr "PRIX BASSE-HAUTE"
+
+msgid "PRICE HIGH-LOW"
+msgstr "PRIX HAUTE-BASSE"
+
+msgid "ODOMETER LOW-HIGH"
+msgstr "ODOMÈTRE BAS-ÉLEVÉ"
+
+msgid "ODOMETER HIGH-LOW"
+msgstr "ODOMÈTRE HAUT-BAS"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+
+
+#: View/Vehicles/step3.ctp:20
+msgid "You can upload vehicle documents such as expert's report.Maximum file size 18 MB,minimum image size: 370X490 pixels."
+msgstr "Vous pouvez télécharger des documents relatifs aux véhicules, tels que des rapports d'experts, pour une taille de fichier maximale de 18 Mo et une taille d'image minimale de 370 x 490 pixels."
+
+#: View/Vehicles/step3.ctp:37
+msgid "You can upload a maximum of 20 vehicle images.Maximum file size 5 MB,minimum image resolution: 370X490 pixels.Only images in landscape orientation can be uploaded."
+msgstr "Vous pouvez télécharger un maximum de 20 images de véhicules, la taille maximale du fichier est de 5 MB et la résolution minimale de l'image est de 5 MB : Seules les images en orientation paysage peuvent être téléchargées."

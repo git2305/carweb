@@ -103,7 +103,7 @@
                     <div class="form-group row">
                         <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("Form of address*") ?></label></div>
                         <div class="col-md-9">
-                            <?php echo $this->Form->input('User.prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
+                            <?php echo $this->Form->input('User.prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
                         </div>
                     </div>
 
@@ -148,20 +148,20 @@
                     <div class="form-group row">
                         <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("Preferred language") ?></label></div>
                         <div class="col-md-9">
-                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => 'Please Select', 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
+                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("How did you find out about us?*") ?></label></div>
                         <div class="col-md-9"><select class="validate[required] form-control" style="margin:0" name="data[User][site_reference]">
-                                <option value="FLEET">About Fleet</option>
-                                <option value="AD">Advertisement</option>
-                                <option value="EVENT">Event</option>
-                                <option value="GARAGE">Le Garage</option>
-                                <option value="OTHER">Other</option>
-                                <option value="RECOMMENDATION">Personal recommendation</option>
-                                <option value="SEARCHENGINE">Search engine</option>
+                                <option value="FLEET"><?php echo __('About Fleet');?></option>
+                                <option value="AD"><?php echo __('Advertisement');?></option>
+                                <option value="EVENT"><?php echo __('Event');?></option>
+                                <option value="GARAGE"><?php echo __('Le Garage');?></option>
+                                <option value="OTHER"><?php echo __('Other');?></option>
+                                <option value="RECOMMENDATION"><?php echo __('Personal recommendation');?></option>
+                                <option value="SEARCHENGINE"><?php echo __('Search engine');?></option>
                             </select>
                         </div>
                     </div>

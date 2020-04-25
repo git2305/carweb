@@ -58,7 +58,7 @@
                                             'Kleinwagen' => 'Kleinwagen',
                                             'Pickup' => 'Pickup'
                                         );
-                                        echo $this->Form->input('Vehicle.body_type', array('value' => isset($vehicleData[$ltnId]['BodyTypeEx']) ? $vehicleData[$ltnId]['BodyTypeEx'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Select Body Type--'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $bodyTypeOptions));
+                                        echo $this->Form->input('Vehicle.body_type', array('value' => isset($vehicleData[$ltnId]['BodyTypeEx']) ? $vehicleData[$ltnId]['BodyTypeEx'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Select Body Type'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $bodyTypeOptions));
                                         ?>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-3"> <label><?= __('Doors *') ?></label></div>
                                     <div class="col-md-9">
-                                        <?php echo $this->Form->input('Vehicle.doors', array('value' => isset($vehicleData[$ltnId]['DoorsNumber']) ? $vehicleData[$ltnId]['DoorsNumber'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Please Select--'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array(2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7))); ?>
+                                        <?php echo $this->Form->input('Vehicle.doors', array('value' => isset($vehicleData[$ltnId]['DoorsNumber']) ? $vehicleData[$ltnId]['DoorsNumber'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Please select'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array(2 => 2, 3 => 3, 4 => 4, 5 => 5, 6 => 6, 7 => 7))); ?>
                                     </div>
                                 </div>
 
@@ -84,14 +84,14 @@
                                 <div class="form-group row">
                                     <div class="col-md-3"> <label><?= __('Wheel Drive *') ?></label></div>
                                     <div class="col-md-9">
-                                        <?php echo $this->Form->input('Vehicle.wheel_drive', array('value' => isset($vehicleData[$ltnId]['DoorsNumber']) ? $vehicleData[$ltnId]['DoorsNumber'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Please Select--'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array('Front' => 'Front', 'Heck' => 'Heck', '4x4' => '4x4'))); ?>
+                                        <?php echo $this->Form->input('Vehicle.wheel_drive', array('value' => isset($vehicleData[$ltnId]['DoorsNumber']) ? $vehicleData[$ltnId]['DoorsNumber'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Please select'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array('Front' => 'Front', 'Heck' => 'Heck', '4x4' => '4x4'))); ?>
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <div class="col-md-3"> <label><?= __('Gear *') ?></label></div>
                                     <div class="col-md-9">
-                                        <?php echo $this->Form->input('Vehicle.gear', array('value' => isset($vehicleData[$ltnId]['GearBox']) ? $vehicleData[$ltnId]['GearBox'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Please Select--'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array('Manuell' => 'Manuell', 'Automat' => 'Automat', 'A-sequent.' => 'A-sequent.', 'Halbautomat' => 'Halbautomat'))); ?>
+                                        <?php echo $this->Form->input('Vehicle.gear', array('value' => isset($vehicleData[$ltnId]['GearBox']) ? $vehicleData[$ltnId]['GearBox'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Please select'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array('Manuell' => 'Manuell', 'Automat' => 'Automat', 'A-sequent.' => 'A-sequent.', 'Halbautomat' => 'Halbautomat'))); ?>
                                     </div>
                                 </div>
 
@@ -110,7 +110,7 @@
                                             'Hybrid/Diesel' => 'Hybrid/Diesel',
                                         );
 
-                                        echo $this->Form->input('Vehicle.fuel', array('value' => isset($vehicleData[$ltnId]['Fuel']) ? $vehicleData[$ltnId]['Fuel'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Please Select--'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $fuelOptions));
+                                        echo $this->Form->input('Vehicle.fuel', array('value' => isset($vehicleData[$ltnId]['Fuel']) ? $vehicleData[$ltnId]['Fuel'] : '', 'div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Please select'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $fuelOptions));
                                         ?>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@
                                     <div class="col-md-9">
                                         <?php
                                         $vehicleColors = ['Anthracite' => __('Anthracite'), 'Beige' => __('Beige'), 'Black' => __('Black'), 'Blue' => __('Blue'), 'Bordeaux' => __('Bordeaux'), 'Brown' => __('Brown'), 'Gold' => __('Gold'), 'Green' => __('Green'), 'Grey' => __('Grey'), 'Orange' => __('Orange'), 'Other' => __('Other'), 'Pink' => __('Pink'), 'Red' => __('Red'), 'Silver' => __('Silver'), 'Turquoise' => __('Turquoise'), 'Violet' => __('Violet'), 'White' => __('White'), 'Yellow' => __('Yellow')];
-                                        echo $this->Form->input('Vehicle.exterior_color', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $vehicleColors, 'empty' => __('--Please Select--')));
+                                        echo $this->Form->input('Vehicle.exterior_color', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $vehicleColors, 'empty' => __('Please select')));
                                         ?>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@
                                     <div class="col-md-9">
                                         <?php
                                         $carFinishOptions = ['Bubble effect' => __('Bubble effect'), 'Individual paint' => __('Individual paint'), 'Matt paint' => __('Matt paint'), 'Mettalic' => __('Mettalic'), 'Solid paint' => __('Solid paint')];
-                                        echo $this->Form->input('Vehicle.car_finish', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Please Select--'), 'class' => 'form-control', 'type' => 'select', 'options' => $carFinishOptions));
+                                        echo $this->Form->input('Vehicle.car_finish', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Please select'), 'class' => 'form-control', 'type' => 'select', 'options' => $carFinishOptions));
                                         ?>
                                     </div>
                                 </div>
@@ -197,7 +197,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-3"> <label><?= __('Interior Color *') ?></label></div>
                                     <div class="col-md-9">
-                                        <?php echo $this->Form->input('Vehicle.interior_color', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('--Please Select--'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $vehicleColors, 'empty' => __('--Please Select--'))); ?>
+                                        <?php echo $this->Form->input('Vehicle.interior_color', array('div' => FALSE, 'label' => FALSE, 'style' => 'margin:0', 'empty' => __('Please select'), 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => $vehicleColors, 'empty' => __('Please select'))); ?>
                                     </div>
                                 </div>
 
@@ -372,7 +372,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-3"> <label for="vehicle_region"><?= __("Vehicle Region*") ?></label></div>
                                     <div class="col-md-9">
-                                        <?php echo $this->Form->input('Vehicle.vehicle_regions', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('--Select Region--'), 'type' => 'select', 'options' => @$region_data)); ?>
+                                        <?php echo $this->Form->input('Vehicle.vehicle_regions', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Select Region'), 'type' => 'select', 'options' => @$region_data)); ?>
                                     </div>
                                 </div>
                                 
@@ -406,7 +406,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-md-3"> <label for="exampleInputEmail1"><?= __('Number of keys*') ?></label></div>
-                                    <div class="col-md-9 "><?php echo $this->Form->input('Vehicle.no_of_keys', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('--Please Select--'), 'type' => 'select', 'options' => array(1 => 1, 2 => 2, 3 => 3, 4 => 4))); ?></div>
+                                    <div class="col-md-9 "><?php echo $this->Form->input('Vehicle.no_of_keys', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array(1 => 1, 2 => 2, 3 => 3, 4 => 4))); ?></div>
                                 </div>
 
                                 

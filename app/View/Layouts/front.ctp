@@ -28,6 +28,8 @@
 <script type="text/javascript">
     var baseUrl = "<?php echo BASE_URL; ?>";
     var siteUrl = "<?php echo SITE_URL; ?>";
+    var lbl_select_make = '<?php echo __('Select make'); ?>';
+    var lbl_select_model = '<?php echo __('Select model'); ?>';
 </script>
 <?php echo $this->Html->script(['front/jquery.min', 'front/jquery-ui','front/jquery.validationEngine', 'front/jquery.validationEngine-en','front/select2.full','front/general','front/common','front/alertifyjs/alertify','front/jquery.countdown','front/jquery.elevatezoom','front/jquery.fancybox','front/jquery.slimscroll','front/jquery.blockUI']); ?>
 

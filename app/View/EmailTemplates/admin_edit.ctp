@@ -77,7 +77,7 @@
                                         <div class="form-group">
                                             <label class="col-lg-3 control-label" for="UserStatus"><?= __("Status") ?></label>
                                             <div class="col-lg-9">
-                                                <?php echo $this->Form->input('EmailTemplate.status', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array(0 => 'Inactive', 1 => 'Active'))); ?>
+                                                <?php echo $this->Form->input('EmailTemplate.status', array('div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array(0 => 'Inactive', 1 => 'Active'))); ?>
                                             </div>
                                         </div>
                                         <div class="form-group">

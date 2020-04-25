@@ -53,10 +53,14 @@ $(document).ready(function () {
 
     setInterval(function () {
         $('[data-countdown]').each(function () {
-            if ($('#expireTime_' + $(this).attr('data-vehicleid')).text() <= '04:00:00') {
-                $('.vehicleSell_' + $(this).attr('data-vehicleid')).css('background', '#F08080');
+            if ($('#expireTime_' + $(this).attr('data-vehicleid')).text() <= '04:21:00') {
+                $('.vehicleSell_' + $(this).attr('data-vehicleid')).css('border', '1px solid red');
+                $('.vehicleSell_' + $(this).attr('data-vehicleid')).find('.btn-Preis').attr('disabled', 'disabled');
+                $('.vehicleSell_' + $(this).attr('data-vehicleid')).find('.btn-Preis').addClass('vehicle-sold-button');
+                $('.vehicleSell_' + $(this).attr('data-vehicleid')).find('.vehicle-sold').removeClass('hidden');
+                $('.vehicleSell_' + $(this).attr('data-vehicleid')).find('.vehicle-in-auction').addClass('hidden');
             }
         });
-    }, 3000);
+    }, 1000);
 
 });

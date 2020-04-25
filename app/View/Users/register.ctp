@@ -143,7 +143,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3"> <label for="exampleInputEmail1"><?= __("Preferred language") ?></label></div>
                                 <div class="col-md-9">
-                                    <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => 'Please Select', 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
+                                    <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
                                 </div>
                             </div>
                             <div class="main-h3"><h3><?= __("Login details") ?><p style="font-weight:normal;  margin-top:10px"><?= __("Please note that your username will be displayed if you place a bid") ?></p></h3></div>

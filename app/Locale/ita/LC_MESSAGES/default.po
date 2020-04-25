@@ -182,10 +182,6 @@ msgstr "Come sei venuto a sapere di noi?*"
 msgid "Status"
 msgstr "Stato"
 
-#: View/Users/admin_edit.ctp:101
-msgid "Please Select"
-msgstr "Per favore seleziona"
-
 #: View/Users/admin_listing.ctp:59 View/Vehicles/admin_listing.ctp:37
 msgid "Action"
 msgstr "Azione"
@@ -428,8 +424,8 @@ msgid "Add category"
 msgstr "Aggiungi una categoria"
 
 #: View/Vehicles/add_advertisement.ctp:46
-msgid "--Select category--"
-msgstr "--Seleziona la categoria--"
+msgid "Select category"
+msgstr "Seleziona la categoria"
 
 #: View/Vehicles/add_advertisement.ctp:50 View/Vehicles/step1.ctp:256
 #: View/Vehicles/step2.ctp:100 View/Vehicles/step3.ctp:55
@@ -530,17 +526,12 @@ msgid "Body type *"
 msgstr "Tipo di carrozzeria *"
 
 #: View/Vehicles/step1.ctp:59
-msgid "--Select body type--"
-msgstr "--Seleziona il tipo di carrozzeria--"
+msgid "Select body type"
+msgstr "Seleziona il tipo di carrozzeria"
 
 #: View/Vehicles/step1.ctp:65
 msgid "Doors *"
 msgstr "Porte *"
-
-#: View/Vehicles/step1.ctp:67;85;92;111;165;172 View/Vehicles/step2.ctp:74
-#: View/Vehicles/step4.ctp:37
-msgid "--Please select--"
-msgstr "--Per favore seleziona--"
 
 #: View/Vehicles/step1.ctp:83
 msgid "Wheel Drive *"
@@ -583,8 +574,8 @@ msgid "Exterior color *"
 msgstr "Colore esterno *"
 
 #: View/Vehicles/step1.ctp:158
-msgid "--Please choose color--"
-msgstr "--Scegli il colore--"
+msgid "Please choose color"
+msgstr "Scegli il colore"
 
 #: View/Vehicles/step1.ctp:163 View/Vehicles/step2.ctp:54
 msgid "Car finish"
@@ -973,9 +964,6 @@ msgstr "Link utili"
 msgid "Security Check"
 msgstr "Controllo di sicurezza"
 
-msgid "Please Select"
-msgstr "Seleziona per favore"
-
 msgid "Used car market"
 msgstr "Mercato dell'usato"
 
@@ -1195,17 +1183,17 @@ msgstr "Dati aziendali"
 msgid "Search your vehicle by production duation and vehicel make and model."
 msgstr "Cerca il tuo veicolo in base alla produzione, alla marca e al modello del veicolo"
 
-msgid "--Select Year--"
-msgstr "--Selezionare l'anno--"
+msgid "Select Year"
+msgstr "Selezionare l'anno"
 
-msgid "--Select Month--"
-msgstr "--Seleziona il mese--"
+msgid "Select Month"
+msgstr "Seleziona il mese"
 
-msgid "--Select Make--"
-msgstr "--Selezionare Make--"
+msgid "Select Make"
+msgstr "Selezionare Make"
 
-msgid "--Select Model--"
-msgstr "--Selezionare il modello--"
+msgid "Select Model"
+msgstr "Selezionare il modello"
 
 msgid "Vehicle Damage"
 msgstr "Danni al veicolo"
@@ -1227,6 +1215,30 @@ msgstr "Compra ora Prezzo"
 
 msgid "Increase with"
 msgstr "Aumenta con"
+
+msgid "Sort by"
+msgstr "Ordina per"
+
+msgid "YEAR OLD-NEW"
+msgstr "ANNO VECCHIO-NOVE"
+
+msgid "YEAR NEW-OLD"
+msgstr "ANNO NUOVO"
+
+msgid "PRICE LOW-HIGH"
+msgstr "PREZZO BASSO-ALTO"
+
+msgid "PRICE HIGH-LOW"
+msgstr "PREZZO ALTO BASSO"
+
+msgid "ODOMETER LOW-HIGH"
+msgstr "CONTACHILOMETRI BASSO-ALTO"
+
+msgid "ODOMETER HIGH-LOW"
+msgstr "CONTACHILOMETRI ALTO-BASSO"
+
+msgid "Only show favourites"
+msgstr "Mostra solo i preferiti"
 
 msgid ""
 msgstr ""

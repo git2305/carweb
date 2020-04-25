@@ -1,12 +1,11 @@
 <section class="mid-section">
     <div class="container vehicle-listing">
         <div class="title-wrap">
-<!--            <h2 class="section-title"><span><?php echo __("Recent") ?></span> <?php echo __("Car Submissions") ?></h2>-->
             <div class="right-title-block">
                 <div class="select-box">
                     <label>
                         <select class="sortbyopt">
-                            <option selected value=""><?php echo __('Sort By'); ?> </option>
+                            <option selected value=""><?php echo __('Sort by'); ?> </option>
                             <option value="YLH"><?php echo __('YEAR OLD-NEW'); ?></option>
                             <option value="YHL"><?php echo __('YEAR NEW-OLD'); ?></option>
                             <option value="PLH"><?php echo __('PRICE LOW-HIGH'); ?></option>
@@ -39,7 +38,7 @@
                         </select>
                     </div>
                     <div class="form-group form-group-col3 form-group-region">
-                        <?php echo $this->Form->input('vehicle_regions', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Select Region--'), 'type' => 'select', 'options' => $region_data)); ?>
+                        <?php echo $this->Form->input('vehicle_regions', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Select Region'), 'type' => 'select', 'options' => $region_data)); ?>
                     </div>
                     <div class="form-group form-group-col2 form-group-minyear">
                         
@@ -50,11 +49,11 @@
                             $minArr[$i] = $i;
                             $maxArr[$i] = $i;
                         }
-                        echo $this->Form->input('min_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Min Year--'), 'type' => 'select', 'options' => $minArr));
+                        echo $this->Form->input('min_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Min Year'), 'type' => 'select', 'options' => $minArr));
                         ?>
                     </div>
                     <div class="form-group form-group-col2 form-group-maxyear">
-                        <?php echo $this->Form->input('max_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('--Max Year--'), 'type' => 'select', 'options' => $maxArr)); ?>
+                        <?php echo $this->Form->input('max_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Max Year'), 'type' => 'select', 'options' => $maxArr)); ?>
                     </div>
                     <div class="form-buttonset"> <button type="button" class="btn btn-default btnQuickSearch"><?php echo __("Search"); ?></button></div>
                 </form>

@@ -243,10 +243,18 @@
                         </h4>
                     </div>
                     <div class="box">
-                        <p><?php echo __('Your bid'); ?></p>
-                        <?php echo $this->Form->input('auctionBid', ['type' => 'select', 'label' => false, 'class' => 'auctionBid', 'options' => $vehicle['bidDropDown']]); ?>
+                        <p><?php echo __('Increase with'); ?></p>
+                        <?php echo $this->Form->input('auctionBid', ['type' => 'select', 'label' => false, 'class' => 'auctionBid', 'options' => ['25' => 25, '50' => 50]  ]); //$vehicle['bidDropDown'] ?>                        
                     </div>
-                    <div class="btn-set"><a href="javascript:void(0);" class="btn btnBid" data-max-bid="<?php echo $vehicle['minAuctionPrice']; ?>" data-increase="<?php echo $vehicle['Vehicle']['Vehicle']['increase_with']; ?>" data-buy-price="<?php echo $vehicle['Vehicle']['Vehicle']['buy_price']; ?>" data-id="<?php echo $vehicle['Vehicle']['Vehicle']['id']; ?>">Bieten</a></div>
+                    
+                    <div class="btn-set"><a href="javascript:void(0);" class="btn btnBidWithIncrease" data-max-bid="<?php echo $vehicle['minAuctionPrice']; ?>" data-increase="<?php echo $vehicle['Vehicle']['Vehicle']['increase_with']; ?>" data-buy-price="<?php echo $vehicle['Vehicle']['Vehicle']['buy_price']; ?>" data-id="<?php echo $vehicle['Vehicle']['Vehicle']['id']; ?>">Bid with increase</a></div>
+                        
+                        <p class="text-center"><?php echo __('OR');?></p>
+                        <?php echo $this->Form->input('custom_auction_bid', array('div' => FALSE, 'label' => FALSE, 'placeholder' => __('Enter custom bid price') ,'class' => 'validate[condRequired[auctionBid]] form-control custom-increase-with')); ?>
+                        <div class="btn-set"><a href="javascript:void(0);" class="btn btnBid" data-max-bid="<?php echo $vehicle['minAuctionPrice']; ?>" data-increase="<?php echo $vehicle['Vehicle']['Vehicle']['increase_with']; ?>" data-buy-price="<?php echo $vehicle['Vehicle']['Vehicle']['buy_price']; ?>" data-id="<?php echo $vehicle['Vehicle']['Vehicle']['id']; ?>">Bid Now</a></div>
+                    
+                    <div class="clearfix"></div>
+                    
                     <hr/>
                     <p class="text-center">OR</p>
                     <p><?php echo __('Buy Price'); ?> : <span class="buy-now-price">CHF <?php echo $vehicle['Vehicle']['Vehicle']['buy_price']; ?></span> </p>
@@ -364,6 +372,15 @@
     //$("#img_01").elevateZoom({gallery: 'gallery_01', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: ''});
 
     $(document).ready(function () {
+        
+//        $('#auctionBid').change(function(){
+//           if( $(this).val() == 'custom' ){
+//               $('.custom-increase-with').show();
+//           } else {
+//               $('.custom-increase-with').hide();
+//               $('.custom-increase-with').val('');
+//           }
+//        });
 
         $('.buyNow').click(function () {
             $.ajax({

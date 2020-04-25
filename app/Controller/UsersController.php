@@ -544,7 +544,7 @@ class UsersController extends AppController {
         $conditions = array();
 
         $conditions['Vehicle.status'] = 1;
-        $conditions['Vehicle.auction_ovr_tym >= '] = date('Y-m-d H:i:s');
+        $conditions['Vehicle.auction_ovr_tym >= '] = date('Y-m-d H:i:s'); //, strtotime('- 2 day')
 
         if (isset($this->request->data['makeName']) && $this->request->data['makeName'] != '') {
             $conditions['Vehicle.brand'] = $this->request->data['makeName'];

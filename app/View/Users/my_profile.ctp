@@ -70,7 +70,7 @@
                     <div class="form-group">
                         <div class="col-lg-3"> <label for="exampleInputEmail1">Preferred language</label></div>
                         <div class="col-lg-9"><select class="form-control">
-                                <option>Please select</option>
+                                <option><?php echo __('Please select');?></option>
                                 <option>German</option>
                                 <option>French</option>
                                 <option>Italian</option>
@@ -81,7 +81,7 @@
                     <div class="form-group">
                         <div class="col-lg-3"> <label for="exampleInputEmail1"><?= __("Form of address*") ?></label></div>
                         <div class="col-lg-9">
-                            <?php echo $this->Form->input('User.prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => 'Please Select', 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
+                            <?php echo $this->Form->input('User.prefix_name', array('type' => 'select', 'div' => false, 'label' => false, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'options' => array('Mrs' => 'Mrs', 'Mr' => 'Mr'))); ?>
                         </div>
                     </div>
 
@@ -130,7 +130,7 @@
                     <div class="form-group">
                         <div class="col-lg-3"> <label for="exampleInputEmail1"><?= __("Preferred language") ?></label></div>
                         <div class="col-lg-9">
-                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => 'Please Select', 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
+                            <?php echo $this->Form->input('User.language', array('div' => false, 'label' => false, 'class' => 'form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array('German' => 'German', 'French' => 'French', 'Italian' => 'Italian', 'English' => 'English'))); ?>
                         </div>
                     </div>
 

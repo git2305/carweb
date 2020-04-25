@@ -1190,6 +1190,15 @@ body .listin-text {
 .pad-l0{ padding-left: 0; }
 .pad-t0{ padding-top: 0; }
 .pad-b0{ padding-bottom: 0; }
+.vehicle-sold-button {
+    pointer-events: none;
+    cursor: not-allowed;
+    background: #ee1111 !important;
+}
+
+.custom-increase-with{ margin: 10px 0 0 0;}
+
+
 
 /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 @media screen and (-webkit-min-device-pixel-ratio:0) {

@@ -41,7 +41,7 @@
                                                 <li><?php echo $this->Html->link(__("Invoices"), array('controller' => 'Vehicles', 'action' => 'invoices')); ?></li>
                                             </ul>
                                         </li>
-                                        <li><?php echo $this->Html->link(__("Sign Out"), array('controller' => 'Users', 'action' => 'logout')); ?></li>
+                                        <li><?php echo $this->Html->link(__("Sign out"), array('controller' => 'Users', 'action' => 'logout')); ?></li>
                                     <?php } else { ?>
                                         <li><?php echo $this->Html->link(__("Sign up"), array('controller' => 'Users', 'action' => 'register'), array('tabindex' => -1)); ?></li>
                                         <li><?php echo $this->Html->link(__("Sign in"), array('controller' => 'Users', 'action' => 'login'), array('tabindex' => -1)); ?></li>

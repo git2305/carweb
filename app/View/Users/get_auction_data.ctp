@@ -95,7 +95,10 @@
                             </p>
                         </div>
                         <div class="col-md-4 mar-top-5">
-                            <a class="btn btn-block btn-Preis" href="<?php echo BASE_URL . '/Vehicles/vehicleDetail/' . base64_encode($data['Vehicle']['id']); ?>"><?php echo __('Offer'); ?></a>
+                            <a class="btn btn-block btn-Preis <?php if($data['Vehicle']['id'] == 1){ ?> vehicle-sold-button <?php } ?>" href="<?php echo BASE_URL . '/Vehicles/vehicleDetail/' . base64_encode($data['Vehicle']['id']); ?>">
+                                <span class="vehicle-sold hidden"><?php echo __('Sold');?></span>
+                                <span class="vehicle-in-auction"><?php echo __('Offer'); ?></span>
+                            </a>
                         </div>
                     </div>
                     

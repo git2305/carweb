@@ -399,19 +399,19 @@ msgstr "Modell auswählen"
 #: View/Users/index.ctp:61
 #: View/Users/index_bkp_20_01.ctp:38
 #: View/Vehicles/step1.ctp:93
-msgid "--Select Region--"
+msgid "Select Region"
 msgstr "Region auswählen"
 
 #: View/Elements/front/auction_listing.ctp:53
 #: View/Users/index.ctp:72
 #: View/Users/index_bkp_20_01.ctp:50
-msgid "--Min Year--"
+msgid "Min Year"
 msgstr "Min. Jahrgang"
 
 #: View/Elements/front/auction_listing.ctp:57
 #: View/Users/index.ctp:77
 #: View/Users/index_bkp_20_01.ctp:56
-msgid "--Max Year--"
+msgid "Max Year"
 msgstr "Max. Jahrgang"
 
 #: View/Elements/front/auction_listing.ctp:59
@@ -1077,20 +1077,20 @@ msgid "Search your vehicle by production duation and vehicel make and model."
 msgstr "Suchen Sie nach Jahrgang, Fahrzeugmarke und Modell."
 
 #: View/Vehicles/add_advertisement.ctp:52
-msgid "--Select Year--"
-msgstr "--Jahrgang wählen--"
+msgid "Select Year"
+msgstr "Jahrgang wählen"
 
 #: View/Vehicles/add_advertisement.ctp:53
-msgid "--Select Make--"
-msgstr "--Marke auswählen--"
+msgid "Select Make"
+msgstr "Marke auswählen"
 
 #: View/Vehicles/add_advertisement.ctp:58
-msgid "--Select Month--"
-msgstr "--Monat auswählen--"
+msgid "Select Month"
+msgstr "Monat auswählen"
 
 #: View/Vehicles/add_advertisement.ctp:59
-msgid "--Select Model--"
-msgstr "--Modell auswählen--"
+msgid "Select Model"
+msgstr "Modell auswählen"
 
 #: View/Vehicles/add_advertisement.ctp:66
 #: View/Vehicles/step1.ctp:268
@@ -1539,8 +1539,8 @@ msgid "Body Type *"
 msgstr "Aufbau"
 
 #: View/Vehicles/step1.ctp:60
-msgid "--Select Body Type--"
-msgstr "--Fahrzeugbau wählen--"
+msgid "Select Body Type"
+msgstr "Fahrzeugbau wählen"
 
 #: View/Vehicles/step1.ctp:66
 msgid "Doors *"
@@ -1549,8 +1549,8 @@ msgstr "Türen"
 #: View/Vehicles/step1.ctp:68;100;107;126;184;191
 #: View/Vehicles/step2.ctp:110
 #: View/Vehicles/step4.ctp:33;42
-msgid "--Please Select--"
-msgstr "--Bitte auswählen--"
+msgid "Please Select"
+msgstr "Bitte auswählen"
 
 #: View/Vehicles/step1.ctp:73;75
 msgid "Displacement"
@@ -1613,7 +1613,7 @@ msgid "Exterior Color *"
 msgstr "Farbe"
 
 #: View/Vehicles/step1.ctp:177
-msgid "--Please Choose Color--"
+msgid "Please Choose Color"
 msgstr "Bitte Farbe auswählen"
 
 #: View/Vehicles/step1.ctp:182

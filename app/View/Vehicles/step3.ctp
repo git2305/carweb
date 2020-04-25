@@ -29,7 +29,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-4"> <label for="exampleInputEmail1"><?= __('Auction Duration *') ?></label></div>
                                     <div class="col-md-8">
-                                        <?php echo $this->Form->input('Vehicle.auction_duration', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array('1' => __('24 hours'), '2' => __('48 hours')))); //'3' => '72 hours' ?>
+                                        <?php echo $this->Form->input('Vehicle.auction_duration', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array('1' => __('24 hours'), '2' => __('48 hours')))); //'3' => '72 hours' ?>
                                     </div>
                                 </div>
                                 
@@ -46,14 +46,14 @@
                                 <div class="form-group row">
                                     <div class="col-md-4"> <label for="exampleInputEmail1"><?= __('To be transported by the *') ?></label></div>
                                     <div class="col-md-8">
-                                        <?php echo $this->Form->input('Vehicle.transport_medium', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please Select'), 'type' => 'select', 'options' => array('Local Transporters' => 'Local Transporters'))); ?>
+                                        <?php echo $this->Form->input('Vehicle.transport_medium', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'empty' => __('Please select'), 'type' => 'select', 'options' => array('Local Transporters' => 'Local Transporters'))); ?>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <div class="col-md-4"> <label for="exampleInputEmail1"><?= __('Increase with') ?></label></div>
+                                    <div class="col-md-4"> <label for="VehicleIncreaseWith"><?= __('Increase with') ?></label></div>
                                     <div class="col-md-8">
-                                        <?php echo $this->Form->input('Vehicle.increase_with', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array('50' => '50', '100' => '100', '150' => '150', '200' => '200' ))); ?>
+                                        <?php echo $this->Form->input('Vehicle.increase_with', array('div' => FALSE, 'label' => FALSE, 'class' => 'validate[required] form-control', 'type' => 'select', 'options' => array('25' => '25', '50' => '50'  ))); ?>
                                     </div>
                                 </div>
                             </div>
@@ -81,6 +81,5 @@
 
     $(document).ready(function () {
         $('#step3-form').validationEngine();
-
     });
 </script>
