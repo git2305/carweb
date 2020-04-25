@@ -31,8 +31,3 @@
 <script>
     alertify.notify('<?php echo $message; ?>', '<?php echo $messageClass; ?>');
 </script>
-
-<!--<div id="flashMessage" class="alert <?php //echo $class; ?> fade in">
-    <a href="#" class="close" data-dismiss="alert">&times;</a>
-    <strong>Error!</strong> <?php //echo $message; ?>
-</div>-->

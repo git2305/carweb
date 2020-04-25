@@ -55,17 +55,31 @@ class UsersController extends AppController {
         $this->loadModel('Company');
         if ($this->data) {
             $tmp = $this->data;
+            
+            $company_already_exist = $this->Company->find('count', array('conditions' => array(
+                'Company.name' => $tmp['Company']['name'],
+                'Company.street' => $tmp['Company']['street'],
+                'Company.postcode' => $tmp['Company']['postcode'],
+            )));
             $email_already_exist = $this->User->find('count', array('conditions' => array('User.email' => $tmp['User']['email'])));
             $usrname_already_exist = $this->User->find('count', array('conditions' => array('User.username' => $tmp['User']['username'])));
-            if ($email_already_exist != 0 || $usrname_already_exist != 0) {
+            
+            
+            if ($email_already_exist != 0 || $usrname_already_exist != 0 || $company_already_exist > 0) {
                 if ($email_already_exist != 0 && $usrname_already_exist != 0) {
-                    $this->Session->setFlash('Username & email already exist. Try with different username & email.', 'default', array('class' => 'red'));
+                    $this->Session->setFlash( __('Username & email already exist. Try with different username & email.') , 'default', array('class' => 'alert alert-danger alert-dismissible'));
                 } elseif ($email_already_exist != 0) {
-                    $this->Session->setFlash('Email already exist. Try with different email id.', 'default', array('class' => 'red'));
+                    $this->Session->setFlash( __('Email already exist. Try with different email id.') , 'default', array('class' => 'alert alert-danger alert-dismissible'));
+                } elseif( $company_already_exist > 0 ){
+                    $this->Session->setFlash( __('Company already exist. Try with different company information.') , 'default', array('class' => 'alert alert-danger alert-dismissible'));
                 } else {
-                    $this->Session->setFlash('Username already exist. Try with different username.', 'default', array('class' => 'red'));
+                    $this->Session->setFlash( __('Username already exist. Try with different username.'), 'default', array('class' => 'alert alert-danger alert-dismissible'));
                 }
-                $this->redirect($this->referer());
+                
+                //$this->set(array('data' => $this->data));
+                
+                //$this->redirect($this->referer());
+                $this->redirect(['action' => 'register']);
             }
 
             $tmp['User']['role_id'] = 2; //As user
@@ -78,6 +92,7 @@ class UsersController extends AppController {
                 unset($tmp['User']);
                 if ($this->Company->save($tmp)) {
                     $this->Session->setFlash('Your profile application has been sent to admin for approval. We will respond you within 1-2 working days.', 'default', array('class' => 'green'));
+                    $this->redirect(['action' => 'login']);
                 } else {
                     $this->Session->setFlash('SomeThing went wrong, Please try again later.', 'default', array('class' => 'red'));
                 }

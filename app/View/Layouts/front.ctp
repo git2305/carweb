@@ -7,7 +7,7 @@
 <?php if(isset($PAGE_TITLE) && !empty($PAGE_TITLE)){
 	echo __($PAGE_TITLE);
 }else{
-	echo __("Car Listing");
+	echo __("EF24");
 } ?>
 </title>
 
@@ -66,7 +66,3 @@
 
 </body>
 </html>
-
-<script>
-	$('#flashMessage').fadeOut(5200);
-</script>
