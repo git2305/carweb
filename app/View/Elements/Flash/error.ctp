@@ -1,33 +1,6 @@
-<?php
-    $class = '';
-    $text = '';
-    switch($params['class']) {
-        case 'success':
-            $class = 'alert-sucess';
-            $text = 'Success!';
-            $messageClass = 'success';
-            break;
-        case 'fail':
-            $class = 'alert-fail';
-            $text = 'Error!';
-            $messageClass = 'fail';
-            break;
-        case 'info':
-            $class = 'alert-info';
-            $text = 'Note!';
-            $messageClass = 'info';
-            break;
-        case 'warning':
-            $class = 'alert-warning';
-            $text = 'Warning!';
-            $messageClass = 'warning';
-            break;
-        default:
-            break;
-    }
-?>
-
-
-<script>
-    alertify.notify('<?php echo $message; ?>', '<?php echo $messageClass; ?>');
-</script>
+<div class="alert alert-danger alert-dismissible" role="alert">
+  <?php echo $message; ?>
+  <button type="button" class="close" data-dismiss="alert" aria-label="<?php echo __('Close');?>">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

@@ -66,3 +66,7 @@
 
 </body>
 </html>
+
+<script>
+	$('#flashMessage').fadeOut(10000);
+</script>

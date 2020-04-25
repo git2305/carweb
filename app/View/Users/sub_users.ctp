@@ -86,7 +86,8 @@
                                     ?>
                                 </td>
                                 <td class="footable-visible footable-last-column">
-                                    <a href="<?php echo SITE_URL . '/Users/editSubUser/' . base64_encode($data['User']['id']) ?>" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                                    <a title="<?php echo __('Edit'); ?>" href="<?php echo SITE_URL . '/Users/editSubUser/' . base64_encode($data['User']['id']) ?>" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+                                    <a title="<?php echo __('Added Vehicle'); ?>" href="<?php echo SITE_URL . '/Users/subUserVehicles/' . base64_encode($data['User']['id']) ?>" class="on-default edit-row"><i class="fa fa-car"></i></a>
                                     <?php echo $this->Form->postLink('<i class="fa fa-remove"></i>', ['action' => 'delete', base64_encode($data['User']['id'])], ['escape' => false, 'confirm' => __('Are you sure you want to delete?')]) ?>
                                 </td>
                             </tr>
