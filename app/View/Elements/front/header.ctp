@@ -20,6 +20,10 @@
                                                 <li><a href="<?php echo SITE_URL; ?>/vehicles/favouriteVehicles"><?php echo __('My Favourite Vehicles'); ?></a></li>
                                                 <li role="separator" class="divider"></li>
                                                 
+                                                <li class="menu-header-title"><?php echo __('My saved search'); ?></li>
+                                                <li><?php echo $this->Html->link(__("My saved search"), array('controller' => 'Users', 'action' => 'mySavedSearch'), array('tabindex' => -1)); ?></li>
+                                                <li role="separator" class="divider"></li>
+                                                
                                                 <?php if( AuthComponent::User('parent_id') == 0  ){ ?>
                                                     <li class="menu-header-title"><?php echo __('Sub Users'); ?></li>
                                                     <li><?php echo $this->Html->link(__("Add Sub User"), array('controller' => 'Users', 'action' => 'addSubUser', base64_encode(AuthComponent::User('id'))), array('tabindex' => -1)); ?></li>
@@ -93,7 +97,7 @@
                         <li> <?php echo $this->Html->link(__("Home"), array('controller' => 'Users', 'action' => 'index'), array('tabindex' => -1)); ?> </li>
                         <li> <?php echo $this->Html->link(__("How it works"), array('controller' => '', 'action' => '/', $cmsSlugs[4])); ?> </li>
                         <li> <?php echo $this->Html->link(__("Registration"), array('controller' => 'Users', 'action' => 'register'), array('tabindex' => -1)); ?></li>
-                        <li> <a href="<?= BASE_URL . '/Vehicles/addAdvertisement' ?>"><img src="<?php echo BASE_URL; ?>/img/front/car-plus-icon.png" /> <?php echo __("Add advertisement"); ?> </a></li>
+                        <li> <a href="<?= BASE_URL . '/Vehicles/addAdvertisement' ?>"><img class="hidden-xs" src="<?php echo BASE_URL; ?>/img/front/car-plus-icon.png" /> <?php echo __("Add advertisement"); ?> </a></li>
                         <li> <?php echo $this->Html->link(__("About Us"), array('controller' => '', 'action' => '/', $cmsSlugs[1])); ?> </li>
                         <li> <?php echo $this->Html->link(__("Contact Us"), array('controller' => 'Users', 'action' => 'contactUs')); ?> </li>
                     </ul>

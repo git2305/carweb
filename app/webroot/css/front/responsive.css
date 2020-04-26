@@ -372,6 +372,7 @@ form .col-sm-3 label,
 	padding: 15px 0;
 	text-align: center;
 }
+.left-logo img{ height: 60px; }
 .login-lang-wrap::before, 
 .login-lang-wrap::after{
 	display:none;
@@ -387,13 +388,14 @@ form .col-sm-3 label,
 	text-align:left;
 }
 .right-search-log {
-	float: none;
+    float: none;
     -webkit-transition:all 0.5s ease 0s;
     -moz-transition:all 0.5s ease 0s;
     -ms-transition:all 0.5s ease 0s;
     -o-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
     opacity:1;
+    padding-bottom:10px;
 }
 .sticky_header .right-search-log {
 	height: 0;
@@ -482,7 +484,7 @@ body .navbar-default .navbar-toggle {
 	padding: 0;
 	position: absolute;
 	right: 0;
-	top: -43px;
+	top: -183px;
 	width: 39px;
 	z-index: 99999;
 }
@@ -502,7 +504,7 @@ body .navbar-default .navbar-toggle .toggle-line {
 	border-radius: 10px;
 	display: block;
 	height:4px;
-	background:#000;
+	background: #000;
 	width: 30px;
 }
 body .navbar-default .navbar-toggle[aria-expanded="true"] .toggle-line {
@@ -642,6 +644,7 @@ body .carousel-indicators {
 	float: none;
 	margin: 0 10px 10px;
 	vertical-align: top;
+        width: 100%;
 }
 .right-title-block > *:last-child{
 	margin-bottom:0;
@@ -1009,7 +1012,6 @@ body .nav-tabs > li > a {
 .form-collapsible {
 	padding: 15px;
 }
-
 
 
 

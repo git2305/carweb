@@ -1012,7 +1012,7 @@ body .select2-container--default .select2-selection--single .select2-selection__
 }
 .mid-section {
     /*padding:70px 0*/
-    padding:15px 0;
+    padding:50px 0;
 }
 .textmargen {
     margin-bottom:10px;
@@ -2932,3 +2932,10 @@ form:after{
 	padding: 0.5em 0.6em;
 
 }
+
+.mb-10 { margin-bottom: 10px !important;}
+.ml-10 { margin-left: 10px !important;}
+.mr-10 { margin-right: 10px !important;}
+.mt-10 { margin-top: 10px !important;}
+
+.slider-wrap { margin: 20px 0;}

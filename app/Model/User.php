@@ -9,10 +9,17 @@ class User extends Model {
         }
         return true;
     }
-
+    
     var $hasOne = array(
         'Company' => array(
             'className' => 'Company',
+            'foreignKey' => 'user_id'
+        )
+    );
+    
+    var $hasMany = array(
+        'SavedSearch' => array(
+            'className' => 'SavedSearch',
             'foreignKey' => 'user_id'
         )
     );

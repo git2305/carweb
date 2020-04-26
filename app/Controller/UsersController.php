@@ -1591,5 +1591,63 @@ class UsersController extends AppController {
         
         $this->set('subUserVehicles', $subUserVehicles);
     }
+    
+    public function mySavedSearch(){
+        $this->layout = 'front';
+        $this->loadModel('SavedSearch');
+        $this->set('PAGE_TITLE', __('My Saved Search'));
+        
+       
+        $this->Paginator->settings = array('limit' => 10, 'conditions' => array('SavedSearch.user_id' => AuthComponent::User('id')), 'order' => 'SavedSearch.created DESC', 'recursive' => 2);
+        $savedSearch = $this->Paginator->paginate('SavedSearch');
+        
+        $this->set('savedSearch', $savedSearch);
+        
+    }
+    
+    public function addSearchReminder() {
+        $this->layout = 'none';
+        $responseData = [];
+        
+        if( $this->request->is('post') ){
+            if ( $this->request->data ) {
+                
+                $this->loadModel('SavedSearch');
+                
+                $this->request->data['status'] = 1;
+                $this->request->data['user_id'] = AuthComponent::User('id');
+                
+                $countSavedSearch = $this->SavedSearch->find('count', array('conditions' => array(
+                    'SavedSearch.make' => $this->request->data['make'],
+                    'SavedSearch.model' => $this->request->data['model'],
+                    'SavedSearch.min_year' => $this->request->data['min_year'],
+                    'SavedSearch.max_year' => $this->request->data['max_year'],
+                    'SavedSearch.vehicle_regions' => $this->request->data['vehicle_regions'],
+                    'SavedSearch.user_id' => AuthComponent::User('id')
+                )));
+                
+                if( $countSavedSearch > 0 ){
+                    $responseData['success'] = false;
+                    $responseData['message'] = __('Reminder for this search is already in your saved search list.');
+                } else {
+                    if ($this->SavedSearch->save( $this->request->data )) {
+                        $responseData['success'] = true;
+                        $responseData['message'] = __('Your search criteria has been saved successfully.');
+                    } else {
+                        $responseData['success'] = false;
+                        $responseData['message'] = __('Unable to store your data. Please try again');
+                    }
+                }
+            }
+        } else {
+            $responseData['success'] = false;
+            $responseData['message'] = __('Invalid request. Please try again');
+        }
+        
+        echo json_encode($responseData, true); die;
+        
+    }
+    
+    
 
 }

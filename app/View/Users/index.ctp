@@ -50,7 +50,10 @@
                                 <label for="exampleInputEmail1"><?= __("Max Year") ?></label>
                                 <?php echo $this->Form->input('max_year', array('div' => FALSE, 'label' => FALSE, 'class' => 'form-control', 'empty' => __('Max Year'), 'type' => 'select', 'options' => $maxArr)); ?>
                             </div>
-                            <div class="text-right"> <button type="button" class="btn btn-default btnQuickSearch"><?php echo __("Search"); ?></button></div>
+                            
+                            <button type="button" class="btn btn-default pull-left btnReminder"><?php echo __("Reminder"); ?></button>
+                            <button type="button" class="btn btn-default pull-right btnQuickSearch"><?php echo __("Search"); ?></button>
+<!--                            <div class="text-right"> <button type="button" class="btn btn-default btnQuickSearch"><?php echo __("Search"); ?></button></div>-->
                         </form>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="NewCars">
