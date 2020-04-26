@@ -637,7 +637,7 @@ body .carousel-indicators {
 }
 .right-title-block {
 	float: none;
-	text-align: center;
+	text-align: left;
 }
 .right-title-block > * {
 	display: inline-block;
