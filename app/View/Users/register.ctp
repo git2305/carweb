@@ -1,7 +1,7 @@
 <!-- ================MID section=====================-->
 <section class="mid-section">
     <div class="container">
-        <div class="row">
+        
             <h1 class="main-title"><?php echo __("Registration"); ?></h1>
             <div class="registra-form">
                 <form method="POST" id="reg_form">
@@ -200,12 +200,22 @@
             </div>
 
 
-        </div>
+        
     </div>
 </section>
 
 <script type = 'text/javascript'>
     $(document).ready(function () {
-        $('#reg_form').validationEngine();
+        $('#reg_form').validationEngine(
+            'attach', {
+                promptPosition : 'bottomLeft:0,0',
+                scroll: false,
+                autoHidePrompt: true,
+                autoHideDelay: 2500,
+                fadeDuration: 0.3,
+                focusFirstField : true,
+                maxErrorsPerField: 1
+            }
+        );
     });
 </script><!-- Finished Middle Content -->

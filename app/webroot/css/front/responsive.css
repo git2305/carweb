@@ -635,6 +635,10 @@ body .carousel-indicators {
 .title-wrap::before{
 	display:none;
 }
+.vehicle_title_list h3 { color :#000;}
+.right-title-block .checkbox-page label{
+    margin: 5px 0 !important;
+}
 .right-title-block {
 	float: none;
 	text-align: left;
