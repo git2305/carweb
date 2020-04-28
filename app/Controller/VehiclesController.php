@@ -889,7 +889,7 @@ class VehiclesController extends AppController {
             }
         }
      
-        $minAuctionPrice = 0;
+        $minAuctionPrice = $vehicles['Vehicle']['min_auction_price'];
         $bidingPriceArray = [];
         if( !empty($vehicles['AuctionBid']) ){
             foreach($vehicles['AuctionBid'] as $key => $val){
