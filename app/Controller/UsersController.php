@@ -90,12 +90,14 @@ class UsersController extends AppController {
                 $tmp['Company']['user_id'] = $lastInsertId;
                 $this->__sendActivationEmail($lastInsertId);
                 unset($tmp['User']);
-                if ($this->Company->save($tmp)) {
+                
+                $this->Company->save($tmp);
+                //if () {
                     $this->Session->setFlash('Your profile application has been sent to admin for approval. We will respond you within 1-2 working days.', 'default', array('class' => 'green'));
                     $this->redirect(['action' => 'login']);
-                } else {
-                    $this->Session->setFlash('SomeThing went wrong, Please try again later.', 'default', array('class' => 'red'));
-                }
+                //} else {
+                //    $this->Session->setFlash('SomeThing went wrong, Please try again later.', 'default', array('class' => 'red'));
+                //}
             }
         }
     }
