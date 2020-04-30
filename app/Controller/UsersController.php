@@ -1,7 +1,7 @@
 <?php
 
 App::uses('AppController', 'Controller');
-App::uses('String', 'Utility');
+App::uses('CakeText', 'Utility');
 App::import('Vendor', 'tcpdf/tcpdf');
 
 class UsersController extends AppController {
@@ -85,8 +85,8 @@ class UsersController extends AppController {
             $tmp['User']['role_id'] = 2; //As user
             $tmp['User']['phone'] = $tmp['User']['phone'];
             $tmp['User']['mobile'] = $tmp['User']['mobile'];
-            $tmp['User']['tokenhash'] = Security::hash(String::uuid(), 'sha512', true); //Set token hash key
-            $tmp['User']['token'] = Security::hash(String::uuid(), 'sha512', true); //Set token hash key
+            $tmp['User']['tokenhash'] = Security::hash(CakeText::uuid(), 'sha512', true); //Set token hash key
+            $tmp['User']['token'] = Security::hash(CakeText::uuid(), 'sha512', true); //Set token hash key
             
             if ($this->User->save($tmp)) {
                 $lastInsertId = $this->User->getLastInsertId();
@@ -94,6 +94,7 @@ class UsersController extends AppController {
                 $this->__sendActivationEmail($lastInsertId);
                 unset($tmp['User']);
                 
+                pr($tmp); die;
                 $this->Company->save($tmp);
                 //if () {
                     $this->Session->setFlash('Your profile application has been sent to admin for approval. We will respond you within 1-2 working days.', 'default', array('class' => 'green'));
@@ -1419,7 +1420,7 @@ class UsersController extends AppController {
                 $user = $this->User->find('first', array('conditions' => array('User.email' => $email)));
                 if ($user) {
                     if ($user['User']['status']) {
-                        $key = Security::hash(String::uuid(), 'sha512', true);
+                        $key = Security::hash(CakeText::uuid(), 'sha512', true);
                         $hash = sha1($user['User']['username'] . rand(0, 100));
                         $resetUrl = Router::url(array('controller' => 'users', 'action' => 'reset'), true) . '/' . $key . '#' . $hash;
                         $resetUrl = '<a href="' . $resetUrl . '">' . __('Reset Password') . '</a>';
