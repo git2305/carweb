@@ -56,7 +56,7 @@ class EmailComponent extends Component {
             return $data = $this->Email->send($this->content);
             //pr($data); die;
         } catch(Exception $e){
-            echo $e->getMessage(); die;
+            //echo $e->getMessage(); die;
         }  
     }
     
