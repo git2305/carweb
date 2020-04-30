@@ -94,7 +94,6 @@ class UsersController extends AppController {
                 $this->__sendActivationEmail($lastInsertId);
                 unset($tmp['User']);
                 
-                pr($tmp); die;
                 $this->Company->save($tmp);
                 //if () {
                     $this->Session->setFlash('Your profile application has been sent to admin for approval. We will respond you within 1-2 working days.', 'default', array('class' => 'green'));
