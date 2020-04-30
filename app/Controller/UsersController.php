@@ -666,8 +666,8 @@ class UsersController extends AppController {
 
         $bidData = $this->AuctionBid->find('all');
 
+        $bidArr = array();
         if (!empty($bidData)) {
-            $bidArr = array();
             foreach ($bidData as $key => $val) {
                 $bidDataPrice = $this->AuctionBid->find('first', array('conditions' => array('AuctionBid.biding_amount > ' => $val['AuctionBid']['biding_amount'], 'AuctionBid.vehicle_id' => $val['AuctionBid']['vehicle_id'])));
                 if (!empty($bidDataPrice)) {
