@@ -85,6 +85,9 @@ class UsersController extends AppController {
             $tmp['User']['role_id'] = 2; //As user
             $tmp['User']['phone'] = $tmp['User']['phone'];
             $tmp['User']['mobile'] = $tmp['User']['mobile'];
+            $tmp['User']['tokenhash'] = Security::hash(String::uuid(), 'sha512', true); //Set token hash key
+            $tmp['User']['token'] = Security::hash(String::uuid(), 'sha512', true); //Set token hash key
+            
             if ($this->User->save($tmp)) {
                 $lastInsertId = $this->User->getLastInsertId();
                 $tmp['Company']['user_id'] = $lastInsertId;
