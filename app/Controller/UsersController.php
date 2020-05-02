@@ -85,8 +85,8 @@ class UsersController extends AppController {
             $tmp['User']['role_id'] = 2; //As user
             $tmp['User']['phone'] = $tmp['User']['phone'];
             $tmp['User']['mobile'] = $tmp['User']['mobile'];
-            $tmp['User']['tokenhash'] = Security::hash(CakeText::uuid(), 'sha512', true); //Set token hash key
-            $tmp['User']['token'] = Security::hash(CakeText::uuid(), 'sha512', true); //Set token hash key
+            //$tmp['User']['tokenhash'] = Security::hash(CakeText::uuid(), 'sha512', true); //Set token hash key
+            //$tmp['User']['token'] = Security::hash(CakeText::uuid(), 'sha512', true); //Set token hash key
             
             if ($this->User->save($tmp)) {
                 $lastInsertId = $this->User->getLastInsertId();
@@ -312,7 +312,18 @@ class UsersController extends AppController {
     public function login() {
         $this->layout = 'front';
         $this->set('PAGE_TITLE', 'Sign in');
-        if ($this->data) { //pr($this->data);die;
+        
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Session->setFlash('Invalid Username / Password !', 'default', array('class' => 'red'));
+        }
+        
+        
+        
+        
+        /*if ($this->data) { //pr($this->data);die;
             if ($this->Auth->login()) {
                 if (AuthComponent::User('status') == 0) {
                     $this->Auth->logout();
@@ -326,7 +337,7 @@ class UsersController extends AppController {
                 $this->Session->setFlash('Invalid Username / Password !', 'default', array('class' => 'red'));
                 $this->redirect($this->referer());
             }
-        }
+        }*/
     }
 
     /*     * * Sumit

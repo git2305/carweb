@@ -28,9 +28,12 @@ class AppController extends Controller {
         //$this->Auth->loginRedirect = array('controller' => 'Users', 'action' => 'index');
         //$this->Auth->logoutRedirect = array('controller' => 'Users', 'action' => 'index');
         $this->Auth->authenticate = array(
-            'Form' => array('fields' => array(
+            'Form' => array(
+                //'passwordHasher' => 'Blowfish',
+                'fields' => array(
                     'username' => 'username',
-                    'password' => 'password'),
+                    'password' => 'password'
+                ),
                 'userModel' => 'User'
             )
         );

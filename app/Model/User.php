@@ -1,6 +1,7 @@
 <?php
 
 App::uses('Model', 'Model');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class User extends Model {
     public function beforeSave($options = array()) {
